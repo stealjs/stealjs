@@ -1,0 +1,51 @@
+{
+  "name": "stealjs",
+  "version": "0.0.1",
+  "description": "StealJS's website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stealjs/stealjs.git"
+  },
+  "keywords": [
+    "StealJS"
+  ],
+  "author": "Bitovi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stealjs/stealjs/issues"
+  },
+  "homepage": "https://github.com/stealjs/stealjs#readme",
+  "dependencies": {
+    "steal": "^0.16.41",
+    "steal-tools": "^0.16.8"
+  },
+  "devDependencies": {
+    "bit-docs": "0.0.7"
+  },
+  "bit-docs": {
+    "dependencies": {
+      "bit-docs-glob-finder": "^0.0.5",
+      "bit-docs-dev": "^0.0.3",
+      "bit-docs-js": "^0.0.6",
+      "bit-docs-tag-sourceref": "^0.0.3",
+      "bit-docs-tag-package": "^0.0.3",
+      "bit-docs-generate-html": "^0.3.0",
+
+      "bit-docs-html-canjs": "^0.4.5",
+      "bit-docs-prettify": "^0.1.0",
+      "bit-docs-html-highlight-line": "^0.2.2",
+      "bit-docs-tag-demo": "^0.3.0"
+    },
+    "glob": {
+      "pattern": "{node_modules,docs}/{steal,steal-tools}/**/*.{js,md}",
+      "ignore": ["node_modules/steal/test/**/*","node_modules/steal-tools/test/**/*"]
+    },
+    "parent": "StealJS",
+    "minifyBuild": false,
+    "dest": "./docs"
+  }
+}
