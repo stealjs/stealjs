@@ -4,6 +4,7 @@
   "description": "StealJS's website",
   "main": "index.js",
   "scripts": {
+    "document": "bit-docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
