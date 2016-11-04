@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>StealJS </title>
+	<meta name="description" content="Futuristic JavaScript dependency loader and builder. Speeds up application load times. Works with ES6, CommonJS, AMD, CSS, LESS and more. Simplifies workflows.">
+	<meta name="author" content="Bitovi.com">
+	<link rel="stylesheet" href="./docs/static/bundles/bit-docs-site/static.css">
+	<style>
+		.embed-outer-wrap {
+			margin-top: 36px;
+		}
+		.embed-wrap {
+			height: 600px;
+			margin: 0;
+			border: 1px solid #d9d9d9;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+		}
+		h2 {
+			text-align: center;
+			font-weight: 600;
+			margin-top: 100px;
+			margin-bottom: 18px;
+		}
+		.logos {
+			padding: 28px 24px 0;
+		}
+		.logos .row {
+			padding-bottom: 50px;
+			display: -webkit-flex;
+			display: flex;
+			justify-content: -webkit-space-between;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.logos .row.group-middle {
+			padding-left: 250px;
+			padding-right: 250px;
+			padding-bottom: 0;
+		}
+		p.action-link {
+			text-align: center;
+			font-size: 24px;
+			padding-top: 22px;
+		}
+		#stealjspluginsanimation_hype_container {
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+<header>
+		<nav class="container">
+			<div class="logo-menu">
+				<a class="brand" href="./index.html">JavaScriptMVC</a>
+				<ul class="dropdown-menu">
+					<li><a href="http://javascriptmvc.com">JavaScriptMVC</a></li>
+					<li><a href="http://canjs.com">CanJS</a></li>
+					<li><a href="http://jquerypp.com">jQuery++</a></li>
+					<li class="active"><a href="http://stealjs.com">StealJS</a></li>
+					<li><a href="http://funcunit.com">FuncUnit</a></li>
+					<li><a href="http://documentjs.com">DocumentJS</a></li>
+				</ul>
+			</div>
+			<ul class="nav">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li class=""><a href="docs/index.html">API</a></li>
+				<li class=""><a href="https://twitter.com/stealjs">Twitter</a></li>
+				<li class=""><a href="https://github.com/stealjs/steal">GitHub</a></li>
+				<li class=""><a href="https://gitter.im/stealjs/steal">Chat</a></li>
+			</ul>
+			<div class="pull-right">
+				<div class="bitovi-menu">
+					<a href="http://bitovi.com" class="bitovi icon-bits">Bitovi</a>
+					<ul class="dropdown-menu">
+						<li><a href="http://bitovi.com">Bitovi.com</a></li>
+						<li><a href="http://bitovi.com/blog">Blog</a></li>
+						<li><a href="http://bitovi.com/development">Development</a></li>
+						<li><a href="http://bitovi.com/design">Design</a></li>
+						<li><a href="http://bitovi.com/training">Training</a></li>
+						<li><a href="http://bitovi.com/open-source">Open Source</a></li>
+						<li><a href="http://bitovi.com/about">About</a></li>
+						<li><a href="http://bitovi.com/contact">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section style="width: 800px; margin:100px auto;">
+			<div style="border-right: 1px solid #ccc; padding-right:20px; margin-right:50px; float:left;">
+				<img src="img/steal-landing-page-logo.jpg" alt="StealJS Logo" />
+			</div>
+			<div style="float:left; width: 320px; padding-top: 36px;">
+				<p style="-webkit-font-smoothing: antialiased; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 300; ">
+					Futuristic JavaScript dependency loader and builder.
+					Speeds up application load times. Works with
+					ES6, CommonJS, AMD, CSS, LESS and more. Simplifies
+					modular workflows.<br></p>
+			</div>
+			<br/><br/><br/><br/>
+			<div class="twitter" style="text-align: center;">
+				<iframe
+					src="//platform.twitter.com/widgets/follow_button.html?screen_name=stealjs"
+					style="width: 200px; height: 20px;"
+					allowtransparency="true"
+					frameborder="0"
+					scrolling="no"
+				>
+				</iframe>
+
+				<iframe
+					src="http://ghbtns.com/github-btn.html?user=stealjs&repo=steal&type=watch&count=true"
+					allowtransparency="true"
+					frameborder="0"
+					scrolling="0"
+					width="110"
+					height="20"
+				>
+				</iframe>
+
+				<iframe
+					src="http://ghbtns.com/github-btn.html?user=stealjs&repo=steal&type=fork&count=true"
+					allowtransparency="true"
+					frameborder="0"
+					scrolling="0"
+					width="95"
+					height="20"
+				>
+				</iframe>
+			</div>
+			<div>
+				Module Loader:
+				<pre class='prettify'><code>> npm install steal --save-dev</code></pre>
+			</div>
+			<div>
+				Build Tools:
+				<pre><code>> npm install steal-tools --save-dev</code></pre>
+			</div>
+
+			<h2>Works with your favorite tech</h2>
+			<div class="logos">
+				<div class="row">
+					<a href="http://donejs.com"><img src="img/logo-donejs.svg" alt="DoneJS"></a>
+					<a href="https://github.com/stealjs/steal-canjs-example"><img src="img/logo-canjs.svg" alt="CanJS"></a>
+					<a href="https://github.com/stealjs/react-example"><img src="img/logo-react.svg" alt="React"></a>
+					<a href="https://github.com/stealjs/steal-angular2-example"><img src="img/logo-angular.svg" alt="Angular 2"></a>
+					<a href="https://github.com/stealjs/vuejs-example"><img src="img/logo-vue.svg" alt="VueJS"></a>
+				</div>
+				<div class="row">
+					<a href="https://github.com/stealjs/steal-cordova"><img src="img/logo-cordova.png" alt="Apache Cordova / PhoneGap"></a>
+					<a href="https://github.com/stealjs/system-npm"><img src="img/logo-npm.svg" alt="npm"></a>
+					<a href="https://github.com/ilyavf/steal-coffee"><img src="img/logo-coffeescript.svg" alt="CoffeeScript"></a>
+					<a href="https://github.com/stealjs/steal-less"><img src="img/logo-less.svg" alt="Less"></a>
+					<a href="https://github.com/stealjs/steal-sass"><img src="img/logo-sass.svg" alt="Sass"></a>
+				</div>
+				<div class="row group-middle">
+					<a href="http://stealjs.com/docs/syntax.es6.html"><img src="img/logo-es6.png" alt="JavaScript ES6"></a>
+					<a href="http://stealjs.com/docs/$css.html"><img src="img/logo-css3.svg" alt="CSS 3"></a>
+				</div>
+			</div>
+
+			<h2>Easy to extend with your own plugins</h2>
+			<div id="stealjspluginsanimation_hype_container" style="margin:auto;position:relative;width:320px;height:474px;overflow:hidden;" aria-live="polite" onclick="window.location.href = 'http://stealjs.com/docs/StealJS.writing-plugins.html'">
+				<script type="text/javascript" charset="utf-8" src="img/stealjs-plugins-animation.hyperesources/stealjspluginsanimation_hype_generated_script.js?10184"></script>
+			</div>
+			<p class="action-link"><a href="http://stealjs.com/docs/StealJS.writing-plugins.html">Learn how to make a plugin</a></p>
+
+			<h2>Why StealJS</h2>
+			<div class="videos" style="text-align: center;">
+				<iframe width="395" height="222" src="https://www.youtube.com/embed/C-kM0v9L9UY" frameborder="0" allowfullscreen></iframe>
+				<iframe width="395" height="222" src="https://www.youtube.com/embed/eIfUsPdKF4A" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="embed-outer-wrap">
+				<h2>Latest Activity</h2>
+				<div class="embed-wrap">
+					<a href="http://bithub.com/embed?hubId=1&tenant=charming_volcano_7196_1&view=public" class="bithub-embed">StealJS Embed</a><script src="http://bithub.com/embed.js"></script>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<nav class="container">
+			<a class="brand javascriptmvc" href="index.html"></a>
+		</nav>
+	</footer>
+	<script>
+		(function(i,s,o,g,r,a,m){
+			i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},
+			i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-2302003-20', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>
