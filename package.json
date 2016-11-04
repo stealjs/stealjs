@@ -20,8 +20,8 @@
   },
   "homepage": "https://github.com/stealjs/stealjs#readme",
   "dependencies": {
-    "steal": "^0.16.41",
-    "steal-tools": "^0.16.8"
+    "steal": "^1.0.0-rc.0",
+    "steal-tools": "^1.0.0-rc.0"
   },
   "devDependencies": {
     "bit-docs": "0.0.7"
@@ -37,6 +37,7 @@
 
       "bit-docs-prettify": "^0.1.0",
       "bit-docs-html-highlight-line": "^0.2.2",
+      "bit-docs-html-toc": "^0.2.1",
       "bit-docs-tag-demo": "^0.3.0",
       "bit-docs-docjs-theme": "^0.0.1"
     },
