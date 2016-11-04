@@ -35,10 +35,10 @@
       "bit-docs-tag-package": "^0.0.3",
       "bit-docs-generate-html": "^0.3.0",
 
-      "bit-docs-html-canjs": "^0.4.5",
       "bit-docs-prettify": "^0.1.0",
       "bit-docs-html-highlight-line": "^0.2.2",
-      "bit-docs-tag-demo": "^0.3.0"
+      "bit-docs-tag-demo": "^0.3.0",
+      "bit-docs-docjs-theme": "^0.0.1"
     },
     "glob": {
       "pattern": "{node_modules,docs}/{steal,steal-tools}/**/*.{js,md}",
