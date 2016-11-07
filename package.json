@@ -22,6 +22,7 @@
   "homepage": "https://github.com/stealjs/stealjs#readme",
   "dependencies": {
     "steal": "^1.0.0-rc.0",
+    "steal-socket.io": "^4.0.0",
     "steal-tools": "^1.0.0-rc.0"
   },
   "devDependencies": {
@@ -35,7 +36,6 @@
       "bit-docs-tag-sourceref": "^0.0.3",
       "bit-docs-tag-package": "^0.0.3",
       "bit-docs-generate-html": "^0.3.0",
-
       "bit-docs-prettify": "^0.1.0",
       "bit-docs-html-highlight-line": "^0.2.2",
       "bit-docs-html-toc": "^0.4.0",
@@ -43,7 +43,7 @@
       "bit-docs-docjs-theme": "^0.2.0"
     },
     "glob": {
-      "pattern": "{node_modules,docs}/{steal,steal-tools}/**/*.{js,md}",
+      "pattern": "{node_modules,docs}/{steal,steal-tools,steal-socket.io}/**/*.{js,md}",
       "ignore": ["node_modules/steal/test/**/*","node_modules/steal-tools/test/**/*"]
     },
     "parent": "StealJS",
