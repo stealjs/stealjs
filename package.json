@@ -40,7 +40,7 @@
       "bit-docs-html-highlight-line": "^0.2.2",
       "bit-docs-html-toc": "^0.2.1",
       "bit-docs-tag-demo": "^0.3.0",
-      "bit-docs-docjs-theme": "^0.0.1"
+      "bit-docs-docjs-theme": "^0.1.0"
     },
     "glob": {
       "pattern": "{node_modules,docs}/{steal,steal-tools}/**/*.{js,md}",
