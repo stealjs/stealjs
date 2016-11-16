@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/stealjs/stealjs#readme",
   "dependencies": {
+    "grunt-steal": "^1.0.0-rc.1",
     "steal": "^1.0.0-rc.0",
     "steal-css": "^1.0.0-rc.0",
     "steal-less": "^1.0.0-rc.0",
@@ -46,8 +47,11 @@
       "bit-docs-docjs-theme": "^0.3.3"
     },
     "glob": {
-      "pattern": "{node_modules,doc}/{steal,steal-*}/**/*.{js,md}",
-      "ignore": ["node_modules/steal/test/**/*","node_modules/steal-tools/test/**/*"]
+      "pattern": "{node_modules,doc}/{steal,grunt-steal,steal-*}/**/*.{js,md}",
+      "ignore": [
+        "node_modules/steal/test/**/*",
+        "node_modules/steal-tools/test/**/*"
+      ]
     },
     "parent": "StealJS",
     "minifyBuild": false,

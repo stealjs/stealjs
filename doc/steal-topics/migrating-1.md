@@ -119,7 +119,7 @@ grunt.initConfig({
 });
 ```
 
-This also applies to the *steal-export* and *steal-live-reload* tasks. Learn more about the Grunt tasks in the [grunt-steal](LINK) docs.
+This also applies to the *steal-export* and *steal-live-reload* tasks. Learn more about the Grunt tasks in the [grunt-steal] docs.
 
 ### NPM 3
 
