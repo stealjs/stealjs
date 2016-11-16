@@ -46,7 +46,7 @@
       "bit-docs-docjs-theme": "^0.3.3"
     },
     "glob": {
-      "pattern": "{node_modules,docs}/{steal,steal-*}/**/*.{js,md}",
+      "pattern": "{node_modules,doc}/{steal,steal-*}/**/*.{js,md}",
       "ignore": ["node_modules/steal/test/**/*","node_modules/steal-tools/test/**/*"]
     },
     "parent": "StealJS",
