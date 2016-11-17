@@ -1,17 +1,19 @@
 @page StealJS.topics.migrating-one Migrating to 1.0
 @parent StealJS.topics
 
-Overall most of the changes needed to upgrade from a Steal 0.16 project to Steal 1.0 are quite small. If you are using an older version of Steal and want to migrate to 1.0 please check out the [changelog](StealJS.changelog.html) to see the changes that have occurred since the version you are currently using.
+This guide walks you through upgrading to StealJS 1.0. It starts with the important breaking changes and then introduces new features you might want to take advantage of and finally goes over the deprecations.
+
+Overall most of the changes needed to upgrade from a StealJS 0.16 project to StealJS 1.0 are quite small. If you are using an older version of StealJS and want to migrate to 1.0 please check out the [changelog](StealJS.changelog.html) to see the changes that have occurred since the version you are currently using.
 
 ## Getting Steal 1.0
 
-The recommended way to get Steal is using [npm](http://npmjs.org/). If you're not already using Steal with npm we recommend doing so. You can install with:
+The recommended way to get StealJS is using [npm](http://npmjs.org/). If you're not already using StealJS with npm, we recommend doing so. You can install with:
 
 ```
 > npm install steal steal-tools --save-dev
 ```
 
-If you're already using Steal through npm you can upgrade the version number. In your package.json change the versions of `steal` and `steal-tools` to:
+If you're already using StealJS through npm you can upgrade the version number. In your package.json change the versions of `steal` and `steal-tools` to:
 
 ```
 {
@@ -28,7 +30,7 @@ If you're already using Steal through npm you can upgrade the version number. In
 }
 ```
 
-If you are using [Grunt](http://gruntjs.com/) for production builds, the grunt tasks for Steal have been moved to their own project, [grunt-steal](https://github.com/stealjs/grunt-steal). More on this is explained below, but for now you will want to install grunt-steal:
+If you are using [Grunt](http://gruntjs.com/) for production builds, the grunt tasks for StealJS have been moved to their own project, [grunt-steal](https://github.com/stealjs/grunt-steal). More on this is explained below, but for now you will want to install grunt-steal:
 
 ```
 > npm install grunt-steal --save-dev
@@ -36,11 +38,11 @@ If you are using [Grunt](http://gruntjs.com/) for production builds, the grunt t
 
 ## Breaking changes
 
-The following are breaking changes to the way Steal works that will require you to change your code. Most represent small (often one-line) changes; nothing drastic has changed since 0.16.
+The following are breaking changes to the way StealJS works that will require you to change your code. Most represent small (often one-line) changes; nothing drastic has changed since 0.16.
 
 ### Production script tag
 
-If you are using the [npm](./npm.html) plugin (and you should be!) you may need to change the [config.main] attribute in the Steal script tag for production.  If your script tag currently looks like this:
+If you are using the [npm](./npm.html) plugin (and you should be!) you may need to change the [config.main] attribute in the StealJS script tag for production.  If your script tag currently looks like this:
 
 ```html
 <script src="./node_modules/steal/steal.production.js"
@@ -56,7 +58,7 @@ Where `"index"` is your application's main module you'll want to change that to:
 
 Where **app** is the `name` in your package.json (your package name). steal-tools now always writes bundles out to include the package name, so where it previously might have written to the file `dist/bundles/index.js` it now writes to `dist/bundles/app/index.js`.
 
-Using the new [configured steal.production](#easier-production-use) alleviates the need to know about this. The [StealJS.moving-to-prod] guide has been updated, and contains all of the ways to use Steal in production.
+Using the new [configured steal.production](#easier-production-use) alleviates the need to know about this. The [StealJS.moving-to-prod] guide has been updated, and contains all of the ways to use StealJS in production.
 
 ### NPM 3
 
@@ -82,7 +84,7 @@ The CSS and Less plugins are no longer included with the steal npm package, but 
 
 Likewise, the Grunt tasks are no longer included with steal-tools. This is part of a long-term project of decreasing the size of our core packages; steal-tools being one of them.
 
-Install grunt-steal as a devDependency:
+Install [grunt-steal] as a devDependency:
 
 ```
 > npm install grunt-steal --save-dev
@@ -100,7 +102,7 @@ to:
 grunt.loadNpmTasks("grunt-steal");
 ```
 
-Last change the configuration object to be `steal` rather than `system` like so:
+Finally change the configuration object to be `steal` rather than `system` like so:
 
 ```
 grunt.initConfig({
@@ -119,9 +121,9 @@ grunt.initConfig({
 });
 ```
 
-This also applies to the *steal-export* and *steal-live-reload* tasks. Learn more about the Grunt tasks in the [grunt-steal] docs.
+This also applies to the [grunt-steal.export] and [grunt-steal.live-reload] tasks. Learn more in the [grunt-steal] docs.
 
-### NPM 3
+### bundlesPath
 
 The use of [config.bundlesPath] in steal-tools is deprecated in favor of the new `dest` option.
 
@@ -148,7 +150,7 @@ stealTools.build({
 });
 ```
 
-steal-tools will write out bundles to `path/to/build/bundles` and also write out a pre-configured Steal script to `path/to/build/steal.production.js`. More on that [below](#easier-production-use).
+steal-tools will write out bundles to `path/to/build/bundles` and also write out a pre-configured StealJS script to `path/to/build/steal.production.js`. More on that [below](#easier-production-use).
 
 
 ### bundlesDepth
@@ -177,21 +179,21 @@ stealTools.build({
 
 ## New features
 
-Although Steal 1.0 is mostly about solidifying that Steal is production-ready, there are a few new features worth mentioning.
+Although StealJS 1.0 is mostly about solidifying that StealJS is production-ready, there are a few new features worth mentioning.
 
 ### Loading from your project's root
 
-Since the introduction of the npm plugin there has been an issue with wanting to load code from the project's root, which may not always be a sibling of your project's `node_modules/` folder. In the past this was done by using your project's package name to load: `app/components/tabs` where `app` is the package.json **"name"** field.
+Since the introduction of the npm plugin, there has been an issue with wanting to load code from the project's root, which may not always be a sibling of your project's `node_modules/` folder. In the past this was done by using your project's package name to load: `app/components/tabs` where `app` is the package.json **"name"** field.
 
-Since some project names can be long this is not ideal. Aside from long names, it also means you'll need refactoring if the project is ever renamed.
+This wasn't ideal because project names could be long, and if your project name changed, these imports would need to be refactored.
 
-In 1.0 you can also use [~] to refer to your project's root.
+In 1.0, [~] refers to your project's root.
 
 ```
 import tabs from "~/components/tabs";
 ```
 
-[~] is treated the same as your project's package name in Steal.
+[~] is treated the same as your project's package name in StealJS.
 
 ### Easier production use
 
@@ -225,7 +227,7 @@ These things still exist in 1.0 but are considered deprecated and might be remov
 
 ### system name replaced by steal
 
-In 0.16 Steal used a special property which we called *system* to configure Steal. You have probably used this in your package.json like:
+In 0.16 StealJS used a special property which we called *system* to configure StealJS. You have probably used this in your package.json like:
 
 ```json
 "system": {
@@ -253,7 +255,7 @@ steal.import("my/app").then(function(){
 });
 ```
 
-Steal was built about a specification for modules that was planned to be part of ES6, but never came to pass. System.import() is supported by Steal, SystemJS, and WebPack, but will never appear in the browser natively, so we are moving away from the *System* name so that in the future we can support the browser's native module system, `<script type="module">`.
+StealJS was built on top of a specification for modules that was planned to be part of ES6, but never came to pass. System.import() is supported by StealJS, SystemJS, and WebPack, but will never appear in the browser natively, so we are moving away from the *System* name so that in the future we can support the browser's native module system, `<script type="module">`.
 
 The global `System` is still available and won't be removed any time soon, but you should use *steal* in its place, or `steal.loader` if you really do need the loader.
 
