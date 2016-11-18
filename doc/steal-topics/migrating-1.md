@@ -10,7 +10,8 @@ Overall most of the changes needed to upgrade from a StealJS 0.16 project to Ste
 The recommended way to get StealJS is using [npm](http://npmjs.org/). If you're not already using StealJS with npm, we recommend doing so. You can install with:
 
 ```
-> npm install steal steal-tools --save-dev
+> npm install steal --save
+> npm install steal-tools --save-dev
 ```
 
 If you're already using StealJS through npm you can upgrade the version number. In your package.json change the versions of `steal` and `steal-tools` to:
