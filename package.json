@@ -24,6 +24,7 @@
   "dependencies": {
     "grunt-steal": "^1.0.0-rc.1",
     "steal": "^1.0.0-rc.0",
+    "steal-conditional": "^0.3.0",
     "steal-css": "^1.0.0-rc.0",
     "steal-less": "^1.0.0-rc.0",
     "steal-mocha": "^1.0.0-pre.2",
@@ -52,7 +53,8 @@
       "pattern": "{node_modules,doc}/{steal,grunt-steal,steal-*}/**/*.{js,md}",
       "ignore": [
         "node_modules/steal/test/**/*",
-        "node_modules/steal-tools/test/**/*"
+        "node_modules/steal-tools/test/**/*",
+        "node_modules/steal-conditional/{demo,test,node_modules}/**/*"
       ]
     },
     "parent": "StealJS",
