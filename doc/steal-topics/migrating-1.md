@@ -75,10 +75,20 @@ If you *are* using npm 3+ and have `"npmAlgorithm": "flat"` in your package.json
 
 ### CSS and Less plugins
 
-The CSS and Less plugins are no longer included with the steal npm package, but rather are contained within their own projects; **steal-css** and **steal-less**. To use them you only need to install them and save them as devDependencies:
+The CSS and Less plugins are no longer included with the steal npm package, but rather are contained within their own projects; **steal-css** and **steal-less**. To use them you need to install them and save them as devDependencies:
 
 ```
 > npm install steal-css steal-less --save-dev
+```
+
+And then update your package.json to use the new **plugins** configuration which tells Steal to load their package.json for metadata:
+
+```json
+"system": {
+  ...
+  
+  "plugins": ["steal-less"]
+}
 ```
 
 ### Grunt tasks
