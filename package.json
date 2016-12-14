@@ -22,15 +22,15 @@
   },
   "homepage": "https://github.com/stealjs/stealjs#readme",
   "dependencies": {
-    "grunt-steal": "^1.0.0-rc.1",
-    "steal": "^1.0.0-rc.0",
+    "grunt-steal": "^1.0.0",
+    "steal": "^1.0.0",
     "steal-conditional": "^0.3.0",
-    "steal-css": "^1.0.0-rc.0",
-    "steal-less": "^1.0.0-rc.0",
-    "steal-mocha": "^1.0.0-pre.2",
-    "steal-qunit": "^1.0.0-rc.0",
+    "steal-css": "^1.0.0",
+    "steal-less": "^1.0.0",
+    "steal-mocha": "^1.0.0",
+    "steal-qunit": "^1.0.0",
     "steal-socket.io": "^4.0.0",
-    "steal-tools": "^1.0.0-rc.0"
+    "steal-tools": "^1.0.0"
   },
   "devDependencies": {
     "bit-docs": "0.0.7"
