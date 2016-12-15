@@ -29,7 +29,7 @@
     "steal-less": "^1.0.0",
     "steal-mocha": "^1.0.0",
     "steal-qunit": "^1.0.0",
-    "steal-socket.io": "^4.0.0",
+    "steal-socket.io": "^4.0.8",
     "steal-tools": "^1.0.0"
   },
   "devDependencies": {
