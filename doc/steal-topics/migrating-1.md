@@ -1,4 +1,4 @@
-@page StealJS.topics.migrating-one Migrating to StealJS 1
+@page StealJS.topics.migrating-one Migrating to StealJS 1.X
 @parent StealJS.topics
 @outline 0
 
