@@ -84,33 +84,32 @@ The [npm] plugin now defaults to compatibility with npm 3 and above. If you’re
 
 If you *are* using npm 3+ and have `"npmAlgorithm": "flat"` in your `package.json`, you can remove this, but leaving it in your config will not cause any harm.
 
-### CSS and Less plugins
+<a name="css-and-less-plugins"></a>
+### Plugins configuration
 
-The CSS and Less plugins are no longer included with the steal npm package, but rather are contained within their own projects: [steal-css](http://npmjs.com/package/steal-css) and [steal-less](http://npmjs.com/package/steal-less). To use them, install them as `devDependencies`:
+The following plugins are no longer included with the `steal` npm package, but rather are contained within their own projects:
+
+- [steal-css](https://www.npmjs.com/package/steal-css)
+- [steal-less](https://www.npmjs.com/package/steal-less)
+- [steal-stache](https://www.npmjs.com/package/steal-stache)
+
+To use them, install them as `devDependencies` and use the new `plugins` configuration to tell Steal to load their `package.json` for metadata.
+
+For example, to use `steal-less`, install it with npm:
 
 ```
-npm install steal-css steal-less --save-dev
+npm install steal-less --save-dev
 ```
 
-Also update your `package.json` to use the new `plugins` configuration which tells Steal to load their `package.json` for metadata:
+Then update the `plugins` configuration in your `package.json`:
 
 ```json
-"steal": {
+{
   ...
-  
-  "plugins": ["steal-less"]
-}
-```
-
-### Stache plugin
-
-Similarly, if you’re using CanJS and the [steal-stache](https://www.npmjs.com/package/steal-stache) plugin, you’ll need to add it to the `plugins` configuration in your `package.json`:
-
-```json
-"steal": {
-  ...
-
-  "plugins": ["steal-stache"]
+  "steal": {
+    ...
+    "plugins": ["steal-less"]
+  }
 }
 ```
 
