@@ -58,7 +58,7 @@
       ]
     },
     "parent": "StealJS",
-    "minifyBuild": false,
+    "minifyBuild": true,
     "dest": "./docs"
   }
 }
