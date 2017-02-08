@@ -28,7 +28,7 @@
     "steal-css": "^1.0.0",
     "steal-less": "^1.0.0",
     "steal-mocha": "^1.0.0",
-    "steal-qunit": "^1.0.0",
+    "steal-qunit": "^1.0.1",
     "steal-socket.io": "^4.0.0",
     "steal-tools": "^1.1.0"
   },
