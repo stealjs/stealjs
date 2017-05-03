@@ -23,7 +23,7 @@
   "homepage": "https://github.com/stealjs/stealjs#readme",
   "dependencies": {
     "grunt-steal": "^1.0.0",
-    "steal": "^1.5.1",
+    "steal": "^1.5.2",
     "steal-conditional": "^0.3.0",
     "steal-css": "^1.2.3",
     "steal-less": "^1.2.0",
@@ -47,7 +47,7 @@
       "bit-docs-html-highlight-line": "^0.2.2",
       "bit-docs-html-toc": "^0.4.0",
       "bit-docs-tag-demo": "^0.3.0",
-      "bit-docs-docjs-theme": "^0.3.3"
+      "bit-docs-docjs-theme": "^0.3.4"
     },
     "glob": {
       "pattern": "{node_modules,doc}/{steal,grunt-steal,steal-*}/**/*.{js,md}",
