@@ -4,8 +4,8 @@
   "description": "StealJS's website",
   "main": "index.js",
   "scripts": {
-    "document": "bit-docs -fd",
-    "doc": "bit-docs",
+    "document": "bit-docs",
+    "document:force": "bit-docs -fd",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
