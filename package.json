@@ -54,7 +54,8 @@
       "ignore": [
         "node_modules/steal/test/**/*",
         "node_modules/steal-tools/test/**/*",
-        "node_modules/steal-conditional/{demo,test,node_modules}/**/*"
+        "node_modules/steal-conditional/{demo,test,node_modules}/**/*",
+        "node_modules/grunt-steal/node_modules/**/*"
       ]
     },
     "parent": "StealJS",
