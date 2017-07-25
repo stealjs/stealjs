@@ -1,6 +1,6 @@
 # StealJS
 
-**StealJS** is an awesome front-end module loader that makes writing large applications easy. Learn more at [stealjs.com](http://stealjs.com/).
+**StealJS** is an awesome front-end module loader that makes writing large applications easy. Learn more at [stealjs.com](https://stealjs.com/).
 
 This repository houses the source for the website.
 
