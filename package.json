@@ -23,7 +23,7 @@
   "homepage": "https://github.com/stealjs/stealjs#readme",
   "dependencies": {
     "grunt-steal": "^1.0.0",
-    "steal": "^1.5.2",
+    "steal": "^1.5.7",
     "steal-bundle-manifest": "^1.0.3",
     "steal-conditional": "^0.3.0",
     "steal-css": "^1.2.3",
@@ -31,7 +31,7 @@
     "steal-mocha": "^1.0.0",
     "steal-qunit": "^1.0.0",
     "steal-socket.io": "^4.0.0",
-    "steal-tools": "^1.5.0"
+    "steal-tools": "^1.8.0"
   },
   "devDependencies": {
     "bit-docs": "0.0.7"
@@ -43,7 +43,7 @@
       "bit-docs-js": "^0.0.6",
       "bit-docs-tag-sourceref": "^0.0.3",
       "bit-docs-tag-package": "^0.0.3",
-      "bit-docs-generate-html": "^0.4.3",
+      "bit-docs-generate-html": "^0.7.1",
       "bit-docs-prettify": "^0.1.0",
       "bit-docs-html-highlight-line": "^0.2.2",
       "bit-docs-html-toc": "^0.4.0",
