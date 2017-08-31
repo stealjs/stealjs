@@ -2,6 +2,7 @@
 @group StealJS.api apis
 @group StealJS.guides guides
 @group StealJS.topics topics
+@group StealJS.production production
 @group StealJS.about about
 @group StealJS.ecosystem ecosystem
 
