@@ -48,7 +48,7 @@
       "bit-docs-html-highlight-line": "^0.2.2",
       "bit-docs-html-toc": "^0.4.0",
       "bit-docs-tag-demo": "^0.3.0",
-      "bit-docs-docjs-theme": "^0.4.0"
+      "bit-docs-stealjs-theme": "^0.6.0"
     },
     "glob": {
       "pattern": "{node_modules,doc}/{steal,grunt-steal,steal-*}/**/*.{js,md}",
