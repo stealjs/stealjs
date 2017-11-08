@@ -9,11 +9,11 @@ Development bundles enable faster reload times during development by bundling to
 * **dev-bundle**: A bundle that contains all of your *node_modules* dependencies, and the configuration contained within your *package.json*. Use this bundle type if you want the fastest page load times.
 * **deps-bundle**: A bundle that contains all of your *node_modules* dependencies. Unlike the dev_bundle, this *does not* contain your package.json configuration. Use this bundle type if you plan on changing configuration often or are installing new npm dependencies.
 
-# API
+## API
 
 The API for development bundles is split between parts in [steal-tools], where the bundles are created, and [steal], where you configuration the loader to load the bundles.
 
-## steal
+### steal
 
 * [config.depsbundle]: Specifies that a *deps bundle* should be preloaded before the [config.main].
 * [config.devbundle]: Specifies that a *dev bundle* should be preloaded before the [config.main].
@@ -24,7 +24,7 @@ Note that these config values should almost always be specified in the steal scr
 <script src="node_modules/steal/steal.js" deps-bundle></script>
 ```
 
-## steal-tools
+### steal-tools
 
 Creating dev and deps bundles can be done either through the `steal-tools bundle` command, or through `stealTools.bundle()` when using the JavaScript API.
 
@@ -44,7 +44,7 @@ Creating dev and deps bundles can be done either through the `steal-tools bundle
     });
     ```
 
-# Enabling Development Bundles
+## Enabling Development Bundles
 
 > *Note*: The development bundles feature requires at least steal 1.2.0, steal-tools 1.3.0, and steal-less 1.2.0 (if using steal-less).
 
