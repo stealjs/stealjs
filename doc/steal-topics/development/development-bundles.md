@@ -34,7 +34,7 @@ Creating dev and deps bundles can be done either through the `steal-tools bundle
     steal-tools bundle --dev
     ```
 
-* [steal-tools.bundle]: A JavaScript API that allows building configurable bundles. To create a deps bundle use the `filter` with these values:
+* [steal-tools.bundle]: A JavaScript API that allows building configurable bundles. To create a dev bundle use the `filter` with these values:
 
     ```js
     var promise = stealTools.bundle({

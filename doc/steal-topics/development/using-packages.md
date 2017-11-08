@@ -10,7 +10,7 @@ Using npm with StealJS is as easy as *installing steal* with npm:
 npm install steal --save-dev
 ```
 
-> Note, whether you use `--save-dev` or `--save` may depend on how you plan on deploying your application. Most of the time you will not need the [steal] package in production because your application has been build into separate bundles which will contain steal.
+> Note, whether you use `--save-dev` or `--save` may depend on how you plan on deploying your application. Most of the time you will not need the [steal] package in production because your application has been built into separate bundles which will contain steal.
 
 Then use steal with a script tag:
 
