@@ -1,10 +1,11 @@
 @page StealJS
-@group StealJS.api apis
-@group StealJS.guides guides
-@group StealJS.topics topics
-@group StealJS.production production
-@group StealJS.about about
-@group StealJS.ecosystem ecosystem
+@group StealJS.development 0 development
+@group StealJS.api 1 apis
+@group StealJS.guides 2 guides
+@group StealJS.topics 3 topics
+@group StealJS.production 4 production
+@group StealJS.about 5 about
+@group StealJS.ecosystem 6 ecosystem
 
 _Good artists copy; great artists steal._
 
