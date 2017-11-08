@@ -13,15 +13,22 @@ This example will show you how to load jQuery from NPM in development mode, but 
 
 There are two changes that need to be made for this to work:
 
-* Set the System config to use the CDN path for production
+* Set the Steal config to use the CDN path for production
 * Modify the build script to ignore jQuery when creating production bundles
 
 ### System configuration
 
-Here is an example showing how to set the System config to load jQuery from production.
+Here is an example showing how to set the System config to load jQuery from a CDN in production.
 
 ```
-  "system": {
+  "steal": {
+    "meta": {
+      "jquery": {
+        "format": "global",
+        "exports": "jQuery",
+        "build": false
+      }
+    },
     "envs": {
       "window-production": {
         "paths": {
