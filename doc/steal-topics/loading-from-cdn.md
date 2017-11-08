@@ -13,15 +13,22 @@ This example will show you how to load jQuery from NPM in development mode, but 
 
 There are two changes that need to be made for this to work:
 
-* Set the System config to use the CDN path for production
+* Set the Steal config to use the CDN path for production
 * Modify the build script to ignore jQuery when creating production bundles
 
 ### System configuration
 
-Here is an example showing how to set the System config to load jQuery from production.
+Here is an example showing how to set the System config to load jQuery from a CDN in production.
 
 ```
-  "system": {
+  "steal": {
+    "meta": {
+      "jquery": {
+        "format": "global",
+        "exports": "jQuery",
+        "build": false
+      }
+    },
     "envs": {
       "window-production": {
         "paths": {
@@ -47,40 +54,3 @@ stealTools.build({
 });
 ```
 
-
-## Always Loading from a CDN
-
-If you want to load a script from a CDN in all environments:
-
-* Load the file using a script tag
-* Configure Steal to use the previously loaded file
-
-### Load Using a &lt;script&gt; Tag and Configure Steal to use Loaded Version
-
-```
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script>
-      steal = {
-        instantiated: {
-          jquery: { 'default': window.jQuery, __useDefault: true }
-        }
-      };
-    </script>
-    <script src="./node_modules/steal/steal.js"></script>
-```
-
-### Prevent Steal from Looking for jQuery During Build
-
-In order for the production build to work, map jQuery to the `@empty` module so Steal knows it doesn't need to try and find it:
-
-```
-  "system": {
-    "envs": {
-      "build-development": {
-        "map": {
-          "jquery": "@empty"
-        }
-      }
-    }
-  }
-```
