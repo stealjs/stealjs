@@ -54,3 +54,40 @@ stealTools.build({
 });
 ```
 
+
+## Always Loading from a CDN
+
+If you want to load a script from a CDN in all environments:
+
+* Load the file using a script tag
+* Configure Steal to use the previously loaded file
+
+### Load Using a &lt;script&gt; Tag and Configure Steal to use Loaded Version
+
+```
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+      steal = {
+        instantiated: {
+          jquery: { 'default': window.jQuery, __useDefault: true }
+        }
+      };
+    </script>
+    <script src="./node_modules/steal/steal.js"></script>
+```
+
+### Prevent Steal from Looking for jQuery During Build
+
+In order for the production build to work, map jQuery to the `@empty` module so Steal knows it doesn't need to try and find it:
+
+```
+  "system": {
+    "envs": {
+      "build-development": {
+        "map": {
+          "jquery": "@empty"
+        }
+      }
+    }
+  }
+```
