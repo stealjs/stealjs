@@ -1,5 +1,5 @@
 @page StealJS.guides.progressive_loading Progressive Loading
-@parent StealJS.guides 2
+@parent StealJS.development 2
 @outline 0
 
 @body

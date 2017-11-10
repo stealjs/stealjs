@@ -1,4 +1,4 @@
-@page StealJS.quick-start2 Quick Start
+@page StealJS.quick-start Quick Start
 @parent StealJS.development 1
 
 The __Quick Start__ is a simple demo that uses [npm](https://www.npmjs.org/) to install steal, steal-tools,
