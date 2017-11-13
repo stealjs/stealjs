@@ -1,5 +1,5 @@
 @page StealJS.hot-module-replacement Hot Module Replacement
-@parent StealJS.development
+@parent StealJS.development 4
 @body
 
 > This guide builds on code examples found in [StealJS.quick-start].

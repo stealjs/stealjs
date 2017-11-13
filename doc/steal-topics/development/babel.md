@@ -1,5 +1,5 @@
 @page StealJS.babel Babel
-@parent StealJS.topics
+@parent StealJS.development 7
 
 @body
 

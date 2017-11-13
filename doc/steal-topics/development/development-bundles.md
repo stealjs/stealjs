@@ -1,5 +1,5 @@
 @page StealJS.development-bundles Development Bundles
-@parent StealJS.development
+@parent StealJS.development 2
 @body
 
 > *Note*, this guide assumes you have been through the [StealJS.guides.progressive_loading progressive loading] guide, or have an existing StealJS project set up.

@@ -1,5 +1,5 @@
 @page StealJS.using-npm-packages Using npm Packages
-@parent StealJS.development
+@parent StealJS.development 3
 @body
 
 [npm](https://www.npmjs.com/) is a JavaScript package managers that allows you to use and share all types of packages. StealJS supports using npm packages, and it is the recommended way to use Steal in any non-legacy application.

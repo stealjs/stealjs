@@ -1,9 +1,9 @@
 @page StealJS.circular Circular Dependencies
-@parent StealJS.topics
+@parent StealJS.development 8
 
 @body
 
-Circular dependencies refers to the uncommon, but some times necessary, practice of having two (or more) modules that depend on each other. Steal supports circular dependencies between modules of the same format. This means AMD modules can be circularly dependant on other AMD modules. ES modules with other ES modules, etc.
+__Circular dependencies__ refers to the uncommon, but some times necessary, practice of having two (or more) modules that depend on each other. Steal supports circular dependencies between modules of the same format. This means AMD modules can be circularly dependent on other AMD modules. ES modules with other ES modules, etc.
 
 The legacy `steal()` format does not support circular dependencies.
 
@@ -11,7 +11,7 @@ The legacy `steal()` format does not support circular dependencies.
 
 ES modules get circular dependencies *right*, making it easier to use without having to think/worry about the fact that the modules depend on each other. Here's an example of 2 modules that depend on each other:
 
-**foo**
+__foo__
 
 ```
 import { getFoo, name as barName } from './bar';
@@ -23,7 +23,7 @@ export function getBar() {
 }
 ```
 
-**bar**
+__bar__
 
 ```
 import { getBar, name as fooName } from './foo';

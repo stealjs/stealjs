@@ -1,5 +1,5 @@
 @page StealJS.configuration Configuration
-@parent StealJS.topics
+@parent StealJS.development 5
 
 @body
 
@@ -7,7 +7,7 @@ Steal allows you to configure module loading through a **steal** property in you
 
 A basic configuration might look like this:
 
-```
+```json
 {
   ...
   "steal": {
