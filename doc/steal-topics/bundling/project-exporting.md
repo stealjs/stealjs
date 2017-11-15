@@ -1,15 +1,17 @@
 @page StealJS.project-exporting Project Exporting
-@parent StealJS.guides 2
+@parent StealJS.bundling 2
+
+@body
 
 StealJS can export your project into commonly used formats and platforms
 which can be used to create distributables that can be used in almost any situation:
 
- - [syntax.amd] and Bower
- - [syntax.CommonJS] and npm for [Browserify](http://browserify.org/)
- - [syntax.es6 ES Syntax] and StealJS, SystemJS, or JSPM
+ - [syntax.amd]
+ - [syntax.CommonJS] and [npm] for [webpack](https://webpack.js.org/) or [Browserify](http://browserify.org/)
+ - [syntax.es6 ES Syntax] and StealJS, or JSPM
  - [syntax.global global format] and `<script>` tags
 
-This guide uses the [steal-tools.grunt.export] task to call [steal-tools.export] which loads the module source and transpiles it to _AMD_, _CommonJS_ and _global_ compatible distributables. This guide uses the [bit-tabs](https://github.com/bitovi-components/bit-tabs) component built with CanJS, but the same techniques can be used to create and export projects that use any other framework or library.
+This guide uses the [steal-tools.grunt.export] task to call [steal-tools.export] which loads the module source and transpiles it to *AMD*, *CommonJS* and *global* compatible distributables. This guide uses the [bit-tabs](https://github.com/bitovi-components/bit-tabs) component built with CanJS, but the same techniques can be used to create and export projects that use any other framework or library.
 
 ## Project Structure
 

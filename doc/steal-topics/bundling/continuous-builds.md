@@ -1,6 +1,8 @@
 @page steal-tools.watch-mode Watch Mode
 @parent StealJS.bundling 1
 
+@body
+
 [steal-tools] includes a __watch mode__ (using the `--watch` flag in the cli) in its build command (also known as __continuous builds__). This enables you to continuously rebuild your application as you work. This is useful if you prefer a workflow where you are debugging your application as it will appear in production.
 
 ## API
