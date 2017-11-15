@@ -1,10 +1,10 @@
 @page StealJS
 @group StealJS.development 0 development
-@group StealJS.bundling 1 Bundling
-@group StealJS.api 2 apis
-@group StealJS.guides 3 guides
-@group StealJS.topics 4 topics
-@group StealJS.production 5 production
+@group StealJS.bundling 1 bundling
+@group StealJS.production 2 production
+@group StealJS.guides 3 step-by-step guides
+@group StealJS.api 4 apis
+@group StealJS.topics 5 other topics
 @group StealJS.about 6 about
 @group StealJS.ecosystem 7 ecosystem
 
