@@ -1,5 +1,5 @@
 @page StealJS.writing-plugins Writing Plugins
-@parent StealJS.topics
+@parent StealJS.advanced
 
 @body
 

@@ -1,5 +1,5 @@
 @page StealJS.quick-start Quick Start
-@parent StealJS.development 1
+@parent StealJS.guides 1
 
 The __Quick Start__ is a simple demo that uses [npm](https://www.npmjs.org/) to install steal, steal-tools,
 and [jquery](http://jquery.com/) to build a *Hello World* app. This guide is a step-by-step guide to create the app from scratch. If you just want a starter project, you can clone the source from the [GitHub Quick Start repo](https://github.com/stealjs/quick-start).
