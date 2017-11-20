@@ -27,7 +27,7 @@
     "steal-bundle-manifest": "^1.0.4",
     "steal-conditional": "^0.4.0",
     "steal-css": "^1.2.3",
-    "steal-less": "^1.2.0",
+    "steal-less": "^1.2.2",
     "steal-mocha": "^1.0.0",
     "steal-qunit": "^1.0.0",
     "steal-socket.io": "^4.0.0",
