@@ -23,7 +23,7 @@
   "homepage": "https://github.com/stealjs/stealjs#readme",
   "dependencies": {
     "grunt-steal": "^1.0.0",
-    "steal": "^1.5.18",
+    "steal": "^1.7.0",
     "steal-bundle-manifest": "^1.0.4",
     "steal-conditional": "^0.4.0",
     "steal-css": "^1.2.3",
