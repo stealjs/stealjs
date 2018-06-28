@@ -34,7 +34,7 @@
     "steal-tools": "^1.9.2"
   },
   "devDependencies": {
-    "bit-docs": "0.0.8-0"
+    "bit-docs": "0.0.9"
   },
   "bit-docs": {
     "dependencies": {
