@@ -7,7 +7,7 @@
 
 ## API
 
-The watch mode is part of the [steal-tools.cmd.buildcli]. Refer to those documentation (as well as [steal-tools.build] for the JavaScript API) for more information. In particular refer to [steal-tools.BuildOptions] for the `watch` flag.
+The watch mode is part of the [steal-tools.cmd.build cli]. Refer to those documentation (as well as [steal-tools.build] for the JavaScript API) for more information. In particular refer to [steal-tools.BuildOptions] for the `watch` flag.
 
 Using the JavaScript API, `stealTools.build` returns a Stream:
 
