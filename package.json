@@ -25,7 +25,7 @@
     "grunt-steal": "^1.0.0",
     "steal": "^2.0.0-pre.0",
     "steal-bundle-manifest": "^1.0.4",
-    "steal-conditional": "^0.4.0",
+    "steal-conditional": "^1.0.0",
     "steal-css": "^1.2.3",
     "steal-less": "^1.2.0",
     "steal-mocha": "^1.0.0",
