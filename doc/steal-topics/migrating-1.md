@@ -1,4 +1,4 @@
-@page StealJS.topics.migrating-one Migrating to StealJS 1.X
+@page StealJS.topics.migrating-one Migrating to StealJS 1.x
 @parent StealJS.topics
 @outline 0
 
@@ -146,7 +146,7 @@ grunt.initConfig({
           config: __dirname + "/package.json!npm"
         },
         buildOptions: {
-          
+
         }
       }
     }
