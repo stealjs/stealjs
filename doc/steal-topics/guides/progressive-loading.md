@@ -121,7 +121,7 @@ Update _myhub.html_ with:
   <head></head>
   <body>
     <div class="container">Hello World.</div>
-    <script src="./node_modules/steal/steal.js"></script>
+    <script src="./node_modules/steal/steal.js" main></script>
   </body>
 </html>
 ```
@@ -239,7 +239,7 @@ Update the _myhub.html_ to use bootstrap:
   </head>
   <body>
     <div class="container">Hello World.</div>
-    <script src="./node_modules/steal/steal.js"></script>
+    <script src="./node_modules/steal/steal.js" main></script>
   </body>
 </html>
 ```
@@ -330,7 +330,7 @@ Create _weather/weather.html_ with:
   </head>
   <body>
     <div id="weather"></div>
-    <script src="../node_modules/steal/steal.js" main="@empty"></script>
+    <script src="../node_modules/steal/steal.js"></script>
     <script type="text/steal-module">
         import weather from "myhub/weather/weather";
         weather("#weather");
@@ -708,7 +708,7 @@ Create _puppies/puppies.html_:
     <div class="container">
         <div id="puppies"></div>
     </div>
-    <script src="../node_modules/steal/steal.js" main="@empty"></script>
+    <script src="../node_modules/steal/steal.js"></script>
 	<script type="text/steal-module">
         var puppies =  require("myhub/puppies/puppies");
         puppies("#puppies");
