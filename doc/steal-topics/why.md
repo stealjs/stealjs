@@ -59,7 +59,7 @@ Consider you are starting a new three.js project. With npm you would install Thr
 
 What this does in the background is save an entry in "dependencies" inside of your package.json file. When you add StealJS to your page through the script tag:
 
-    <script src="node_modules/steal/steal.js"></script>
+    <script src="node_modules/steal/steal.js" main></script>
 
 
 StealJS will know that you're using npm and look up your package.json for metadata. For you it's as simple as saving and then using:

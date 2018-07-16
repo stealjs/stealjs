@@ -51,7 +51,7 @@ The **index.html** page loads your app. All that is needed is the script tag tha
 <!doctype html>
 <html>
   <body>
-	<script src="./node_modules/steal/steal.js"></script>
+	<script src="./node_modules/steal/steal.js" main></script>
   </body>
 </html>
 ```

@@ -15,7 +15,7 @@ npm install steal --save-dev
 Then use steal with a script tag:
 
 ```html
-<script src="./node_modules/steal/steal.js"></script>
+<script src="./node_modules/steal/steal.js" main></script>
 ```
 
 This will tell steal to load your __package.json__ file, making any `dependencies` or `devDependencies` listed therein available to be imported.

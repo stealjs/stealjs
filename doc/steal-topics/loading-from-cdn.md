@@ -73,7 +73,7 @@ If you want to load a script from a CDN in all environments:
         }
       };
     </script>
-    <script src="./node_modules/steal/steal.js"></script>
+    <script src="./node_modules/steal/steal.js" main></script>
 ```
 
 ### Prevent Steal from Looking for jQuery During Build

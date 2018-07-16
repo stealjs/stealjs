@@ -53,7 +53,7 @@ In a lot of Steal apps you might have separate html files for development and pr
   <title>My App</title>
 </head>
 <body>
-  <script src="./node_modules/steal/steal.js"></script>
+  <script src="./node_modules/steal/steal.js" main></script>
 </body>
 </html>
 ```

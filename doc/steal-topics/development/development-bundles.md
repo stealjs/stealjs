@@ -21,7 +21,7 @@ The API for development bundles is split between parts in [steal-tools], where t
 Note that these config values should almost always be specified in the steal script tag:
 
 ```html
-<script src="node_modules/steal/steal.js" deps-bundle></script>
+<script src="node_modules/steal/steal.js" deps-bundle main></script>
 ```
 
 ### steal-tools
