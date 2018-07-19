@@ -3,11 +3,31 @@
 
 @body
 
-Tree shaking is a specialized form of [dead code elimination](https://en.wikipedia.org/wiki/Dead_code_elimination) that targets the ES module system's `import` and `export` declarations to find unused code. [steal-tools] performs tree shaking as part of [steal-tools.build] and [steal-tools.optimize]. You do *not* need to do anything special to turn out tree shaking.
+Tree shaking is a specialized form of [dead code elimination](https://en.wikipedia.org/wiki/Dead_code_elimination) that targets the ES module system's `import` and `export` declarations to find unused code. [steal-tools] performs tree shaking as part of [steal-tools.build] and [steal-tools.optimize]. You do *not* need to do anything special to turn on tree shaking.
 
 ## API
 
-Tree shaking is enabled by default. If you have an existing app that depends on side-effects created by unused import statements, you can disable tree shaking. If using the [steal-tools.build JavaScript API] you can disable in the [steal-tools.BuildOptions]:
+Tree shaking is enabled by default and runs both in the client and then in the build. If you have an existing app that depends on side-effects created by unused import statements, you can disable tree shaking.
+
+In the browser you can disable it one of two ways. If you want to disable tree-shaking just on a particular page, pass the `no-tree-shaking` attribute:
+
+```html
+<script src="node_modules/steal/steal.js" main no-tree-shaking></script>
+```
+
+To disable it globally (both in the client and during the build), add this flag to your `package.json`:
+
+```json
+{
+  "steal": {
+    "treeShaking": false
+  }
+}
+```
+
+> Note that this flag only works from the root package.
+
+If you only want to disable tree-shaking during the build, you can use the [steal-tools.build JavaScript API] and set the same [steal-tools.BuildOptions]:
 
 ```js
 const stealTools = require("steal-tools");
