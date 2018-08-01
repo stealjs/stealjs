@@ -136,7 +136,7 @@ Update _package.json_ to:
   "name": "myhub",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "myhub.js",
   "scripts": {
     "start": "http-server -c-1 ."
   },
@@ -145,7 +145,7 @@ Update _package.json_ to:
   "devDependencies": {
     "http-server": "^0.10.0",
     "jquery": "^3.2.1",
-    "steal": "^1.5.13",
+    "steal": "^2.1.1",
     "steal-css": "^1.3.1",
     "steal-less": "^1.2.0",
     "steal-tools": "^1.8.4"
@@ -179,7 +179,7 @@ We need to update our package.json to specify the *plugins* that need to be load
   "devDependencies": {
     "http-server": "^0.10.0",
     "jquery": "^3.2.1",
-    "steal": "^1.5.13",
+    "steal": "^2.1.1",
     "steal-css": "^1.3.1",
     "steal-less": "^1.2.0",
     "steal-tools": "^1.8.4"
@@ -689,7 +689,7 @@ Steal is able to detect and deal with globals by default, but it's often necessa
 Use npm to get the `justifiedGallery` package into your project:
 
 ```
-> npm install justifiedGallery --save-dev
+> npm install justifiedGallery@3.6.5 --save-dev
 ```
 
 ### Create a modlet for _puppies_
@@ -759,8 +759,8 @@ Update _package.json_ to:
     "bootstrap": "^3.3.7",
     "http-server": "^0.10.0",
     "jquery": "^3.2.1",
-    "justifiedGallery": "^3.6.2",
-    "steal": "^1.5.13",
+    "justifiedGallery": "3.6.5",
+    "steal": "^2.1.1",
     "steal-css": "^1.3.1",
     "steal-less": "^1.2.0",
     "steal-qunit": "^1.0.1",
@@ -906,8 +906,8 @@ In your package.json `"scripts"` section add:
     "bootstrap": "^3.3.7",
     "http-server": "^0.10.0",
     "jquery": "^3.2.1",
-    "justifiedGallery": "^3.6.2",
-    "steal": "^1.5.13",
+    "justifiedGallery": "3.6.5",
+    "steal": "^2.1.1",
     "steal-css": "^1.3.1",
     "steal-less": "^1.2.0",
     "steal-qunit": "^1.0.1",
@@ -1014,8 +1014,8 @@ Update your `build` script to add the `--bundle-steal` flag:
     "bootstrap": "^3.3.7",
     "http-server": "^0.10.0",
     "jquery": "^3.2.1",
-    "justifiedGallery": "^3.6.2",
-    "steal": "^1.5.13",
+    "justifiedGallery": "3.6.5",
+    "steal": "^2.1.1",
     "steal-css": "^1.3.1",
     "steal-less": "^1.2.0",
     "steal-qunit": "^1.0.1",
@@ -1135,8 +1135,8 @@ Update _package.json_ to:
     "bootstrap": "^3.3.7",
     "http-server": "^0.10.0",
     "jquery": "^3.2.1",
-    "justifiedGallery": "^3.6.2",
-    "steal": "^1.5.13",
+    "justifiedGallery": "3.6.5",
+    "steal": "^2.1.1",
     "steal-css": "^1.3.1",
     "steal-less": "^1.2.0",
     "steal-qunit": "^1.0.1",
