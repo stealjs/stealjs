@@ -51,7 +51,7 @@
       "bit-docs-stealjs-theme": "^0.8.1"
     },
     "glob": {
-      "pattern": "{node_modules,doc}/{steal,grunt-steal,steal-*}/{,lib,doc/types,doc,!(node_modules)}/*.{js,md}",
+      "pattern": "{node_modules,doc}/{steal,grunt-steal,steal-*}/{,lib,docs/**,doc/types,doc,!(node_modules)}/*.{js,md}",
       "ignore": [
         "node_modules/steal/test/**/*",
         "node_modules/steal-tools/test/**/*",
