@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: node_modules/steal-socket.io/steal-socket.io.md
+	@module steal-socket.io
+######################################################################## -->
+
+<!--[if lt IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 9]>
+<html class="no-js ie ie9" lang="en">
+<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>StealJS  - steal-socket.io</title>
+	<meta name="description" content="Wrap SocketIO client for SSR and testing. The steal-socket.io module exports a function that wraps socket.io to serve the following purposes:  Ignore socket.io for server-side rendering (SSR). Ignore socket.io for can-zone. Proxy and delay socket.io connection for testing.">
+	<meta name="author" content="">
+	<meta property="og:title" content="StealJS  - steal-socket.io">
+	<meta property="og:description" content="Wrap SocketIO client for SSR and testing. The steal-socket.io module exports a function that wraps socket.io to serve the following purposes:  Ignore socket.io for server-side rendering (SSR). Ignore socket.io for can-zone. Proxy and delay socket.io connection for testing.">
+	<meta property="og:image" content="https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png">
+	<script type="application/ld+json">
+		{
+			"@context": "http://www.schema.org",
+			"@type": "SoftwareSourceCode",
+			"applicationCategory": "DeveloperApplication",
+			"brand": "Bitovi",
+			"category": "JavaScript Frameworks",
+			"codeRepository": "https://github.com/stealjs/steal",
+			"description": "Wrap SocketIO client for SSR and testing. The steal-socket.io module exports a function that wraps socket.io to serve the following purposes:  Ignore socket.io for server-side rendering (SSR). Ignore socket.io for can-zone. Proxy and delay socket.io connection for testing.",
+			"image": "https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png",
+			"license": "https://github.com/stealjs/steal/blob/master/license.md",
+			"logo": "https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png",
+			"name": "StealJS  - steal-socket.io",
+			"programmingLanguage": "JavaScript"
+		}
+	</script>
+	
+		<link rel="stylesheet" type="text/css" href="./static/bundles/bit-docs-site/static.css">
+	
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-2302003-20', 'auto');
+			ga('send', 'pageview');
+		</script>
+	
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="static/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body class="docs">
+	
+	<header>
+		
+		<div style="display: none;" class="navbar"></div>
+		<nav class="container">
+			<div class="logo-menu">
+				<a class="brand" href="./index.html">StealJS</a>
+
+				<ul class="dropdown-menu">
+					<li><a href="https://donejs.com/">DoneJS</a></li>
+					<li><a href="https://stealjs.com/">StealJS</a></li>
+					<li><a href="https://jquerypp.com/">jQuery ++</a></li>
+					<li><a href="https://funcunit.com/">FuncUnit</a></li>
+					<li><a href="https://documentjs.com/">DocumentJS</a></li>
+				</ul>
+			</div>
+
+			<ul class="nav">
+				<li><a href="https://stealjs.com">Home</a></li>
+
+				
+          <li class="active"><a href="index.html">Api</a></li>
+        
+
+				<li><a href="https://twitter.com/stealjs">Twitter</a></li>
+				<li><a href="https://github.com/stealjs/steal">GitHub</a></li>
+				<li><a href="https://gitter.im/stealjs/steal">Chat</a></li>
+			</ul>
+
+			<div class="pull-right">
+				<div class="bitovi-menu">
+					<a href="https://www.bitovi.com" class="bitovi icon-bits">Bitovi</a>
+					<ul class="dropdown-menu">
+						<li><a href="https://www.bitovi.com">Bitovi.com</a></li>
+						<li><a href="https://www.bitovi.com/blog">Blog</a></li>
+						<li><a href="https://www.bitovi.com/design">Design</a></li>
+						<li><a href="https://www.bitovi.com/development">Development</a></li>
+						<li><a href="https://www.bitovi.com/training">Training</a></li>
+						<li><a href="https://www.bitovi.com/open-source">Open Source</a></li>
+						<li><a href="https://www.bitovi.com/about">About</a></li>
+						<li><a href="https://www.bitovi.com/contact">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+
+	
+<div class="container api">
+
+	
+	<nav class="sidebar">
+		
+		<ul class="api cascading primary-grouping">
+	
+		
+
+		
+			
+				<li class="search-container active">
+					<a
+						class="sidebar-title"
+						href="index.html"
+						data-search="StealJS"
+					>
+						StealJS
+					</a>
+					
+	
+		<ul>
+			
+				
+					
+						<li class="heading search-container">
+							<span>step-by-step guides</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.guides.progressive_loading.html" data-search="Progressive Loading">
+							Progressive Loading
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.quick-start.html" data-search="Quick Start">
+							Quick Start
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.guides.boolean_conditional_loading.html" data-search="Boolean Conditional Loading">
+							Boolean Conditional Loading
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.guides.substitution_conditional_loading.html" data-search="Substitution Conditional Loading">
+							Substitution Conditional Loading
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>development</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.development-bundles.html" data-search="Development Bundles">
+							Development Bundles
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.using-npm-packages.html" data-search="Using npm Packages">
+							Using npm Packages
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.hot-module-replacement.html" data-search="Hot Module Replacement">
+							Hot Module Replacement
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.configuration.html" data-search="Configuration">
+							Configuration
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.conditionals.html" data-search="Conditional Loading">
+							Conditional Loading
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.babel.html" data-search="Babel">
+							Babel
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.circular.html" data-search="Circular Dependencies">
+							Circular Dependencies
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.error-messages.html" data-search="Error Messages">
+							Error Messages
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>bundling</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.optimized-builds.html" data-search="Optimized Builds">
+							Optimized Builds
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.code-splitting.html" data-search="Code Splitting">
+							Code Splitting
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.tree-shaking.html" data-search="Tree Shaking">
+							Tree Shaking
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.watch-mode.html" data-search="Watch Mode">
+							Watch Mode
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.multi-main.html" data-search="Multi-main Builds">
+							Multi-main Builds
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.project-exporting.html" data-search="Project Exporting">
+							Project Exporting
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>production</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.loading-from-cdn.html" data-search="Loading Scripts from a CDN">
+							Loading Scripts from a CDN
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.moving-to-prod.html" data-search="Moving to Production">
+							Moving to Production
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-bundle-manifest.server.html" data-search="Server templating in Node">
+							Server templating in Node
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-bundle-manifest.snippets.html" data-search="Generating HTML Snippets">
+							Generating HTML Snippets
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>advanced</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.writing-plugins.html" data-search="Writing Plugins">
+							Writing Plugins
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.guides.streams.html" data-search="Streaming API">
+							Streaming API
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>apis</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal.html" data-search="steal">
+							steal
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.html" data-search="steal-tools">
+							steal-tools
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>migrating</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.migrating.html" data-search="Migrating from Legacy Steal">
+							Migrating from Legacy Steal
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.topics.migrating-one.html" data-search="Migrating to StealJS 1.x">
+							Migrating to StealJS 1.x
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.topics.migrating-two.html" data-search="Migrating to StealJS 2.x">
+							Migrating to StealJS 2.x
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>about</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.why.html" data-search="Why StealJS">
+							Why StealJS
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="guides.Contributing.html" data-search="Contributing">
+							Contributing
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>ecosystem</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="grunt-steal.html" data-search="grunt-steal">
+							grunt-steal
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-bundle-manifest.html" data-search="steal-bundle-manifest">
+							steal-bundle-manifest
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-conditional.html" data-search="steal-conditional">
+							steal-conditional
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-css.html" data-search="steal-css">
+							steal-css
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-less.html" data-search="steal-less">
+							steal-less
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-mocha.html" data-search="steal-mocha">
+							steal-mocha
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-qunit.html" data-search="steal-qunit">
+							steal-qunit
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container active ">
+						<a class="module" href="steal-socket.io.html" data-search="steal-socket.io">
+							steal-socket.io
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+		</ul>
+	
+
+
+				</li>
+			
+		
+	
+</ul>
+
+	</nav>
+	
+
+	
+	<article class="content docs">
+	
+
+		
+		<section class="title">
+			<div class="heading">
+<h1>steal-socket.io</h1>
+	<ul class="tags">
+		<li>module</li>
+	</ul>
+	
+	
+</div>
+
+<div class="sub-heading">
+	
+	
+	<span class="inherits">&nbsp;</span>
+</div>
+
+<ul class="links">
+	
+	
+	
+</ul>
+<br />
+
+		</section>
+		
+
+		
+		<section class="contents">
+			<div class="on-this-page-container"></div>
+		</section>
+		
+
+		
+
+		
+		<section class="description">
+			<p>Wrap SocketIO client for SSR and testing.</p>
+<p>The <code>steal-socket.io</code> module exports a function that wraps <code>socket.io</code> to serve the following purposes:</p>
+<ul>
+<li>Ignore <code>socket.io</code> for <a href="https://donejs.com/Features.html#section_Server_SideRendered">server-side rendering</a> (SSR).</li>
+<li>Ignore <code>socket.io</code> for <a href="http://v3.canjs.com/doc/can-zone.html">can-zone</a>.</li>
+<li>Proxy and delay <code>socket.io</code> connection for testing.</li>
+</ul>
+
+		</section>
+		
+
+		
+			
+				<section class="signature">
+					<h2 id="sig_stealSocket_url__options__">stealSocket( url, [options] )
+</h2>
+<div class="signature-wrapper">
+<p>Since this is a wrapper around SocketIO <code>io</code> function it supports all the same arguments as <a href="http://socket.io/docs/client-api/#client-api">socket.io does</a>.</p>
+<pre><code>var io = require(&quot;steal-socket.io&quot;);
+var socket = io(&quot;localhost&quot;, {transports: [&quot;websocket&quot;]});
+</code></pre>
+
+
+	<h3>Parameters</h3>
+
+	<ol class="parameters">
+		
+		<li class="parameter">
+			<h4>url
+				<code>{String}</code></h4>
+			<div class="description">
+				<p>A URL for <code>socket.io</code> connection.</p>
+
+			</div>
+			
+			
+			
+		</li>
+		
+		<li class="parameter">
+			<h4>options
+				<code>{Object}</code><span class="pull-right optional">Optional</span></h4>
+			<div class="description">
+				<p>Optional parameters to be passed to <code>socket.io</code>.</p>
+
+			</div>
+			
+			
+			
+		</li>
+		
+	</ol>
+
+
+	<h3>Returns</h3>
+	<div class="returns">
+		<h4><code>{ProxySocket}</code></h4>
+		<div class="description">
+			<p>A proxy socket that can delay establishing <code>socket.io</code> connection.</p>
+
+		</div>
+		
+		
+	</div>
+	
+
+
+
+
+
+</div>
+
+				</section>
+			
+		
+
+		
+
+
+		
+		<section class="comment">
+			<h2>Ignore SSR</h2>
+<p>If your application uses real-time communication with <code>socket.io</code> and your server supports SSR then its a good idea
+to ignore <code>socket.io</code> module during SSR completely.</p>
+<p>The <code>steal-socket.io</code> module maps <code>socket.io-client/dist/socket.io</code> to an <code>@empty</code> module, and stubs <code>socket.io</code> as minimally
+as possible.</p>
+<h2>Ignore can-zone</h2>
+<p>This wrapper is aware of <a href="https://github.com/canjs/can-zone">can-zone</a> module which helps to track asynchronous
+activity. It uses <code>can-zone.ignore</code> to skip the tracking of <code>socket.io</code> calls. For more information about what
+<code>can-zone</code> is checkout <a href="https://davidwalsh.name/can-zone">this article</a> as well as
+the <a href="http://v3.canjs.com/doc/can-zone.html">documentation</a>.</p>
+<h2>Proxy and delay socket.io connection</h2>
+<p>This wrapper helps with testing and demoing applications that use <code>socket.io</code> for real-time communication.</p>
+<p>Often some modules that use socket.io call it to establish a socket connection immediately. This makes mocking of socket.io impossible.</p>
+<p>The wrapper delays the creation of socket connection till StealJS <a href="https://stealjs.github.io/stealjs/docs/steal.done.html">is done</a>
+with loading all the modules (including the ones where we can mock socket.io).</p>
+<h3>How it works</h3>
+<p>The <code>delay-io</code> wrapper returns <code>io</code>-like function that resolves with a <code>ProxySocket</code>. The <code>ProxySocket</code> is
+a replacement for <code>io.Socket</code> and acts as a proxy for it.</p>
+<p>Initially the wrapper records all calls to <code>io</code> and its socket into a <em>FIFO storage</em>, and then, when <code>StealJS</code>
+<a href="https://stealjs.github.io/stealjs/docs/steal.done.html">is done</a> with loading all modules, it replays the recorded
+calls against the real <code>io</code> and its socket.</p>
+<p>After replaying the wrapper directly proxies all the subsequent calls.</p>
+<h3>Usage</h3>
+<p>Import <code>steal-socket.io</code> which includes this wrapper as its part, or directly import <code>steal-socket.io/delay-io</code>
+to use just this wrapper.</p>
+<p>Lets say we have an application <code>myApp.js</code> that uses <code>socket.io</code> and tries to establish the connection right during
+module evaluation. We import <code>steal-socket.io</code> in our app instead of <code>socket.io-client/dist/socket.io</code>:</p>
+<pre><code>var io = require(&quot;steal-socket.io&quot;);
+
+var messages = [];
+
+var socket = io(&quot;localhost&quot;);
+io.on(&quot;messages&quot;, function(m){
+    messages.push(m);
+});
+
+module.exports = {
+    messages: messages
+};
+</code></pre>
+<p>We now create a module <code>myFixtureSocket.js</code> that mocks <code>socket.io</code> server responses, e.g. using <a href="http://v3.canjs.com/doc/can-fixture-socket.html">can-fixture-socket</a>:</p>
+<pre><code>var io = require(&quot;socket.io-client/dist/socket.io&quot;);
+var fixtureSocket = require(&quot;can-fixture-socket&quot;);
+var mockSocket = new fixtureSocket( io );
+mockSocket.on(&quot;connect&quot;, function(){
+    mockSocket.emit(&quot;messages&quot;, &quot;some messages&quot;);
+});
+</code></pre>
+<p>And then we can test our application like this:</p>
+<pre><code>require(&quot;myFixtureSocket&quot;);
+var myApp = require(&quot;my-app.js&quot;);
+
+QUnit.test(function(){
+    assert.equal(myApp.messages.length, 1, &quot;Contains one message received from socket server.&quot;);
+});
+</code></pre>
+
+		</section>
+		
+		
+
+		
+
+		
+
+	
+	</article>
+	
+
+
+</div>
+
+
+<survey-ad>
+  <button aria-label="Close" class="close" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <a href="https://donejs.com/survey.html" target="_blank">
+    Help us improve StealJS by taking our community survey
+  </a>
+</survey-ad>
+
+
+	
+	<footer>
+		<nav class="container">
+			<a class="brand javascriptmvc" href="index.html"></a>
+		</nav>
+	</footer>
+	
+
+	<script type="text/javascript">
+		var docObject = {"src":{"path":"node_modules/steal-socket.io/steal-socket.io.md"},"description":"Wrap SocketIO client for SSR and testing. \n\nThe `steal-socket.io` module exports a function that wraps `socket.io` to serve the following purposes:\n\n * Ignore `socket.io` for [server-side rendering](https://donejs.com/Features.html#section_Server_SideRendered) (SSR).\n * Ignore `socket.io` for [can-zone](http://v3.canjs.com/doc/can-zone.html).\n * Proxy and delay `socket.io` connection for testing.\n\n\n","type":"module","title":"","name":"steal-socket.io","parent":"StealJS.ecosystem","types":[],"signatures":[{"code":"stealSocket( url, [options] )","description":"\n\nSince this is a wrapper around SocketIO `io` function it supports all the same arguments as [socket.io does](http://socket.io/docs/client-api/#client-api).\n```\nvar io = require(\"steal-socket.io\");\nvar socket = io(\"localhost\", {transports: [\"websocket\"]});\n```\n","params":[{"types":[{"type":"String"}],"name":"url","description":"A URL for `socket.io` connection.\n"},{"types":[{"type":"Object","options":[]}],"optional":true,"name":"options","description":"Optional parameters to be passed to `socket.io`.\n"}],"returns":{"types":[{"type":"ProxySocket"}],"description":"A proxy socket that can delay establishing `socket.io` connection.\n\n"}}],"_curParam":{"types":[{"type":"Object","options":[]}],"optional":true,"name":"options","description":"Optional parameters to be passed to `socket.io`.\n"},"_curReturn":{"types":[{"type":"ProxySocket"}],"description":"A proxy socket that can delay establishing `socket.io` connection.\n\n"},"comment":" ","pathToRoot":".."};
+	</script>
+
+	
+		<script>
+		  steal = {
+		    instantiated: {
+		      "bundles/bit-docs-site/static.css!$css" : null
+		    }
+		  }
+		</script>
+		<script type='text/javascript'
+				data-main="bit-docs-site/static"
+				src="./static/node_modules/steal/steal.production.js"></script>
+	
+</body>
+
+</html>

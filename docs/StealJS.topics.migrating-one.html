@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: doc/steal-topics/migrating-1.md
+	@page StealJS.topics.migrating-one
+######################################################################## -->
+
+<!--[if lt IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 9]>
+<html class="no-js ie ie9" lang="en">
+<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>StealJS - Migrating to StealJS 1.x </title>
+	<meta name="description" content="This guide walks you through upgrading to StealJS 1. It’s broken up into four parts:">
+	<meta name="author" content="">
+	<meta property="og:title" content="StealJS - Migrating to StealJS 1.x ">
+	<meta property="og:description" content="This guide walks you through upgrading to StealJS 1. It’s broken up into four parts:">
+	<meta property="og:image" content="https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png">
+	<script type="application/ld+json">
+		{
+			"@context": "http://www.schema.org",
+			"@type": "SoftwareSourceCode",
+			"applicationCategory": "DeveloperApplication",
+			"brand": "Bitovi",
+			"category": "JavaScript Frameworks",
+			"codeRepository": "https://github.com/stealjs/steal",
+			"description": "This guide walks you through upgrading to StealJS 1. It’s broken up into four parts:",
+			"image": "https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png",
+			"license": "https://github.com/stealjs/steal/blob/master/license.md",
+			"logo": "https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png",
+			"name": "StealJS - Migrating to StealJS 1.x ",
+			"programmingLanguage": "JavaScript"
+		}
+	</script>
+	
+		<link rel="stylesheet" type="text/css" href="./static/bundles/bit-docs-site/static.css">
+	
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-2302003-20', 'auto');
+			ga('send', 'pageview');
+		</script>
+	
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="static/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body class="docs">
+	
+	<header>
+		
+		<div style="display: none;" class="navbar"></div>
+		<nav class="container">
+			<div class="logo-menu">
+				<a class="brand" href="./index.html">StealJS</a>
+
+				<ul class="dropdown-menu">
+					<li><a href="https://donejs.com/">DoneJS</a></li>
+					<li><a href="https://stealjs.com/">StealJS</a></li>
+					<li><a href="https://jquerypp.com/">jQuery ++</a></li>
+					<li><a href="https://funcunit.com/">FuncUnit</a></li>
+					<li><a href="https://documentjs.com/">DocumentJS</a></li>
+				</ul>
+			</div>
+
+			<ul class="nav">
+				<li><a href="https://stealjs.com">Home</a></li>
+
+				
+          <li class="active"><a href="index.html">Api</a></li>
+        
+
+				<li><a href="https://twitter.com/stealjs">Twitter</a></li>
+				<li><a href="https://github.com/stealjs/steal">GitHub</a></li>
+				<li><a href="https://gitter.im/stealjs/steal">Chat</a></li>
+			</ul>
+
+			<div class="pull-right">
+				<div class="bitovi-menu">
+					<a href="https://www.bitovi.com" class="bitovi icon-bits">Bitovi</a>
+					<ul class="dropdown-menu">
+						<li><a href="https://www.bitovi.com">Bitovi.com</a></li>
+						<li><a href="https://www.bitovi.com/blog">Blog</a></li>
+						<li><a href="https://www.bitovi.com/design">Design</a></li>
+						<li><a href="https://www.bitovi.com/development">Development</a></li>
+						<li><a href="https://www.bitovi.com/training">Training</a></li>
+						<li><a href="https://www.bitovi.com/open-source">Open Source</a></li>
+						<li><a href="https://www.bitovi.com/about">About</a></li>
+						<li><a href="https://www.bitovi.com/contact">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+
+	
+<div class="container api">
+
+	
+	<nav class="sidebar">
+		
+		<ul class="api cascading primary-grouping">
+	
+		
+
+		
+			
+				<li class="search-container active">
+					<a
+						class="sidebar-title"
+						href="index.html"
+						data-search="StealJS"
+					>
+						StealJS
+					</a>
+					
+	
+		<ul>
+			
+				
+					
+						<li class="heading search-container">
+							<span>step-by-step guides</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.guides.progressive_loading.html" data-search="Progressive Loading">
+							Progressive Loading
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.quick-start.html" data-search="Quick Start">
+							Quick Start
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.guides.boolean_conditional_loading.html" data-search="Boolean Conditional Loading">
+							Boolean Conditional Loading
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.guides.substitution_conditional_loading.html" data-search="Substitution Conditional Loading">
+							Substitution Conditional Loading
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>development</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.development-bundles.html" data-search="Development Bundles">
+							Development Bundles
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.using-npm-packages.html" data-search="Using npm Packages">
+							Using npm Packages
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.hot-module-replacement.html" data-search="Hot Module Replacement">
+							Hot Module Replacement
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.configuration.html" data-search="Configuration">
+							Configuration
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.conditionals.html" data-search="Conditional Loading">
+							Conditional Loading
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.babel.html" data-search="Babel">
+							Babel
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.circular.html" data-search="Circular Dependencies">
+							Circular Dependencies
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.error-messages.html" data-search="Error Messages">
+							Error Messages
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>bundling</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.optimized-builds.html" data-search="Optimized Builds">
+							Optimized Builds
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.code-splitting.html" data-search="Code Splitting">
+							Code Splitting
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.tree-shaking.html" data-search="Tree Shaking">
+							Tree Shaking
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.watch-mode.html" data-search="Watch Mode">
+							Watch Mode
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.multi-main.html" data-search="Multi-main Builds">
+							Multi-main Builds
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.project-exporting.html" data-search="Project Exporting">
+							Project Exporting
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>production</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.loading-from-cdn.html" data-search="Loading Scripts from a CDN">
+							Loading Scripts from a CDN
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.moving-to-prod.html" data-search="Moving to Production">
+							Moving to Production
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-bundle-manifest.server.html" data-search="Server templating in Node">
+							Server templating in Node
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-bundle-manifest.snippets.html" data-search="Generating HTML Snippets">
+							Generating HTML Snippets
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>advanced</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.writing-plugins.html" data-search="Writing Plugins">
+							Writing Plugins
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.guides.streams.html" data-search="Streaming API">
+							Streaming API
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>apis</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal.html" data-search="steal">
+							steal
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.html" data-search="steal-tools">
+							steal-tools
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>migrating</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.migrating.html" data-search="Migrating from Legacy Steal">
+							Migrating from Legacy Steal
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container active ">
+						<a class="page" href="StealJS.topics.migrating-one.html" data-search="Migrating to StealJS 1.x">
+							Migrating to StealJS 1.x
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.topics.migrating-two.html" data-search="Migrating to StealJS 2.x">
+							Migrating to StealJS 2.x
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>about</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.why.html" data-search="Why StealJS">
+							Why StealJS
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="guides.Contributing.html" data-search="Contributing">
+							Contributing
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>ecosystem</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="grunt-steal.html" data-search="grunt-steal">
+							grunt-steal
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-bundle-manifest.html" data-search="steal-bundle-manifest">
+							steal-bundle-manifest
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-conditional.html" data-search="steal-conditional">
+							steal-conditional
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-css.html" data-search="steal-css">
+							steal-css
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-less.html" data-search="steal-less">
+							steal-less
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-mocha.html" data-search="steal-mocha">
+							steal-mocha
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-qunit.html" data-search="steal-qunit">
+							steal-qunit
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-socket.io.html" data-search="steal-socket.io">
+							steal-socket.io
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+		</ul>
+	
+
+
+				</li>
+			
+		
+	
+</ul>
+
+	</nav>
+	
+
+	
+	<article class="content docs">
+	
+
+		
+		<section class="title">
+			<div class="heading">
+<h1>Migrating to StealJS 1.x</h1>
+	<ul class="tags">
+		<li>page</li>
+	</ul>
+	
+	
+</div>
+
+<div class="sub-heading">
+	
+	
+		<span class="module">StealJS.topics.migrating-one</span>
+	
+	
+	
+	<span class="inherits">&nbsp;</span>
+</div>
+
+<ul class="links">
+	
+	
+	
+</ul>
+<br />
+
+		</section>
+		
+
+		
+		<section class="contents">
+			<div class="on-this-page-container"></div>
+		</section>
+		
+
+		
+
+		
+		<section class="description">
+			<p>This guide walks you through upgrading to StealJS 1. It’s broken up into four parts:</p>
+
+		</section>
+		
+
+		
+			
+		
+
+		
+
+
+		
+		<section class="comment">
+			<ol>
+<li><a href="#getting-steal-1">Getting StealJS 1</a> for your existing project</li>
+<li><a href="#breaking-changes">Breaking changes</a> that require updates to your code</li>
+<li><a href="#new-features">New features</a> you might want to take advantage of</li>
+<li><a href="#deprecations">Deprecations</a> to consider for the future</li>
+</ol>
+<p>Overall, most of the changes needed to upgrade from a StealJS 0.16 project to StealJS 1 are quite small. If you are using an older version of StealJS and want to migrate to StealJS 1, please check out the <a href="StealJS.changelog.html">changelog</a> to see the changes that have occurred since the version you are currently using.</p>
+<p><a name="getting-steal-10"></a></p>
+<h2>Getting StealJS 1</h2>
+<p>The recommended way to get StealJS is using <a href="http://npmjs.org/">npm</a>. If you’re not already using StealJS with npm, we recommend doing so. You can install with:</p>
+<pre><code>npm install steal@1 --save
+npm install steal-tools@1 --save-dev
+</code></pre>
+<p>If you’re already using StealJS through npm, you can run the above commands to upgrade and your <code>package.json</code> will be updated.</p>
+<p>If you want to upgrade manually, change the versions of <code>steal</code> and <code>steal-tools</code> in your <code>package.json</code> to:</p>
+<pre><code>{
+  &quot;dependencies&quot;: {
+    ...
+
+    &quot;steal&quot;: &quot;^1.0.0&quot;
+  },
+  &quot;devDependencies&quot;: {
+    ...
+
+    &quot;steal-tools&quot;: &quot;^1.0.0&quot;
+  }
+}
+</code></pre>
+<p><span line-highlight='5,10'></span>
+If you are using <a href="http://gruntjs.com/">Grunt</a> for production builds, the Grunt tasks for StealJS have been moved to their own project, <a href="https://github.com/stealjs/grunt-steal">grunt-steal</a>. This is explained in <a href="#grunt-tasks">further detail below</a>, but for now you will want to install <code>grunt-steal</code>:</p>
+<pre><code>npm install grunt-steal --save-dev
+</code></pre>
+<h2>Breaking changes</h2>
+<p>The following are breaking changes to the way StealJS works that will require you to change your code. Most represent small (often one-line) changes; nothing drastic has changed since 0.16.</p>
+<h3>Production script tag</h3>
+<p>If you are using the <a href="./npm.html">npm</a> plugin (and you should be!), you may need to change the <a href="config.main.html" title="The entry point of the application.">main</a> attribute in the StealJS script tag for production.  If your script tag currently looks like this:</p>
+<pre><code class="language-html">&lt;script src=&quot;./node_modules/steal/steal.production.js&quot;
+  main=&quot;index&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>Where <code>&quot;index&quot;</code> is your application’s main module, you’ll want to change that to:</p>
+<pre><code class="language-html">&lt;script src=&quot;./node_modules/steal/steal.production.js&quot;
+  main=&quot;app/index&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p><span line-highlight='2'></span>
+Where <code>app</code> is your package’s <code>name</code> in your <code>package.json</code>. <code>steal-tools</code> now always includes the package name in the bundles it produces, so where it previously might have written to the file <code>dist/bundles/index.js</code>, it now writes to <code>dist/bundles/app/index.js</code>.</p>
+<p>Using the new <a href="#easier-production-use">configured steal.production</a> alleviates the need to know about this. The <a href="StealJS.moving-to-prod.html" title="">Moving to Production</a> guide has been updated; it contains all of the ways to use StealJS in production.</p>
+<h3>NPM 3</h3>
+<p>The <a href="npm.html" title="">npm</a> plugin now defaults to compatibility with npm 3 and above. If you’re using Node version 5+, you have npm 3.  If you are using an older version of Node, or are using npm 2 for another reason, you need to update your configuration in your <code>package.json</code> to add:</p>
+<pre><code class="language-json">&quot;steal&quot;: {
+  &quot;npmAlgorithm&quot;: &quot;nested&quot;
+}
+</code></pre>
+<p>If you <em>are</em> using npm 3+ and have <code>&quot;npmAlgorithm&quot;: &quot;flat&quot;</code> in your <code>package.json</code>, you can remove this, but leaving it in your config will not cause any harm.</p>
+<p><a name="css-and-less-plugins"></a></p>
+<h3>Plugins configuration</h3>
+<p>The following plugins are no longer included with the <code>steal</code> npm package, but rather are contained within their own projects:</p>
+<ul>
+<li><a href="https://www.npmjs.com/package/steal-css">steal-css</a></li>
+<li><a href="https://www.npmjs.com/package/steal-less">steal-less</a></li>
+<li><a href="https://www.npmjs.com/package/steal-stache">steal-stache</a></li>
+</ul>
+<p>To use them, install them as <code>devDependencies</code> and use the new <code>plugins</code> configuration to tell Steal to load their <code>package.json</code> for metadata.</p>
+<p>For example, to use <code>steal-less</code>, install it with npm:</p>
+<pre><code>npm install steal-less --save-dev
+</code></pre>
+<p>Then update the <code>plugins</code> configuration in your <code>package.json</code>:</p>
+<pre><code class="language-json">{
+  ...
+  &quot;steal&quot;: {
+    ...
+    &quot;plugins&quot;: [&quot;steal-less&quot;]
+  }
+}
+</code></pre>
+<h3>Grunt tasks</h3>
+<p>Likewise, the Grunt tasks are no longer included with <code>steal-tools</code>. This is part of a long-term project of decreasing the size of our core packages; <code>steal-tools</code> being one of them.</p>
+<p>Install <a href="grunt-steal.html" title="grunt-steal is a collection of Grunt tasks for building out projects that use StealJS.">grunt-steal</a> as a dev-dependency:</p>
+<pre><code>npm install grunt-steal --save-dev
+</code></pre>
+<p>In your <code>Gruntfile.js</code>, change:</p>
+<pre><code class="language-js">grunt.loadNpmTasks(&quot;steal-tools&quot;);
+</code></pre>
+<p>to:</p>
+<pre><code class="language-js">grunt.loadNpmTasks(&quot;grunt-steal&quot;);
+</code></pre>
+<p>Finally, change the configuration object to be <code>steal</code> rather than <code>system</code> like so:</p>
+<pre><code>grunt.initConfig({
+  &quot;steal-build&quot;: {
+    default: {
+      options: {
+        steal: {
+          config: __dirname + &quot;/package.json!npm&quot;
+        },
+        buildOptions: {
+
+        }
+      }
+    }
+  }
+});
+</code></pre>
+<p><span line-highlight='5'></span>
+This also applies to the <a href="grunt-steal.export.html" title="A Grunt multi task that loads modules, and writes them out in different formats.">steal-export</a> and <a href="grunt-steal.live-reload.html" title="The steal-live-reload options object's values.">steal-live-reload</a> tasks. Learn more in the <a href="grunt-steal.html" title="grunt-steal is a collection of Grunt tasks for building out projects that use StealJS.">grunt-steal</a> docs.</p>
+<h3>bundlesPath</h3>
+<p>The use of <a href="config.bundlesPath.html" title="A configuration property for setting the path of where the production
+bundles folder is located.">bundlesPath</a> in <code>steal-tools</code> is deprecated in favor of the new <code>dest</code> option.</p>
+<p><a href="config.bundlesPath.html" title="A configuration property for setting the path of where the production
+bundles folder is located.">bundlesPath</a> has always been confusing because it means something different when used in the client (to set the path where production bundles are served) vs. in the build (which previously meant where the bundles are written).</p>
+<p><code>dest</code> clears this confusion up. Setting <code>dest</code> tells <code>steal-tools</code> where your production files go. It will write out your bundles inside of this path.</p>
+<p>To upgrade, change your build script that looks something like this:</p>
+<pre><code class="language-js">stealTools.build({
+  config: __dirname + &quot;/package.json!npm&quot;,
+  bundlesPath: __dirname + &quot;/path/to/build/bundles&quot;
+});
+</code></pre>
+<p>To:</p>
+<pre><code class="language-js">stealTools.build({
+  config: __dirname + &quot;/package.json!npm&quot;
+}, {
+  dest: __dirname + &quot;/path/to/build&quot;
+});
+</code></pre>
+<p><code>steal-tools</code> will write out bundles to <code>path/to/build/bundles</code> and also write out a pre-configured StealJS script to <code>path/to/build/steal.production.js</code>. More on that <a href="#easier-production-use">below</a>.</p>
+<h3>bundlesDepth</h3>
+<p>Two configuration options have been renamed:</p>
+<ul>
+<li><code>bundlesDepth</code> to <code>maxBundleRequests</code></li>
+<li><code>mainsDepth</code> to <code>maxMainRequests</code></li>
+</ul>
+<p>These options have been renamed to more accurately reflect what their purpose is: to control the number of requests that will be needed in production. The functionality remains the same.</p>
+<p>Just change this option in your build script:</p>
+<pre><code class="language-js">stealTools.build({
+  config: __dirname + &quot;/package.json!npm&quot;
+}, {
+  bundlesDepth: 3
+}
+</code></pre>
+<p>becomes:</p>
+<pre><code class="language-js">stealTools.build({
+  config: __dirname + &quot;/package.json!npm&quot;
+}, {
+  maxBundleRequests: 3
+}
+</code></pre>
+<p><span line-highlight='4'></span></p>
+<h2>New features</h2>
+<p>Although StealJS 1 is mostly about solidifying that StealJS is production-ready, there are a few new features worth mentioning.</p>
+<h3>Loading from your project’s root</h3>
+<p>Since the introduction of the npm plugin, there has been an issue with wanting to load code from the project’s root, which may not always be a sibling of your project’s <code>node_modules/</code> folder. In the past this was done by using your project’s package name to load: <code>app/components/tabs</code> where <code>app</code> is the <code>&quot;name&quot;</code> field in your <code>package.json</code>.</p>
+<p>This wasn’t ideal because project names could be long, and if your project name changed, these imports would need to be refactored.</p>
+<p>In StealJS 1, <code>~</code> refers to your project’s root.</p>
+<pre><code>import tabs from &quot;~/components/tabs&quot;;
+</code></pre>
+<p><code>~</code> is treated the same as your project’s package name in StealJS.</p>
+<h3>Easier production use</h3>
+<p>Using Steal in development is as easy as adding a script tag that points to <code>steal.js</code> inside your <code>node_modules</code> folder, but up to now when changing to production you have to add a few attributes such as the <a href="config.main.html" title="The entry point of the application.">main</a>, and possibly <a href="config.bundlesPath.html" title="A configuration property for setting the path of where the production
+bundles folder is located.">bundlesPath</a> or even <a href="config.baseURL.html" title="Specifies the root path to use for all module lookups.">baseURL</a>.</p>
+<p>Using Steal 1 in production is just as easy as in development. <code>steal-tools</code> now builds out a pre-configured <code>steal.production.js</code> to your <code>dest</code> folder. By default it will be written to <code>dist/steal.production.js</code>. So now all you need to do is use this script tag in production:</p>
+<pre><code class="language-js">&lt;script src=&quot;./dist/steal.production.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<h3>Babel 6</h3>
+<p>StealJS 1 includes <a href="https://babeljs.io/blog/2015/10/29/6.0.0">Babel 6</a>! We are using <a href="https://greenkeeper.io/">Greenkeeper</a> to keep our packages up-to-date so there will be patch releases as new versions of <a href="https://babeljs.io/">Babel</a> come out.</p>
+<p>You can configure which presets/plugins are used in your <code>package.json</code> config:</p>
+<pre><code class="language-json">&quot;steal&quot;: {
+  &quot;babelOptions&quot;: {
+    &quot;presets&quot;: [&quot;es2015&quot;]
+  }
+}
+</code></pre>
+<p>The available presets and plugins are listed in the <a href="config.babelOptions.html" title="Babel 6 is the default JavaScript compiler in StealJS.
+Babel provides some options for transpiling JavaScript code.
+Available options can be found in Babel’s documentation.">babelOptions</a> docs.</p>
+<h2>Deprecations</h2>
+<p>These things still exist in StealJS 1 but are considered deprecated and might be removed in 2.0.</p>
+<h3>system name replaced by steal</h3>
+<p>In 0.16, StealJS used a special property called <code>system</code> to configure StealJS. You have probably used this in your <code>package.json</code> like:</p>
+<pre><code class="language-json">&quot;system&quot;: {
+  &quot;map&quot;: {
+
+  }
+}
+</code></pre>
+<p>In StealJS 1, this option is now called <code>steal</code>, so the above would become:</p>
+<pre><code class="language-json">&quot;steal&quot;: {
+  &quot;map&quot;: {
+
+  }
+}
+</code></pre>
+<p><span line-highlight='1'></span>
+Similarly, to dynamically import code we’ve previously taught to use <code>System.import</code>. This should be replaced by using <a href="steal.import.html" title="Dynamically imports modules after initial configuration has loaded. Otherwise works very similar to steal.loader.import.">steal.import</a> instead:</p>
+<pre><code class="language-js">steal.import(&quot;my/app&quot;).then(function(){
+
+});
+</code></pre>
+<p>StealJS was built on top of a specification for modules that was planned to be part of ES6, but never came to pass. <code>System.import()</code> is supported by StealJS, SystemJS, and WebPack, but will never appear in the browser natively, so we are moving away from the <code>System</code> name so that in the future we can support the browser’s native module system, <code>&lt;script type=&quot;module&quot;&gt;</code>.</p>
+<p>The global <code>System</code> is still available and won’t be removed any time soon, but you should use <code>steal</code> in its place, or <code>steal.loader</code> if you really do need the loader.</p>
+<h3>Configuring the loader directly</h3>
+<p>In the past you’ve been able to configure the System object directly to add <a href="config.map.html" title="Alter moduleName keys.">map</a>, <a href="config.ext.html" title="Configures plugin loading by module extension.">ext</a>, and other configuration values. In Steal 1, this is deprecated in favor of using <a href="config.config.html" title="Specifies configuration values for Steal. This should be used to
+set properties like config.configPath and config.env.">steal.config()</a>:</p>
+<pre><code class="language-js">steal.config({
+  map: {
+    &quot;foo&quot;: &quot;bar&quot;
+  }
+});
+</code></pre>
+
+		</section>
+		
+		
+
+		
+
+		
+
+	
+	</article>
+	
+
+
+</div>
+
+
+<survey-ad>
+  <button aria-label="Close" class="close" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <a href="https://donejs.com/survey.html" target="_blank">
+    Help us improve StealJS by taking our community survey
+  </a>
+</survey-ad>
+
+
+	
+	<footer>
+		<nav class="container">
+			<a class="brand javascriptmvc" href="index.html"></a>
+		</nav>
+	</footer>
+	
+
+	<script type="text/javascript">
+		var docObject = {"src":{"path":"doc/steal-topics/migrating-1.md"},"description":"\nThis guide walks you through upgrading to StealJS 1. It’s broken up into four parts:\n","name":"StealJS.topics.migrating-one","title":"Migrating to StealJS 1.x","type":"page","parent":"StealJS.topics","outline":{"depth":0},"pathToRoot":".."};
+	</script>
+
+	
+		<script>
+		  steal = {
+		    instantiated: {
+		      "bundles/bit-docs-site/static.css!$css" : null
+		    }
+		  }
+		</script>
+		<script type='text/javascript'
+				data-main="bit-docs-site/static"
+				src="./static/node_modules/steal/steal.production.js"></script>
+	
+</body>
+
+</html>

@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: node_modules/steal/ext/babel.js
+	@function static.ListCache.Stack.static.MapCache.static.SetCache.static.ensureApplyDecoratedDescriptorHelper
+######################################################################## -->
+
+<!--[if lt IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 9]>
+<html class="no-js ie ie9" lang="en">
+<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>StealJS  - static.ListCache.Stack.static.MapCache.static.SetCache.static.ensureApplyDecoratedDescriptorHelper</title>
+	<meta name="description" content="Add a helper to take an initial descriptor, apply some decorators to it, and optionally define the property.">
+	<meta name="author" content="">
+	<meta property="og:title" content="StealJS  - static.ListCache.Stack.static.MapCache.static.SetCache.static.ensureApplyDecoratedDescriptorHelper">
+	<meta property="og:description" content="Add a helper to take an initial descriptor, apply some decorators to it, and optionally define the property.">
+	<meta property="og:image" content="https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png">
+	<script type="application/ld+json">
+		{
+			"@context": "http://www.schema.org",
+			"@type": "SoftwareSourceCode",
+			"applicationCategory": "DeveloperApplication",
+			"brand": "Bitovi",
+			"category": "JavaScript Frameworks",
+			"codeRepository": "https://github.com/stealjs/steal",
+			"description": "Add a helper to take an initial descriptor, apply some decorators to it, and optionally define the property.",
+			"image": "https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png",
+			"license": "https://github.com/stealjs/steal/blob/master/license.md",
+			"logo": "https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png",
+			"name": "StealJS  - static.ListCache.Stack.static.MapCache.static.SetCache.static.ensureApplyDecoratedDescriptorHelper",
+			"programmingLanguage": "JavaScript"
+		}
+	</script>
+	
+		<link rel="stylesheet" type="text/css" href="./static/bundles/bit-docs-site/static.css">
+	
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-2302003-20', 'auto');
+			ga('send', 'pageview');
+		</script>
+	
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="static/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body class="docs">
+	
+	<header>
+		
+		<div style="display: none;" class="navbar"></div>
+		<nav class="container">
+			<div class="logo-menu">
+				<a class="brand" href="./index.html">StealJS</a>
+
+				<ul class="dropdown-menu">
+					<li><a href="https://donejs.com/">DoneJS</a></li>
+					<li><a href="https://stealjs.com/">StealJS</a></li>
+					<li><a href="https://jquerypp.com/">jQuery ++</a></li>
+					<li><a href="https://funcunit.com/">FuncUnit</a></li>
+					<li><a href="https://documentjs.com/">DocumentJS</a></li>
+				</ul>
+			</div>
+
+			<ul class="nav">
+				<li><a href="https://stealjs.com">Home</a></li>
+
+				
+          <li class="active"><a href="index.html">Api</a></li>
+        
+
+				<li><a href="https://twitter.com/stealjs">Twitter</a></li>
+				<li><a href="https://github.com/stealjs/steal">GitHub</a></li>
+				<li><a href="https://gitter.im/stealjs/steal">Chat</a></li>
+			</ul>
+
+			<div class="pull-right">
+				<div class="bitovi-menu">
+					<a href="https://www.bitovi.com" class="bitovi icon-bits">Bitovi</a>
+					<ul class="dropdown-menu">
+						<li><a href="https://www.bitovi.com">Bitovi.com</a></li>
+						<li><a href="https://www.bitovi.com/blog">Blog</a></li>
+						<li><a href="https://www.bitovi.com/design">Design</a></li>
+						<li><a href="https://www.bitovi.com/development">Development</a></li>
+						<li><a href="https://www.bitovi.com/training">Training</a></li>
+						<li><a href="https://www.bitovi.com/open-source">Open Source</a></li>
+						<li><a href="https://www.bitovi.com/about">About</a></li>
+						<li><a href="https://www.bitovi.com/contact">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+
+	
+<div class="container api">
+
+	
+	<nav class="sidebar">
+		
+		<ul class="api cascading primary-grouping">
+	
+		
+			<li class="search-container active parent">
+				<a class="sidebar-title" href="index.html" data-search="StealJS">
+					StealJS
+				</a>
+				
+			</li>
+		
+			<li class="search-container active parent">
+				<a class="sidebar-title" href="static.html" data-search="static">
+					static
+				</a>
+				
+			</li>
+		
+			<li class="search-container active parent">
+				<a class="sidebar-title" href="static.ListCache.html" data-search="static.ListCache">
+					
+				</a>
+				
+			</li>
+		
+			<li class="search-container active parent">
+				<a class="sidebar-title" href="static.ListCache.Stack.html" data-search="static.ListCache.Stack">
+					
+				</a>
+				
+			</li>
+		
+			<li class="search-container active parent">
+				<a class="sidebar-title" href="static.ListCache.Stack.static.html" data-search="static">
+					static
+				</a>
+				
+			</li>
+		
+			<li class="search-container active parent">
+				<a class="sidebar-title" href="static.ListCache.Stack.static.MapCache.html" data-search="static.ListCache.Stack.static.MapCache">
+					
+				</a>
+				
+			</li>
+		
+			<li class="search-container active parent">
+				<a class="sidebar-title" href="static.ListCache.Stack.static.MapCache.static.html" data-search="static">
+					static
+				</a>
+				
+			</li>
+		
+
+		
+			
+				<li class="search-container active">
+					<a
+						class="sidebar-title"
+						href="static.ListCache.Stack.static.MapCache.static.SetCache.html"
+						data-search="static.ListCache.Stack.static.MapCache.static.SetCache"
+					>
+						
+					</a>
+					
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.Buffer.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.Buffer">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.COMPARE_PARTIAL_FLAG.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.COMPARE_PARTIAL_FLAG">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.INFINITY.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.INFINITY">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.Uint8Array.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.Uint8Array">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.apply.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.apply">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.arrayLikeKeys.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.arrayLikeKeys">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.arrayReduce.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.arrayReduce">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.assignMergeValue.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.assignMergeValue">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.baseFor.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.baseFor">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.baseGet.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.baseGet">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.baseGetAllKeys.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.baseGetAllKeys">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.baseIsEqual.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.baseIsEqual">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.baseMap.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.baseMap">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.baseToString.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.baseToString">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.cacheHas.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.cacheHas">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.castPath.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.castPath">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.cloneBuffer.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.cloneBuffer">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.cloneTypedArray.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.cloneTypedArray">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.createFind.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.createFind">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.dataViewCtorString.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.dataViewCtorString">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.equalArrays.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.equalArrays">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.freeExports.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.freeExports">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.freeGlobal.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.freeGlobal">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.freeModule.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.freeModule">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.freeProcess.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.freeProcess">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.funcProto.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.funcProto">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.funcToString.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.funcToString">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.getAllKeys.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.getAllKeys">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.getSymbolsIn.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.getSymbolsIn">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.getTag.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.getTag">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.hasOwnProperty.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.hasOwnProperty">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.hasPath.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.hasPath">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.initCloneObject.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.initCloneObject">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.isStrictComparable.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.isStrictComparable">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.mapTag.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.mapTag">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.mapToArray.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.mapToArray">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.matchesStrictComparable.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.matchesStrictComparable">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.moduleExports.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.moduleExports">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.nodeUtil.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.nodeUtil">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.objectProto.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.objectProto">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.overArg.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.overArg">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.symbolProto.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.symbolProto">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.toSource.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.toSource">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>static</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.ArraySet.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.ArraySet">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.ArraySet_add.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.ArraySet_add">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.ArraySet_at.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.ArraySet_at">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.ArraySet_fromArray.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.ArraySet_fromArray">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.ArraySet_has.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.ArraySet_has">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.ArraySet_indexOf.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.ArraySet_indexOf">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.ArraySet_size.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.ArraySet_size">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.ArraySet_toArray.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.ArraySet_toArray">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.Buffer.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.Buffer">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.Buffer.alloc.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.Buffer.alloc">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.Buffer.allocUnsafe.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.Buffer.allocUnsafe">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.Buffer.allocUnsafeSlow.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.Buffer.allocUnsafeSlow">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.Buffer.from.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.Buffer.from">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.Emitter.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.Emitter">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="constructor" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.Hash.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.Hash">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.SourceMapGenerator.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.SourceMapGenerator">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.SourceMapGenerator_addMapping.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.SourceMapGenerator_addMapping">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.SourceMapGenerator_applySourceMap.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.SourceMapGenerator_applySourceMap">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.SourceMapGenerator_fromSourceMap.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.SourceMapGenerator_fromSourceMap">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.SourceMapGenerator_serializeMappings.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.SourceMapGenerator_serializeMappings">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.SourceMapGenerator_setSourceContent.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.SourceMapGenerator_setSourceContent">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.SourceMapGenerator_toJSON.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.SourceMapGenerator_toJSON">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.SourceMapGenerator_toString.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.SourceMapGenerator_toString">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.SourceMapGenerator_validateMapping.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.SourceMapGenerator_validateMapping">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.TYPED_ARRAY_SUPPORT.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.TYPED_ARRAY_SUPPORT">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.applyClassDecorators.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.applyClassDecorators">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.applyEnsureOrdering.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.applyEnsureOrdering">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.applyMethodDecorators.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.applyMethodDecorators">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.applyObjectDecorators.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.applyObjectDecorators">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.applyTargetDecorators.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.applyTargetDecorators">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.base64VLQ_decode.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.base64VLQ_decode">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.base64VLQ_encode.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.base64VLQ_encode">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.coerce.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.coerce">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.createDebug.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.createDebug">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.disable.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.disable">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.enable.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.enable">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.enabled.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.enabled">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container active ">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.ensureApplyDecoratedDescriptorHelper.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.ensureApplyDecoratedDescriptorHelper">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.ensureInitializerDefineProp.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.ensureInitializerDefineProp">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.ensureInitializerWarning.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.ensureInitializerWarning">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.exports.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.exports">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.formatters.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.formatters">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.fromVLQSigned.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.fromVLQSigned">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.funcProto.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.funcProto">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.funcToString.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.funcToString">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.hasOwnProperty.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.hasOwnProperty">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.invariant.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.invariant">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.isReference.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.isReference">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.module.exports.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.module.exports">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.names.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.names">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.objectCtorString.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.objectCtorString">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.objectTag.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.objectTag">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.selectColor.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.selectColor">
+							
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="static.ListCache.Stack.static.MapCache.static.SetCache.static.toVLQSigned.html" data-search="static.ListCache.Stack.static.MapCache.static.SetCache.static.toVLQSigned">
+							
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+		</ul>
+	
+
+
+				</li>
+			
+		
+	
+</ul>
+
+	</nav>
+	
+
+	
+	<article class="content docs">
+	
+
+		
+		<section class="title">
+			<div class="heading">
+<h1></h1>
+	<ul class="tags">
+		<li>function</li>
+	</ul>
+	
+	
+</div>
+
+<div class="sub-heading">
+	
+	
+	<span class="inherits">&nbsp;</span>
+</div>
+
+<ul class="links">
+	
+	
+	
+</ul>
+<br />
+
+		</section>
+		
+
+		
+		<section class="contents">
+			<div class="on-this-page-container"></div>
+		</section>
+		
+
+		
+
+		
+		<section class="description">
+			<p>Add a helper to take an initial descriptor, apply some decorators to it, and optionally
+define the property.</p>
+
+		</section>
+		
+
+		
+			
+		
+
+		
+			<section class="signature">
+				<h2 id="sig_">static.ensureApplyDecoratedDescriptorHelper(path, state)
+</h2>
+<div class="signature-wrapper">
+<p>Add a helper to take an initial descriptor, apply some decorators to it, and optionally
+define the property.</p>
+
+
+	<h3>Parameters</h3>
+
+	<ol class="parameters">
+		
+		<li class="parameter">
+			<h4>path
+				<code>{*}</code></h4>
+			<div class="description">
+				
+			</div>
+			
+			
+			
+		</li>
+		
+		<li class="parameter">
+			<h4>state
+				<code>{*}</code></h4>
+			<div class="description">
+				
+			</div>
+			
+			
+			
+		</li>
+		
+	</ol>
+
+
+
+
+
+
+</div>
+
+			</section>
+		
+
+
+		
+		<section class="comment">
+			
+		</section>
+		
+		
+
+		
+
+		
+
+	
+	</article>
+	
+
+
+</div>
+
+
+<survey-ad>
+  <button aria-label="Close" class="close" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <a href="https://donejs.com/survey.html" target="_blank">
+    Help us improve StealJS by taking our community survey
+  </a>
+</survey-ad>
+
+
+	
+	<footer>
+		<nav class="container">
+			<a class="brand javascriptmvc" href="index.html"></a>
+		</nav>
+	</footer>
+	
+
+	<script type="text/javascript">
+		var docObject = {"type":"function","name":"static.ListCache.Stack.static.MapCache.static.SetCache.static.ensureApplyDecoratedDescriptorHelper","params":[{"name":"path","types":[{"type":"*"}]},{"name":"state","types":[{"type":"*"}]}],"parent":"static.ListCache.Stack.static.MapCache.static.SetCache.static","src":{"line":36471,"codeLine":36475,"path":"node_modules/steal/ext/babel.js"},"description":"Add a helper to take an initial descriptor, apply some decorators to it, and optionally\ndefine the property.\n","pathToRoot":".."};
+	</script>
+
+	
+		<script>
+		  steal = {
+		    instantiated: {
+		      "bundles/bit-docs-site/static.css!$css" : null
+		    }
+		  }
+		</script>
+		<script type='text/javascript'
+				data-main="bit-docs-site/static"
+				src="./static/node_modules/steal/steal.production.js"></script>
+	
+</body>
+
+</html>

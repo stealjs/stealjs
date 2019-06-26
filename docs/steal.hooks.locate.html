@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: node_modules/steal/docs/hook-locate.md
+	@function steal.hooks.locate
+######################################################################## -->
+
+<!--[if lt IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 9]>
+<html class="no-js ie ie9" lang="en">
+<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>StealJS - locate </title>
+	<meta name="description" content="A loader hook that is used to identify the location (such as the URL) where a module can be fetched.">
+	<meta name="author" content="">
+	<meta property="og:title" content="StealJS - locate ">
+	<meta property="og:description" content="A loader hook that is used to identify the location (such as the URL) where a module can be fetched.">
+	<meta property="og:image" content="https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png">
+	<script type="application/ld+json">
+		{
+			"@context": "http://www.schema.org",
+			"@type": "SoftwareSourceCode",
+			"applicationCategory": "DeveloperApplication",
+			"brand": "Bitovi",
+			"category": "JavaScript Frameworks",
+			"codeRepository": "https://github.com/stealjs/steal",
+			"description": "A loader hook that is used to identify the location (such as the URL) where a module can be fetched.",
+			"image": "https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png",
+			"license": "https://github.com/stealjs/steal/blob/master/license.md",
+			"logo": "https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png",
+			"name": "StealJS - locate ",
+			"programmingLanguage": "JavaScript"
+		}
+	</script>
+	
+		<link rel="stylesheet" type="text/css" href="./static/bundles/bit-docs-site/static.css">
+	
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-2302003-20', 'auto');
+			ga('send', 'pageview');
+		</script>
+	
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="static/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body class="docs">
+	
+	<header>
+		
+		<div style="display: none;" class="navbar"></div>
+		<nav class="container">
+			<div class="logo-menu">
+				<a class="brand" href="./index.html">StealJS</a>
+
+				<ul class="dropdown-menu">
+					<li><a href="https://donejs.com/">DoneJS</a></li>
+					<li><a href="https://stealjs.com/">StealJS</a></li>
+					<li><a href="https://jquerypp.com/">jQuery ++</a></li>
+					<li><a href="https://funcunit.com/">FuncUnit</a></li>
+					<li><a href="https://documentjs.com/">DocumentJS</a></li>
+				</ul>
+			</div>
+
+			<ul class="nav">
+				<li><a href="https://stealjs.com">Home</a></li>
+
+				
+          <li class="active"><a href="index.html">Api</a></li>
+        
+
+				<li><a href="https://twitter.com/stealjs">Twitter</a></li>
+				<li><a href="https://github.com/stealjs/steal">GitHub</a></li>
+				<li><a href="https://gitter.im/stealjs/steal">Chat</a></li>
+			</ul>
+
+			<div class="pull-right">
+				<div class="bitovi-menu">
+					<a href="https://www.bitovi.com" class="bitovi icon-bits">Bitovi</a>
+					<ul class="dropdown-menu">
+						<li><a href="https://www.bitovi.com">Bitovi.com</a></li>
+						<li><a href="https://www.bitovi.com/blog">Blog</a></li>
+						<li><a href="https://www.bitovi.com/design">Design</a></li>
+						<li><a href="https://www.bitovi.com/development">Development</a></li>
+						<li><a href="https://www.bitovi.com/training">Training</a></li>
+						<li><a href="https://www.bitovi.com/open-source">Open Source</a></li>
+						<li><a href="https://www.bitovi.com/about">About</a></li>
+						<li><a href="https://www.bitovi.com/contact">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+
+	
+<div class="container api">
+
+	
+	<nav class="sidebar">
+		
+		<ul class="api cascading primary-grouping">
+	
+		
+			<li class="search-container active parent">
+				<a class="sidebar-title" href="index.html" data-search="StealJS">
+					StealJS
+				</a>
+				
+			</li>
+		
+
+		
+			
+				<li class="search-container active">
+					<a
+						class="sidebar-title"
+						href="steal.html"
+						data-search="steal"
+					>
+						steal
+					</a>
+					
+	
+		<ul>
+			
+				
+					
+						<li class="heading search-container">
+							<span>config</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="config.babelOptions.html" data-search="babelOptions">
+							babelOptions
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.baseURL.html" data-search="baseURL">
+							baseURL
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.buildConfig.html" data-search="buildConfig">
+							buildConfig
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.builtins.html" data-search="builtins">
+							builtins
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.bundle.html" data-search="bundle">
+							bundle
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.bundles.html" data-search="bundles">
+							bundles
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.bundlesPath.html" data-search="bundlesPath">
+							bundlesPath
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.cacheKey.html" data-search="cacheKey">
+							cacheKey
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.cacheVersion.html" data-search="cacheVersion">
+							cacheVersion
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.config.html" data-search="config">
+							config
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.configMain.html" data-search="configMain">
+							configMain
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.configPath.html" data-search="configPath">
+							configPath
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.depsbundle.html" data-search="depsBundle">
+							depsBundle
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.devbundle.html" data-search="devBundle">
+							devBundle
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.env.html" data-search="env">
+							env
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.envs.html" data-search="envs">
+							envs
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.ext.html" data-search="ext">
+							ext
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.instantiated.html" data-search="instantiated">
+							instantiated
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.jsonOptions.html" data-search="jsonOptions">
+							jsonOptions
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.loadBundles.html" data-search="loadBundles">
+							loadBundles
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.main.html" data-search="main">
+							main
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.map.html" data-search="map">
+							map
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.meta.html" data-search="meta">
+							meta
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.paths.html" data-search="paths">
+							paths
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.stealPath.html" data-search="stealPath">
+							stealPath
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="config.transpiler.html" data-search="transpiler">
+							transpiler
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>functions</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="steal.done.html" data-search="steal.done">
+							steal.done
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="steal.import.html" data-search="steal.import">
+							steal.import
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="steal.isEnv.html" data-search="steal.isEnv">
+							steal.isEnv
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="steal.isPlatform.html" data-search="steal.isPlatform">
+							steal.isPlatform
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="steal.loader.import.html" data-search="steal.loader.import">
+							steal.loader.import
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="steal.setContextual.html" data-search="steal.setContextual">
+							steal.setContextual
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>hooks</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal.hooks.fetch.html" data-search="fetch">
+							fetch
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal.hooks.instantiate.html" data-search="instantiate">
+							instantiate
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container active ">
+						<a class="function" href="steal.hooks.locate.html" data-search="locate">
+							locate
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal.hooks.normalize.html" data-search="normalize">
+							normalize
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal.hooks.translate.html" data-search="translate">
+							translate
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>modules</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="@config.html" data-search="@config">
+							@config
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="@dev.html" data-search="@dev">
+							@dev
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="@less-engine.html" data-search="@less-engine">
+							@less-engine
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="@loader.html" data-search="@loader">
+							@loader
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="@steal.html" data-search="@steal">
+							@steal
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="@traceur.html" data-search="@traceur">
+							@traceur
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="npm.html" data-search="npm">
+							npm
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal.live-reload.html" data-search="live-reload">
+							live-reload
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal.steal-clone.html" data-search="steal-clone">
+							steal-clone
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>other</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal.steal-module.html" data-search="steal-module script tag">
+							steal-module script tag
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>schemes</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="locate.html" data-search="locate://">
+							locate://
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="property" href="tilde.html" data-search="~">
+							~
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>syntaxes</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="syntax.CommonJS.html" data-search="CommonJS ">
+							CommonJS 
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="syntax.amd.html" data-search="AMD ">
+							AMD 
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="syntax.es6.html" data-search="ES6">
+							ES6
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="syntax.global.html" data-search="global">
+							global
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="syntax.steal.html" data-search="steal ">
+							steal 
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>types</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="load.html" data-search="load">
+							load
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="load.metadata.html" data-search="metadata">
+							metadata
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="moduleIdentifier.html" data-search="moduleIdentifier">
+							moduleIdentifier
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="moduleName.html" data-search="moduleName">
+							moduleName
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+		</ul>
+	
+
+
+				</li>
+			
+		
+	
+</ul>
+
+	</nav>
+	
+
+	
+	<article class="content docs">
+	
+
+		
+		<section class="title">
+			<div class="heading">
+<h1>locate</h1>
+	<ul class="tags">
+		<li>function</li>
+	</ul>
+	
+	
+</div>
+
+<div class="sub-heading">
+	
+	
+		<span class="module">steal.hooks.locate</span>
+	
+	
+	
+	<span class="inherits">&nbsp;</span>
+</div>
+
+<ul class="links">
+	
+	
+	
+</ul>
+<br />
+
+		</section>
+		
+
+		
+		<section class="contents">
+			<div class="on-this-page-container"></div>
+		</section>
+		
+
+		
+
+		
+		<section class="description">
+			<p>A loader hook that is used to identify the location (such as the URL) where a module can be fetched.</p>
+
+		</section>
+		
+
+		
+			
+				<section class="signature">
+					<h2 id="sig_locate_load_">locate(load)
+</h2>
+<div class="signature-wrapper">
+
+
+	<h3>Parameters</h3>
+
+	<ol class="parameters">
+		
+		<li class="parameter">
+			<h4>load
+				<code>{<a href="load.html" title="The load object is a POJO that is used to refer to a module during module loading lifecycle hooks.">load</a>}</code></h4>
+			<div class="description">
+				<p>The <em>load</em> object associated with this module.</p>
+
+			</div>
+			
+			
+			
+		</li>
+		
+	</ol>
+
+
+	<h3>Returns</h3>
+	<div class="returns">
+		<h4><code>{<a href="Promise.html" title="Create a promise whose fate is determined by resolver">Promise</a> | String}</code></h4>
+		<div class="description">
+			<p>the result</p>
+
+		</div>
+		
+		
+	</div>
+	
+
+
+
+
+
+</div>
+
+				</section>
+			
+		
+
+		
+
+
+		
+		<section class="comment">
+			<p>The <strong>locate</strong> hook is the second hook in the module loading lifecycle. It is used to determine from where a module can be fetched.</p>
+<pre><code>loader.locate({
+  name: &quot;foo&quot;
+}).then(function(address){
+  address === &quot;http://example.com/foo.js&quot;
+});
+</code></pre>
+
+		</section>
+		
+		
+
+		
+
+		
+
+	
+	</article>
+	
+
+
+</div>
+
+
+<survey-ad>
+  <button aria-label="Close" class="close" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <a href="https://donejs.com/survey.html" target="_blank">
+    Help us improve StealJS by taking our community survey
+  </a>
+</survey-ad>
+
+
+	
+	<footer>
+		<nav class="container">
+			<a class="brand javascriptmvc" href="index.html"></a>
+		</nav>
+	</footer>
+	
+
+	<script type="text/javascript">
+		var docObject = {"src":{"path":"node_modules/steal/docs/hook-locate.md"},"description":"\nA loader hook that is used to identify the location (such as the URL) where a module can be fetched.\n","title":"locate","name":"steal.hooks.locate","type":"function","parent":"StealJS.hooks","signatures":[{"code":"locate(load)","description":"","params":[{"types":[{"type":"load"}],"name":"load","description":"The *load* object associated with this module.\n"}],"returns":{"types":[{"type":"Promise"},{"type":"String"}],"description":"the result\n"}}],"_curParam":{"types":[{"type":"load"}],"name":"load","description":"The *load* object associated with this module.\n"},"_curReturn":{"types":[{"type":"Promise"},{"type":"String"}],"description":"the result\n"},"comment":" ","pathToRoot":".."};
+	</script>
+
+	
+		<script>
+		  steal = {
+		    instantiated: {
+		      "bundles/bit-docs-site/static.css!$css" : null
+		    }
+		  }
+		</script>
+		<script type='text/javascript'
+				data-main="bit-docs-site/static"
+				src="./static/node_modules/steal/steal.production.js"></script>
+	
+</body>
+
+</html>

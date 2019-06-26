@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: node_modules/steal-tools/doc/types/export-object.md
+	@typedef steal-tools.export.object
+######################################################################## -->
+
+<!--[if lt IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 9]>
+<html class="no-js ie ie9" lang="en">
+<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>StealJS - ExportObject </title>
+	<meta name="description" content="An object that specifies the modules to load and their outputs. This is used by steal-tools.export and steal-tools.grunt.export.">
+	<meta name="author" content="">
+	<meta property="og:title" content="StealJS - ExportObject ">
+	<meta property="og:description" content="An object that specifies the modules to load and their outputs. This is used by steal-tools.export and steal-tools.grunt.export.">
+	<meta property="og:image" content="https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png">
+	<script type="application/ld+json">
+		{
+			"@context": "http://www.schema.org",
+			"@type": "SoftwareSourceCode",
+			"applicationCategory": "DeveloperApplication",
+			"brand": "Bitovi",
+			"category": "JavaScript Frameworks",
+			"codeRepository": "https://github.com/stealjs/steal",
+			"description": "An object that specifies the modules to load and their outputs. This is used by steal-tools.export and steal-tools.grunt.export.",
+			"image": "https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png",
+			"license": "https://github.com/stealjs/steal/blob/master/license.md",
+			"logo": "https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png",
+			"name": "StealJS - ExportObject ",
+			"programmingLanguage": "JavaScript"
+		}
+	</script>
+	
+		<link rel="stylesheet" type="text/css" href="./static/bundles/bit-docs-site/static.css">
+	
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-2302003-20', 'auto');
+			ga('send', 'pageview');
+		</script>
+	
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="static/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body class="docs">
+	
+	<header>
+		
+		<div style="display: none;" class="navbar"></div>
+		<nav class="container">
+			<div class="logo-menu">
+				<a class="brand" href="./index.html">StealJS</a>
+
+				<ul class="dropdown-menu">
+					<li><a href="https://donejs.com/">DoneJS</a></li>
+					<li><a href="https://stealjs.com/">StealJS</a></li>
+					<li><a href="https://jquerypp.com/">jQuery ++</a></li>
+					<li><a href="https://funcunit.com/">FuncUnit</a></li>
+					<li><a href="https://documentjs.com/">DocumentJS</a></li>
+				</ul>
+			</div>
+
+			<ul class="nav">
+				<li><a href="https://stealjs.com">Home</a></li>
+
+				
+          <li class="active"><a href="index.html">Api</a></li>
+        
+
+				<li><a href="https://twitter.com/stealjs">Twitter</a></li>
+				<li><a href="https://github.com/stealjs/steal">GitHub</a></li>
+				<li><a href="https://gitter.im/stealjs/steal">Chat</a></li>
+			</ul>
+
+			<div class="pull-right">
+				<div class="bitovi-menu">
+					<a href="https://www.bitovi.com" class="bitovi icon-bits">Bitovi</a>
+					<ul class="dropdown-menu">
+						<li><a href="https://www.bitovi.com">Bitovi.com</a></li>
+						<li><a href="https://www.bitovi.com/blog">Blog</a></li>
+						<li><a href="https://www.bitovi.com/design">Design</a></li>
+						<li><a href="https://www.bitovi.com/development">Development</a></li>
+						<li><a href="https://www.bitovi.com/training">Training</a></li>
+						<li><a href="https://www.bitovi.com/open-source">Open Source</a></li>
+						<li><a href="https://www.bitovi.com/about">About</a></li>
+						<li><a href="https://www.bitovi.com/contact">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+
+	
+<div class="container api">
+
+	
+	<nav class="sidebar">
+		
+		<ul class="api cascading primary-grouping">
+	
+		
+			<li class="search-container active parent">
+				<a class="sidebar-title" href="index.html" data-search="StealJS">
+					StealJS
+				</a>
+				
+			</li>
+		
+
+		
+			
+				<li class="search-container active">
+					<a
+						class="sidebar-title"
+						href="steal-tools.html"
+						data-search="steal-tools"
+					>
+						steal-tools
+					</a>
+					
+	
+		<ul>
+			
+				
+					
+						<li class="heading search-container">
+							<span>JavaScript</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.build.html" data-search="build">
+							build
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.bundle.html" data-search="bundle">
+							bundle
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.export.html" data-search="export">
+							export
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.optimize.html" data-search="optimize">
+							optimize
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.transform.html" data-search="transform">
+							transform
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.transformImport.html" data-search="transformImport">
+							transformImport
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>Command Line</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.cmd.build.html" data-search="steal-tools build">
+							steal-tools build
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.cmd.bundle.html" data-search="steal-tools bundle">
+							steal-tools bundle
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.cmd.export.html" data-search="steal-tools export">
+							steal-tools export
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.cmd.live-reload.html" data-search="steal-tools live-reload">
+							steal-tools live-reload
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.cmd.optimize.html" data-search="steal-tools optimize">
+							steal-tools optimize
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.cmd.steal-tools.html" data-search="steal-tools">
+							steal-tools
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.cmd.transform.html" data-search="steal-tools transform">
+							steal-tools transform
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>Export Helpers</span>
+							
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>Streams</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.streams.bundle.html" data-search="bundle">
+							bundle
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.streams.concat.html" data-search="concat">
+							concat
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.streams.graph.html" data-search="graph">
+							graph
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.streams.minify.html" data-search="minify">
+							minify
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.streams.transpile.html" data-search="transpile">
+							transpile
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.streams.write.html" data-search="write">
+							write
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>Types</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="steal-tools.BuildOptions.html" data-search="BuildOptions">
+							BuildOptions
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.BuildOptions.transpile.html" data-search="Transpile">
+							Transpile
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="steal-tools.BuildResult.html" data-search="BuildResult">
+							BuildResult
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="steal-tools.BundleAssetsOptions.html" data-search="BundleAssetsOptions">
+							BundleAssetsOptions
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="steal-tools.StealConfig.html" data-search="StealConfig">
+							StealConfig
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container active ">
+						<a class="typedef" href="steal-tools.export.object.html" data-search="ExportObject">
+							ExportObject
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="steal-tools.export.output.html" data-search="ExportOutput">
+							ExportOutput
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="steal-tools.source.object.html" data-search="SourceObject">
+							SourceObject
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="steal-tools.transform.options.html" data-search="TransformOptions">
+							TransformOptions
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+		</ul>
+	
+
+
+				</li>
+			
+		
+	
+</ul>
+
+	</nav>
+	
+
+	
+	<article class="content docs">
+	
+
+		
+		<section class="title">
+			<div class="heading">
+<h1>ExportObject</h1>
+	<ul class="tags">
+		<li>typedef</li>
+	</ul>
+	
+	
+</div>
+
+<div class="sub-heading">
+	
+	
+		<span class="module">steal-tools.export.object</span>
+	
+	
+	
+	<code>{Object}</code>
+	
+	<span class="inherits">&nbsp;</span>
+</div>
+
+<ul class="links">
+	
+	
+	
+</ul>
+<br />
+
+		</section>
+		
+
+		
+		<section class="contents">
+			<div class="on-this-page-container"></div>
+		</section>
+		
+
+		
+
+		
+		<section class="description">
+			<p>An object that specifies the modules to load and their outputs. This is used by
+<a href="steal-tools.export.html" title="Export a project's modules to other forms and formats declaratively.">export</a> and [steal-tools.grunt.export].</p>
+
+		</section>
+		
+
+		
+			
+			<section class='primary-options'>
+				
+
+  <h2 id="sig_">Object
+</h2>
+<div class="signature-wrapper">
+
+
+
+
+
+
+  <h3>Properties</h3>
+  
+  <ol class="parameters">
+	
+	<li class="parameter">
+		<h4>steal
+			<code>{<a href="steal-tools.StealConfig.html" title="Configuration values needed for StealJS to load modules. Some set of the following
+values are required:">StealConfig</a>}</code></h4>
+		<div class="description">
+			<p>Specifies the <a href="config.config.html" title="Specifies configuration values for Steal. This should be used to
+set properties like config.configPath and config.env.">config</a> values used
+to load modules.  At a minimum, some set of <a href="config.main.html" title="The entry point of the application.">main</a>, <a href="config.baseURL.html" title="Specifies the root path to use for all module lookups.">baseURL</a>,
+or <a href="config.configPath.html" title="A shortcut for specifying the @config module path and baseURL.">configPath</a> must be specified.</p>
+<pre><code>steal: {
+  main: ['mymodule'],
+  config: __dirname+&quot;/config.js&quot;
+}
+</code></pre>
+
+		</div>
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>options
+			<code>{Object}</code></h4>
+		<div class="description">
+			<p>Options that configure the following:</p>
+<ul>
+<li>[debug=false] <code>true</code> turns on debug messages. Defaults to <code>false</code>.</li>
+<li>[quiet=false] No logging.  Defaults to <code>false</code>.</li>
+</ul>
+
+		</div>
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>outputs
+			<code>{Object&lt;String,<a href="steal-tools.export.output.html" title="Specifies the behavior for an output in an steal-tools.export.object &quot;outputs&quot; property. These properties are in
+addition to steal-tools.transform.options.">ExportOutput</a>&gt;}</code></h4>
+		<div class="description">
+			<p>Configures output files to be written.</p>
+
+		</div>
+		
+		
+		
+	</li>
+	
+</ol>
+
+
+</div>
+
+  
+
+			</section>
+			
+		
+
+		
+
+
+		
+		<section class="comment">
+			<h2>Use</h2>
+<p>Each ExportObject task is configured by three values:</p>
+<ul>
+<li>steal - Describes the <a href="config.config.html" title="Specifies configuration values for Steal. This should be used to
+set properties like config.configPath and config.env.">config</a> values used to load modules; this is passed to <a href="steal-tools.transformImport.html" title="Loads a module, and its dependencies, and provides a steal-tools.transform
+method, so they can be written out in another form.">transformImport</a>.</li>
+<li>options - Configures special behavior of the loader such as logging.</li>
+<li>outputs - Configures the modules that should be written out, how they
+should be written out, and where they should be written.</li>
+</ul>
+<h2>steal</h2>
+<p>A <a href="steal-tools.StealConfig.html" title="Configuration values needed for StealJS to load modules. Some set of the following
+values are required:">StealConfig</a> object that is used to load modules. Typically, you will want to specify at least the <code>config</code> and <code>main</code> options, like so:</p>
+<pre><code>steal: {
+  config: __dirname + &quot;/config.js&quot;,
+  main: [&quot;math/add&quot;, &quot;math/subtract&quot;]
+}
+</code></pre>
+<h2>options</h2>
+<p>Options configures logging. Example:</p>
+<pre><code>options: { verbose: true }
+</code></pre>
+<p>or</p>
+<pre><code>options: { quiet: true }
+</code></pre>
+<h2>outputs</h2>
+<p><code>outputs</code> specifies different ways the modules loaded by <code>steal</code> are written out. It's
+an object of <a href="steal-tools.export.output.html" title="Specifies the behavior for an output in an steal-tools.export.object &quot;outputs&quot; property. These properties are in
+addition to steal-tools.transform.options.">ExportOutput</a> objects.  Each <a href="steal-tools.export.output.html" title="Specifies the behavior for an output in an steal-tools.export.object &quot;outputs&quot; property. These properties are in
+addition to steal-tools.transform.options.">ExportOutput</a>
+supports the following options:</p>
+<ul>
+<li>modules <i>{Array&lt;<a href="moduleName.html" title="">moduleName</a> | comparitor&gt;}</i></li>
+<li>eachModule <i>{Array&lt;<a href="moduleName.html" title="">moduleName</a> | comparitor&gt;}</i></li>
+<li>graphs <i>{Array&lt;<a href="moduleName.html" title="">moduleName</a> | comparitor&gt;}</i></li>
+<li>dest <i>{String | function(moduleName, moduleData, load, loader)}</i></li>
+<li>ignore <i>{Array&lt;<a href="moduleName.html" title="">moduleName</a> | <a href="steal-tools.export.ignorer.html" title="Specifies a function that decides of a module should be ignored (not included) in the exported artifact.">ignorer</a>()&gt;}</i></li>
+</ul>
+<p>And the options available to <a href="steal-tools.transform.options.html" title="Specify the behavior of a transform.">TransformOptions</a>.</p>
+<ul>
+<li>ignore <i>{Array&lt;RegExp | String | function(String, Load)&gt;}</i></li>
+<li>removeDevelopmentCode <i>{Boolean}</i></li>
+<li>format <i>{String}</i></li>
+<li>noGlobalShim <i>{Boolean}</i></li>
+<li>exports <i>{Object&lt;<a href="moduleName.html" title="">moduleName</a>,String&gt;}</i></li>
+<li>useNormalizedDependencies <i>{Boolean}</i></li>
+<li>normalize <i>{function(depName, depLoad, curName, curLoad)}</i></li>
+<li>minify <i>{Boolean}</i></li>
+<li>ignoreAllDependencies <i>{Boolean}</i></li>
+<li>includeTraceurRuntime <i>{Boolean}</i></li>
+<li>sourceMaps <i>{Boolean}</i></li>
+<li>sourceMapsContent <i>{Boolean}</i></li>
+</ul>
+<p>Only one of <code>modules</code>, <code>eachModule</code>, or <code>graphs</code> should be specified.</p>
+<p>Example:</p>
+<pre><code>outputs: {
+  &quot;global first and second together without jQuery&quot;: {
+    modules: [&quot;first&quot;,&quot;second&quot;],
+    ignore: [&quot;jquery&quot;],
+    format: &quot;global&quot;
+  },
+  &quot;first and second seperately without jQuery&quot;: {
+    eachModule: [&quot;first&quot;,&quot;second&quot;],
+    ignore: [&quot;jquery&quot;],
+    format: &quot;global&quot;
+  },
+  &quot;first and second and their dependencies individually converted to amd&quot;: {
+    graphs: [&quot;first&quot;,&quot;second&quot;],
+    format: &quot;amd&quot;
+  }
+}
+</code></pre>
+<h3>output names</h3>
+<p>An output name can mixin default output options of an <strong>Export Helper</strong>, like [steal-tools/lib/build/helpers/cjs],
+by including a &quot;+&quot;, followed by the name of the export helper.  For example:</p>
+<pre><code>outputs: {
+  &quot;+amd&quot;: {},
+  &quot;+cjs&quot;: {dist: __dirname+&quot;cjs&quot;},
+  &quot;+global-js&quot;: {},
+  &quot;+global-css&quot;: {}
+}
+</code></pre>
+<p>The given output ExportObject's value will overwrite or modify the behavior of the <strong>Export Helper</strong>.  For example,
+<code>{dist: __dirname+&quot;/cjs&quot;}</code> will change the output destination of &quot;+cjs&quot;.</p>
+
+		</section>
+		
+		
+
+		
+
+		
+
+	
+	</article>
+	
+
+
+</div>
+
+
+<survey-ad>
+  <button aria-label="Close" class="close" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <a href="https://donejs.com/survey.html" target="_blank">
+    Help us improve StealJS by taking our community survey
+  </a>
+</survey-ad>
+
+
+	
+	<footer>
+		<nav class="container">
+			<a class="brand javascriptmvc" href="index.html"></a>
+		</nav>
+	</footer>
+	
+
+	<script type="text/javascript">
+		var docObject = {"src":{"path":"node_modules/steal-tools/doc/types/export-object.md"},"description":"\nAn object that specifies the modules to load and their outputs. This is used by\n[steal-tools.export] and [steal-tools.grunt.export].\n","type":"typedef","title":"ExportObject","types":[{"type":"Object","options":[{"name":"steal","description":"Specifies the [config.config] values used \nto load modules.  At a minimum, some set of [config.main main], [config.baseURL baseURL],\nor [config.configPath configPath] must be specified.\n\n```\nsteal: {\n  main: ['mymodule'],\n  config: __dirname+\"/config.js\"\n}\n```\n","types":[{"type":"steal-tools.StealConfig"}]},{"name":"options","description":"Options that configure the following:\n\n - [debug=false] `true` turns on debug messages. Defaults to `false`.\n - [quiet=false] No logging.  Defaults to `false`.\n\n","types":[{"type":"Object","options":[]}]},{"name":"outputs","description":"Configures output files to be written.\n","types":[{"type":"Object","template":[{"types":[{"type":"String"}]},{"types":[{"type":"steal-tools.export.output"}]}]}]}]}],"name":"steal-tools.export.object","parent":"steal-tools.types","templateRender":true,"comment":" ","pathToRoot":".."};
+	</script>
+
+	
+		<script>
+		  steal = {
+		    instantiated: {
+		      "bundles/bit-docs-site/static.css!$css" : null
+		    }
+		  }
+		</script>
+		<script type='text/javascript'
+				data-main="bit-docs-site/static"
+				src="./static/node_modules/steal/steal.production.js"></script>
+	
+</body>
+
+</html>

@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: doc/steal-topics/advanced/streams.md
+	@page steal-tools.guides.streams
+######################################################################## -->
+
+<!--[if lt IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 9]>
+<html class="no-js ie ie9" lang="en">
+<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>StealJS - Streaming API </title>
+	<meta name="description" content="In 0.14.0 StealTools added a new streaming API based on Node streams. This gives you a greater ability to interject your own functionality in the middle of the build process, or to exclude parts you don&#x27;t want (like if you didn&#x27;t want to write the results to the filesystem.">
+	<meta name="author" content="">
+	<meta property="og:title" content="StealJS - Streaming API ">
+	<meta property="og:description" content="In 0.14.0 StealTools added a new streaming API based on Node streams. This gives you a greater ability to interject your own functionality in the middle of the build process, or to exclude parts you don&#x27;t want (like if you didn&#x27;t want to write the results to the filesystem.">
+	<meta property="og:image" content="https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png">
+	<script type="application/ld+json">
+		{
+			"@context": "http://www.schema.org",
+			"@type": "SoftwareSourceCode",
+			"applicationCategory": "DeveloperApplication",
+			"brand": "Bitovi",
+			"category": "JavaScript Frameworks",
+			"codeRepository": "https://github.com/stealjs/steal",
+			"description": "In 0.14.0 StealTools added a new streaming API based on Node streams. This gives you a greater ability to interject your own functionality in the middle of the build process, or to exclude parts you don&#x27;t want (like if you didn&#x27;t want to write the results to the filesystem.",
+			"image": "https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png",
+			"license": "https://github.com/stealjs/steal/blob/master/license.md",
+			"logo": "https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png",
+			"name": "StealJS - Streaming API ",
+			"programmingLanguage": "JavaScript"
+		}
+	</script>
+	
+		<link rel="stylesheet" type="text/css" href="./static/bundles/bit-docs-site/static.css">
+	
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-2302003-20', 'auto');
+			ga('send', 'pageview');
+		</script>
+	
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="static/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body class="docs">
+	
+	<header>
+		
+		<div style="display: none;" class="navbar"></div>
+		<nav class="container">
+			<div class="logo-menu">
+				<a class="brand" href="./index.html">StealJS</a>
+
+				<ul class="dropdown-menu">
+					<li><a href="https://donejs.com/">DoneJS</a></li>
+					<li><a href="https://stealjs.com/">StealJS</a></li>
+					<li><a href="https://jquerypp.com/">jQuery ++</a></li>
+					<li><a href="https://funcunit.com/">FuncUnit</a></li>
+					<li><a href="https://documentjs.com/">DocumentJS</a></li>
+				</ul>
+			</div>
+
+			<ul class="nav">
+				<li><a href="https://stealjs.com">Home</a></li>
+
+				
+          <li class="active"><a href="index.html">Api</a></li>
+        
+
+				<li><a href="https://twitter.com/stealjs">Twitter</a></li>
+				<li><a href="https://github.com/stealjs/steal">GitHub</a></li>
+				<li><a href="https://gitter.im/stealjs/steal">Chat</a></li>
+			</ul>
+
+			<div class="pull-right">
+				<div class="bitovi-menu">
+					<a href="https://www.bitovi.com" class="bitovi icon-bits">Bitovi</a>
+					<ul class="dropdown-menu">
+						<li><a href="https://www.bitovi.com">Bitovi.com</a></li>
+						<li><a href="https://www.bitovi.com/blog">Blog</a></li>
+						<li><a href="https://www.bitovi.com/design">Design</a></li>
+						<li><a href="https://www.bitovi.com/development">Development</a></li>
+						<li><a href="https://www.bitovi.com/training">Training</a></li>
+						<li><a href="https://www.bitovi.com/open-source">Open Source</a></li>
+						<li><a href="https://www.bitovi.com/about">About</a></li>
+						<li><a href="https://www.bitovi.com/contact">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+
+	
+<div class="container api">
+
+	
+	<nav class="sidebar">
+		
+		<ul class="api cascading primary-grouping">
+	
+		
+
+		
+			
+				<li class="search-container active">
+					<a
+						class="sidebar-title"
+						href="index.html"
+						data-search="StealJS"
+					>
+						StealJS
+					</a>
+					
+	
+		<ul>
+			
+				
+					
+						<li class="heading search-container">
+							<span>step-by-step guides</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.guides.progressive_loading.html" data-search="Progressive Loading">
+							Progressive Loading
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.quick-start.html" data-search="Quick Start">
+							Quick Start
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.guides.boolean_conditional_loading.html" data-search="Boolean Conditional Loading">
+							Boolean Conditional Loading
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.guides.substitution_conditional_loading.html" data-search="Substitution Conditional Loading">
+							Substitution Conditional Loading
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>development</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.development-bundles.html" data-search="Development Bundles">
+							Development Bundles
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.using-npm-packages.html" data-search="Using npm Packages">
+							Using npm Packages
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.hot-module-replacement.html" data-search="Hot Module Replacement">
+							Hot Module Replacement
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.configuration.html" data-search="Configuration">
+							Configuration
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.conditionals.html" data-search="Conditional Loading">
+							Conditional Loading
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.babel.html" data-search="Babel">
+							Babel
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.circular.html" data-search="Circular Dependencies">
+							Circular Dependencies
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.error-messages.html" data-search="Error Messages">
+							Error Messages
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>bundling</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.optimized-builds.html" data-search="Optimized Builds">
+							Optimized Builds
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.code-splitting.html" data-search="Code Splitting">
+							Code Splitting
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.tree-shaking.html" data-search="Tree Shaking">
+							Tree Shaking
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.watch-mode.html" data-search="Watch Mode">
+							Watch Mode
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.multi-main.html" data-search="Multi-main Builds">
+							Multi-main Builds
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.project-exporting.html" data-search="Project Exporting">
+							Project Exporting
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>production</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.loading-from-cdn.html" data-search="Loading Scripts from a CDN">
+							Loading Scripts from a CDN
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.moving-to-prod.html" data-search="Moving to Production">
+							Moving to Production
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-bundle-manifest.server.html" data-search="Server templating in Node">
+							Server templating in Node
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-bundle-manifest.snippets.html" data-search="Generating HTML Snippets">
+							Generating HTML Snippets
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>advanced</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.writing-plugins.html" data-search="Writing Plugins">
+							Writing Plugins
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container active ">
+						<a class="page" href="steal-tools.guides.streams.html" data-search="Streaming API">
+							Streaming API
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>apis</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal.html" data-search="steal">
+							steal
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.html" data-search="steal-tools">
+							steal-tools
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>migrating</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.migrating.html" data-search="Migrating from Legacy Steal">
+							Migrating from Legacy Steal
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.topics.migrating-one.html" data-search="Migrating to StealJS 1.x">
+							Migrating to StealJS 1.x
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.topics.migrating-two.html" data-search="Migrating to StealJS 2.x">
+							Migrating to StealJS 2.x
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>about</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.why.html" data-search="Why StealJS">
+							Why StealJS
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="guides.Contributing.html" data-search="Contributing">
+							Contributing
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>ecosystem</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="grunt-steal.html" data-search="grunt-steal">
+							grunt-steal
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-bundle-manifest.html" data-search="steal-bundle-manifest">
+							steal-bundle-manifest
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-conditional.html" data-search="steal-conditional">
+							steal-conditional
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-css.html" data-search="steal-css">
+							steal-css
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-less.html" data-search="steal-less">
+							steal-less
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-mocha.html" data-search="steal-mocha">
+							steal-mocha
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-qunit.html" data-search="steal-qunit">
+							steal-qunit
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-socket.io.html" data-search="steal-socket.io">
+							steal-socket.io
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+		</ul>
+	
+
+
+				</li>
+			
+		
+	
+</ul>
+
+	</nav>
+	
+
+	
+	<article class="content docs">
+	
+
+		
+		<section class="title">
+			<div class="heading">
+<h1>Streaming API</h1>
+	<ul class="tags">
+		<li>page</li>
+	</ul>
+	
+	
+</div>
+
+<div class="sub-heading">
+	
+	
+		<span class="module">steal-tools.guides.streams</span>
+	
+	
+	
+	<span class="inherits">&nbsp;</span>
+</div>
+
+<ul class="links">
+	
+	
+	
+</ul>
+<br />
+
+		</section>
+		
+
+		
+		<section class="contents">
+			<div class="on-this-page-container"></div>
+		</section>
+		
+
+		
+
+		
+		<section class="description">
+			<p>In 0.14.0 StealTools added a new streaming API based on <a href="https://nodejs.org/api/stream.html">Node streams</a>. This gives you a greater ability to interject your own functionality in the middle of the build process, or to exclude parts you don't want (like if you didn't want to write the results to the filesystem.</p>
+
+		</section>
+		
+
+		
+			
+		
+
+		
+
+
+		
+		<section class="comment">
+			<p>The streaming APIs are more powerful, but more complex, if you just want to build your app you should use <a href="steal-tools.build.html" title="Build a module and all of its dependencies and, optionally, other bundles to progressively load.">build</a> instead. If you are new to streams consult the <a href="https://github.com/substack/stream-handbook">stream handbook</a> to learn what makes them useful.</p>
+<h1>Streams</h1>
+<p>The following are the streams that can be created. Each stream is explained individually and at the end of the docs we'll talking about putting them all together. Many of the examples use the <a href="https://www.npmjs.com/package/through2">through2</a> module, which provide an easy way to work with Node streams.</p>
+<h2>graph</h2>
+<p>The basis for StealTool's build process is a <strong>dependency graph</strong>. A dependency graph is an object that contains all of your app's dependencies. The key is the name of the module and the value is a [steal-tools.node] object.</p>
+<p>The graph stream is the first stream created and is required for use with all of the other streams.</p>
+<pre><code class="language-js">var s = require(&quot;steal-tools&quot;).streams;
+var through = require(&quot;through2&quot;);
+
+var graphStream = s.graph({
+    config: __dirname + &quot;/package.json!npm&quot;
+});
+
+graphStream.pipe(through(function(data){
+    // data contains a 'graph' property.
+}));
+</code></pre>
+<h2>transpile</h2>
+<p>Given a graph stream, <strong>transpile</strong> will transpile each module in the graph to AMD so that it can be bundled for production.</p>
+<pre><code class="language-js">var s = require(&quot;steal-tools&quot;).streams;
+var through = require(&quot;through2&quot;);
+
+var steal = {
+    config: __dirname + &quot;/package.json!npm&quot;
+};
+
+var transpileStream = s.graph(steal)
+    .pipe(s.transpile());
+
+transpileStream.pipe(through(function(data){
+    // data contains everything from the graphStream
+    // With the modules in data.dependencyGraph having
+    // been transpiled to AMD.
+}));
+</code></pre>
+<h2>minify</h2>
+<p>A <a href="steal-tools.streams.minify.html" title="Given a stream of steal-tools.BuildResult objects, minify the source of each module in each bundle. This is the default behavior of StealTool's multi-build.">minify</a> stream will minify the source of each module in your graph individually. You'll want to do this after transpiling.</p>
+<h2>bundle</h2>
+<p>The <a href="steal-tools.streams.bundle.html" title="The bundle stream takes a stream of steal-tools.BuildResult objects and applies a progressive loading algorithm to split the graph into separate bundles optimized for fast loading.">bundle</a> stream will analyze your dependency graph and split it into optimized bundles.</p>
+<pre><code class="language-js">var s = require(&quot;steal-tools&quot;).streams;
+var through = require(&quot;through2&quot;);
+
+var steal = {
+    config: __dirname + &quot;/package.json!npm&quot;
+};
+
+var bundleStream = s.graph(steal)
+    .pipe(s.transpile())
+    .pipe(s.minify())
+    .pipe(s.bundle());
+
+bundleStream.pipe(through(function(data){
+    // data contains everything from the graphStream
+    // and also contains a .bundles property
+}));
+</code></pre>
+<h2>concat</h2>
+<p>Once you've created the stream that contains all of your application's bundles, you can pipe it into a concat stream. The concat stream will <strong>concatenate</strong> the source from all of the graph's dependencies into a single source code.</p>
+<p>The <a href="steal-tools.BuildResult.html" title="The result if a multi-build.">BuildResult</a> object is what is returned from this stream, and each of the <strong>bundles</strong> within will now contain a <code>source</code> property.</p>
+<h2>write</h2>
+<p>After concatentating the bundles you call <strong>write</strong> to write the source to the filesystem. If you where only interested in examining the bundles in-memory you could skip this step.</p>
+<p>Otherwise, pipe in the result from <strong>concat</strong> here.</p>
+<h1>Putting it all together</h1>
+<p>Given these APIs you can construct your own build by piping the streams into each other. Here's what a typical build looks like:</p>
+<pre><code class="language-js">var s = require(&quot;steal-tools&quot;).streams;
+
+var steal = {
+    config: __dirname + &quot;/package.json!npm&quot;
+};
+
+var stream = s.graph(steal)
+    .pipe(s.transpile())
+    .pipe(s.minify())
+    .pipe(s.bundle())
+    .pipe(s.concat())
+    .pipe(s.write());
+</code></pre>
+<p>Now let's say we wanted to rerun <a href="https://babeljs.io/">babel</a> to transpile non-es6 modules. We could do this by injecting a stream after <em>graph</em> has completed. This allows us to use our own transpile stream in place of the one StealTools provides:</p>
+<pre><code class="language-js">var s = require(&quot;steal-tools&quot;).streams;
+
+var babel = require(&quot;babel-core&quot;);
+var transform = function(source){
+    return babel.transform(source, {
+        presets: [
+            require(&quot;babel-preset-es2015-no-commonjs&quot;),
+            require(&quot;babel-preset-react&quot;),
+            require(&quot;babel-preset-stage-0&quot;)
+        ]
+    });
+};
+
+var transpile = function(){
+    return through.obj(function(data){
+        data.bundles.forEach(function(bundle){
+            bundle.nodes.forEach(function(node){
+                node.activeSource = transform(node.getSource());
+            });
+        });
+    });
+};
+
+var steal = {
+    config: __dirname + &quot;/package.json!npm&quot;
+};
+
+var stream = s.graph(steal)
+    .pipe(transpile())
+    .pipe(s.minify())
+    .pipe(s.bundle())
+    .pipe(s.concat())
+    .pipe(s.write());
+</code></pre>
+
+		</section>
+		
+		
+
+		
+
+		
+
+	
+	</article>
+	
+
+
+</div>
+
+
+<survey-ad>
+  <button aria-label="Close" class="close" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <a href="https://donejs.com/survey.html" target="_blank">
+    Help us improve StealJS by taking our community survey
+  </a>
+</survey-ad>
+
+
+	
+	<footer>
+		<nav class="container">
+			<a class="brand javascriptmvc" href="index.html"></a>
+		</nav>
+	</footer>
+	
+
+	<script type="text/javascript">
+		var docObject = {"src":{"path":"doc/steal-topics/advanced/streams.md"},"description":"\nIn 0.14.0 StealTools added a new streaming API based on [Node streams](https://nodejs.org/api/stream.html). This gives you a greater ability to interject your own functionality in the middle of the build process, or to exclude parts you don't want (like if you didn't want to write the results to the filesystem.\n","name":"steal-tools.guides.streams","title":"Streaming API","type":"page","parent":"StealJS.advanced","pathToRoot":".."};
+	</script>
+
+	
+		<script>
+		  steal = {
+		    instantiated: {
+		      "bundles/bit-docs-site/static.css!$css" : null
+		    }
+		  }
+		</script>
+		<script type='text/javascript'
+				data-main="bit-docs-site/static"
+				src="./static/node_modules/steal/steal.production.js"></script>
+	
+</body>
+
+</html>

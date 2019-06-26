@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: doc/steal-topics/why.md
+	@page StealJS.why
+######################################################################## -->
+
+<!--[if lt IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 9]>
+<html class="no-js ie ie9" lang="en">
+<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>StealJS - Why StealJS </title>
+	<meta name="description" content="StealJS is a dependency loader and build tool that solves the most difficult parts of building large JavaScript applications. With it&#x27;s focus on simplified workflows and highly efficient production builds, we hope that StealJS is the last module loader you&#x27;ll ever need. If you haven&#x27;t checked out StealJS yet, we provide:">
+	<meta name="author" content="">
+	<meta property="og:title" content="StealJS - Why StealJS ">
+	<meta property="og:description" content="StealJS is a dependency loader and build tool that solves the most difficult parts of building large JavaScript applications. With it&#x27;s focus on simplified workflows and highly efficient production builds, we hope that StealJS is the last module loader you&#x27;ll ever need. If you haven&#x27;t checked out StealJS yet, we provide:">
+	<meta property="og:image" content="https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png">
+	<script type="application/ld+json">
+		{
+			"@context": "http://www.schema.org",
+			"@type": "SoftwareSourceCode",
+			"applicationCategory": "DeveloperApplication",
+			"brand": "Bitovi",
+			"category": "JavaScript Frameworks",
+			"codeRepository": "https://github.com/stealjs/steal",
+			"description": "StealJS is a dependency loader and build tool that solves the most difficult parts of building large JavaScript applications. With it&#x27;s focus on simplified workflows and highly efficient production builds, we hope that StealJS is the last module loader you&#x27;ll ever need. If you haven&#x27;t checked out StealJS yet, we provide:",
+			"image": "https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png",
+			"license": "https://github.com/stealjs/steal/blob/master/license.md",
+			"logo": "https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png",
+			"name": "StealJS - Why StealJS ",
+			"programmingLanguage": "JavaScript"
+		}
+	</script>
+	
+		<link rel="stylesheet" type="text/css" href="./static/bundles/bit-docs-site/static.css">
+	
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-2302003-20', 'auto');
+			ga('send', 'pageview');
+		</script>
+	
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="static/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body class="docs">
+	
+	<header>
+		
+		<div style="display: none;" class="navbar"></div>
+		<nav class="container">
+			<div class="logo-menu">
+				<a class="brand" href="./index.html">StealJS</a>
+
+				<ul class="dropdown-menu">
+					<li><a href="https://donejs.com/">DoneJS</a></li>
+					<li><a href="https://stealjs.com/">StealJS</a></li>
+					<li><a href="https://jquerypp.com/">jQuery ++</a></li>
+					<li><a href="https://funcunit.com/">FuncUnit</a></li>
+					<li><a href="https://documentjs.com/">DocumentJS</a></li>
+				</ul>
+			</div>
+
+			<ul class="nav">
+				<li><a href="https://stealjs.com">Home</a></li>
+
+				
+          <li class="active"><a href="index.html">Api</a></li>
+        
+
+				<li><a href="https://twitter.com/stealjs">Twitter</a></li>
+				<li><a href="https://github.com/stealjs/steal">GitHub</a></li>
+				<li><a href="https://gitter.im/stealjs/steal">Chat</a></li>
+			</ul>
+
+			<div class="pull-right">
+				<div class="bitovi-menu">
+					<a href="https://www.bitovi.com" class="bitovi icon-bits">Bitovi</a>
+					<ul class="dropdown-menu">
+						<li><a href="https://www.bitovi.com">Bitovi.com</a></li>
+						<li><a href="https://www.bitovi.com/blog">Blog</a></li>
+						<li><a href="https://www.bitovi.com/design">Design</a></li>
+						<li><a href="https://www.bitovi.com/development">Development</a></li>
+						<li><a href="https://www.bitovi.com/training">Training</a></li>
+						<li><a href="https://www.bitovi.com/open-source">Open Source</a></li>
+						<li><a href="https://www.bitovi.com/about">About</a></li>
+						<li><a href="https://www.bitovi.com/contact">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+
+	
+<div class="container api">
+
+	
+	<nav class="sidebar">
+		
+		<ul class="api cascading primary-grouping">
+	
+		
+
+		
+			
+				<li class="search-container active">
+					<a
+						class="sidebar-title"
+						href="index.html"
+						data-search="StealJS"
+					>
+						StealJS
+					</a>
+					
+	
+		<ul>
+			
+				
+					
+						<li class="heading search-container">
+							<span>step-by-step guides</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.guides.progressive_loading.html" data-search="Progressive Loading">
+							Progressive Loading
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.quick-start.html" data-search="Quick Start">
+							Quick Start
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.guides.boolean_conditional_loading.html" data-search="Boolean Conditional Loading">
+							Boolean Conditional Loading
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.guides.substitution_conditional_loading.html" data-search="Substitution Conditional Loading">
+							Substitution Conditional Loading
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>development</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.development-bundles.html" data-search="Development Bundles">
+							Development Bundles
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.using-npm-packages.html" data-search="Using npm Packages">
+							Using npm Packages
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.hot-module-replacement.html" data-search="Hot Module Replacement">
+							Hot Module Replacement
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.configuration.html" data-search="Configuration">
+							Configuration
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.conditionals.html" data-search="Conditional Loading">
+							Conditional Loading
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.babel.html" data-search="Babel">
+							Babel
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.circular.html" data-search="Circular Dependencies">
+							Circular Dependencies
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.error-messages.html" data-search="Error Messages">
+							Error Messages
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>bundling</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.optimized-builds.html" data-search="Optimized Builds">
+							Optimized Builds
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.code-splitting.html" data-search="Code Splitting">
+							Code Splitting
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.tree-shaking.html" data-search="Tree Shaking">
+							Tree Shaking
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.watch-mode.html" data-search="Watch Mode">
+							Watch Mode
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.multi-main.html" data-search="Multi-main Builds">
+							Multi-main Builds
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.project-exporting.html" data-search="Project Exporting">
+							Project Exporting
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>production</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.loading-from-cdn.html" data-search="Loading Scripts from a CDN">
+							Loading Scripts from a CDN
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.moving-to-prod.html" data-search="Moving to Production">
+							Moving to Production
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-bundle-manifest.server.html" data-search="Server templating in Node">
+							Server templating in Node
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-bundle-manifest.snippets.html" data-search="Generating HTML Snippets">
+							Generating HTML Snippets
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>advanced</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.writing-plugins.html" data-search="Writing Plugins">
+							Writing Plugins
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.guides.streams.html" data-search="Streaming API">
+							Streaming API
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>apis</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal.html" data-search="steal">
+							steal
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.html" data-search="steal-tools">
+							steal-tools
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>migrating</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.migrating.html" data-search="Migrating from Legacy Steal">
+							Migrating from Legacy Steal
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.topics.migrating-one.html" data-search="Migrating to StealJS 1.x">
+							Migrating to StealJS 1.x
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.topics.migrating-two.html" data-search="Migrating to StealJS 2.x">
+							Migrating to StealJS 2.x
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>about</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container active ">
+						<a class="page" href="StealJS.why.html" data-search="Why StealJS">
+							Why StealJS
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="guides.Contributing.html" data-search="Contributing">
+							Contributing
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>ecosystem</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="grunt-steal.html" data-search="grunt-steal">
+							grunt-steal
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-bundle-manifest.html" data-search="steal-bundle-manifest">
+							steal-bundle-manifest
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-conditional.html" data-search="steal-conditional">
+							steal-conditional
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-css.html" data-search="steal-css">
+							steal-css
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-less.html" data-search="steal-less">
+							steal-less
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-mocha.html" data-search="steal-mocha">
+							steal-mocha
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-qunit.html" data-search="steal-qunit">
+							steal-qunit
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-socket.io.html" data-search="steal-socket.io">
+							steal-socket.io
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+		</ul>
+	
+
+
+				</li>
+			
+		
+	
+</ul>
+
+	</nav>
+	
+
+	
+	<article class="content docs">
+	
+
+		
+		<section class="title">
+			<div class="heading">
+<h1>Why StealJS</h1>
+	<ul class="tags">
+		<li>page</li>
+	</ul>
+	
+	
+</div>
+
+<div class="sub-heading">
+	
+	
+		<span class="module">StealJS.why</span>
+	
+	
+	
+	<span class="inherits">&nbsp;</span>
+</div>
+
+<ul class="links">
+	
+	
+	
+</ul>
+<br />
+
+		</section>
+		
+
+		
+		<section class="contents">
+			<div class="on-this-page-container"></div>
+		</section>
+		
+
+		
+
+		
+		<section class="description">
+			<p>StealJS is a dependency loader and build tool that solves the most difficult parts of building large JavaScript applications. With it's focus on simplified workflows and highly efficient production builds, we hope that StealJS is the last module loader you'll ever need. If you haven't checked out StealJS yet, we provide:</p>
+
+		</section>
+		
+
+		
+			
+		
+
+		
+
+
+		
+		<section class="comment">
+			<ul>
+<li>A <a href="#section_BuildOptimization">production bundler and optimizer</a> that speeds up application load times by balancing caching and resource requests.</li>
+<li><a href="#section_Workflows">Easy workflows</a> for use with npm and/or Bower. Less and CSS are supported out of the box.</li>
+<li>A powerful <a href="#section_Exporting">exporting tool</a> for library authors so your module can reach users regardless of whether they are using StealJS, Browserify, RequireJS, SystemJS or WebPack.</li>
+<li>A module loader based on ES6, but providing compatibility with CommonJS and AMD.</li>
+</ul>
+<h2>Why StealJS?</h2>
+<p>The landscape of module loaders today is vast; there are more choices today than there have ever been. At Bitovi we work with a large variety of different types of teams with their own unique workflows. We needed a modular loader that was flexible to accommodate all of these different teams. So we focused on a few key areas:</p>
+<h2>Build Optimization</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C-kM0v9L9UY" frameborder="0" allowfullscreen></iframe>
+<p>With some other module loaders you have to start thinking about production right from the beginning. If you don't you might set yourself up to have inefficient production builds. For example if your app is large enough you might worry about a large number of dependencies causing your site's initial load time to be slow. Research has shown that users respond to page load times. The faster your page loads the higher your retention is going to be. Having unused dependencies included in your production build will have an effect on your bottom line.</p>
+<p>Likewise if you have a traditional, non single page, application you have to worry about redundancies between your different pages. StealJS provides build optimizations for both types of web sites.</p>
+<h3>Progressive Loading</h3>
+<p>For a large single page application Steal-Tool's multi-build can break apart your application code into optimized bundles. Only the dependencies needed to render the page being viewed are loaded. As your user navigates to other areas of the site (from say a login screen to the home page) more dependencies are progressively loaded for each section they visit. This means you can more effectively cache your application as well.</p>
+<p>To make the speedup happen, StealJS uses a unique, two pass algorithm that works great for progressively loaded pages and pages with static dependencies. The first pass aggressively splits your dependencies into bundles based on how often modules are used with other modules. This could lead to too many separate bundles and a high number of requests needed when loading a page, so the second pass of the algorithm groups bundles together for greater efficiency.</p>
+<h3>Multi-App Build</h3>
+<p>For more traditional sites (not single page applications) you might have your apps separated into different pages. Nevertheless you don't want to build a common dependency, like Lodash, into each of these apps' production code. The multi-app build as part of Steal-Tools accounts for this as well. Like with progressive loading common resources are bundled together. So when the user navigates to /cms the CMS app will load a bundle containing jQuery and CanJS that will be reused when they later navigate to the /accounting application.</p>
+<h2>Workflows</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eIfUsPdKF4A" frameborder="0" allowfullscreen></iframe>
+<h3>Package Managers</h3>
+<p>The rise of package managers like npm and Bower has changed the way developers write applications today. Unfortunately this alone didn't make it easier to use your dependencies in your projects. In traditional module loaders like RequireJS you would have to configure these dependencies one-by-one.</p>
+<pre><code>require.config({
+  paths: {
+    jquery: &quot;node_modules/jquery/dist/jquery&quot;,
+    can: &quot;node_modules/can/dist/amd/can&quot;
+ }
+});
+</code></pre>
+<p>This is tedious and error-prone. Once apps scale your config becomes more complex and harder to read. If any of the packages have their own dependencies you'll have to configure those as well. The result is that most client-side libraries have between 0 and 1 dependency.</p>
+<p>Some newer loaders like Webpack and Browserify side-step this problem by requiring you use npm with a build script. This solves the dependency problem but creates new ones. In large applications where you might have many demo and test pages you now have to create separate bundles for each of these.</p>
+<p>We think it can be better than this. The user shouldn't have to configure their loader but they also shouldn't be forced to start off a project by writing a build script. So we built Bower and npm plugins that allow you to use these package managers but still have the convenience that browser-based module loaders provide.</p>
+<p>Consider you are starting a new three.js project. With npm you would install Three like so:</p>
+<pre><code>npm install three --save
+</code></pre>
+<p>What this does in the background is save an entry in &quot;dependencies&quot; inside of your package.json file. When you add StealJS to your page through the script tag:</p>
+<pre><code>&lt;script src=&quot;node_modules/steal/steal.js&quot; main&gt;&lt;/script&gt;
+</code></pre>
+<p>StealJS will know that you're using npm and look up your package.json for metadata. For you it's as simple as saving and then using:</p>
+<pre><code>import THREE from &quot;three&quot;;
+</code></pre>
+<p>Additionally StealJS supports loading code in all popular module formats, and they can be mixed and matched. You don't ever have to care about whether your dependencies are written in CommonJS, AMD, ES6, or even browser globals, and you can choose to use whichever format works for you.</p>
+<h3>Exporting</h3>
+<p>If you're a library author you've probably experienced the pain of building your library so that it can be consumed by all of the popular module loaders and in Node. Most projects have given up to the point where they only allow their library to be consumed in the format they themselves use and then in one other format; most likely global. Inevitably someone will request a build in a format you don't support.</p>
+<p>It shouldn't be this difficult. As library authors you really don't care about what module loader your users choose; you want them to be able to use your code everywhere. Steal-Tools is a set of build tools that includes a way to export your project to a variety of formats and gives you complete control over what gets built and how. You can, for example, have a large project and export &quot;foo&quot; and &quot;bar&quot; as their own individual modules if needed. For most common tasks there are helpers that make it easy to export into the common format. For example you could do:</p>
+<pre><code>stealTools.export({
+  steal: {
+    config: &quot;package.json!npm&quot;,
+    main: &quot;my/project&quot;
+  },
+  outputs: {
+    &quot;+cjs&quot;: {},
+    &quot;+amd&quot;: {},
+    &quot;+global-js&quot;: {}
+  }
+});
+</code></pre>
+<p>Which would export your code to a dist/ folder, dist/cjs, dist/amd, and dist/global for the various formats. In this example we are accepting the defaults, which is what you probably want most of the time. A full export guide is available <a href="http://stealjs.com/docs/StealJS.project-exporting.html">on stealjs.com</a>. The built CommonJS code can be used with Browserify, Webpack or StealJS. The AMD code can be used by RequireJS (or any other AMD loader including StealJS) and the global folder contains an output that doesn't require a loader at all.</p>
+<h2>Choosing StealJS</h2>
+<p>The documentation on <a href="http://stealjs.com">stealjs.com</a> contains everything you need to explore the various features that Steal and Steal-Tools give you. The quick start guide is the best way to get started on a new project using StealJS.</p>
+<p>Some of the things on our roadmap including full Source Map support (both for production builds and exported projects), a watch mode that will make continuous-building easier and faster, streams for use with Gulp, and hot reloading of modules.</p>
+<p>Up until this point we have been concentrating on nailing the basics but now have room to start implementing features that will make working on your projects incrementally &quot;nicer&quot;.</p>
+<p>Lastly, StealJS has a long-standing commitment to backwards compatibility. Even though StealJS is now built on a completely different codebase than it was just a year ago it is mostly compatible with applications that use Legacy Steal with just a few minor config changes. We won't abandon our users when a breaking change comes; there will always be a bridge that makes upgrading your application something that can be done in a day or so.</p>
+
+		</section>
+		
+		
+
+		
+
+		
+
+	
+	</article>
+	
+
+
+</div>
+
+
+<survey-ad>
+  <button aria-label="Close" class="close" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <a href="https://donejs.com/survey.html" target="_blank">
+    Help us improve StealJS by taking our community survey
+  </a>
+</survey-ad>
+
+
+	
+	<footer>
+		<nav class="container">
+			<a class="brand javascriptmvc" href="index.html"></a>
+		</nav>
+	</footer>
+	
+
+	<script type="text/javascript">
+		var docObject = {"src":{"path":"doc/steal-topics/why.md"},"description":"\nStealJS is a dependency loader and build tool that solves the most difficult parts of building large JavaScript applications. With it's focus on simplified workflows and highly efficient production builds, we hope that StealJS is the last module loader you'll ever need. If you haven't checked out StealJS yet, we provide:\n","name":"StealJS.why","title":"Why StealJS","type":"page","parent":"StealJS.about","order":0,"pathToRoot":".."};
+	</script>
+
+	
+		<script>
+		  steal = {
+		    instantiated: {
+		      "bundles/bit-docs-site/static.css!$css" : null
+		    }
+		  }
+		</script>
+		<script type='text/javascript'
+				data-main="bit-docs-site/static"
+				src="./static/node_modules/steal/steal.production.js"></script>
+	
+</body>
+
+</html>

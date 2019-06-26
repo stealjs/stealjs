@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: doc/steal-topics/development/hot-module-replacement.md
+	@page StealJS.hot-module-replacement
+######################################################################## -->
+
+<!--[if lt IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 9]>
+<html class="no-js ie ie9" lang="en">
+<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>StealJS - Hot Module Replacement </title>
+	<meta name="description" content="StealJS.hot-module-replacement">
+	<meta name="author" content="">
+	<meta property="og:title" content="StealJS - Hot Module Replacement ">
+	<meta property="og:description" content="StealJS.hot-module-replacement">
+	<meta property="og:image" content="https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png">
+	<script type="application/ld+json">
+		{
+			"@context": "http://www.schema.org",
+			"@type": "SoftwareSourceCode",
+			"applicationCategory": "DeveloperApplication",
+			"brand": "Bitovi",
+			"category": "JavaScript Frameworks",
+			"codeRepository": "https://github.com/stealjs/steal",
+			"description": "StealJS.hot-module-replacement",
+			"image": "https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png",
+			"license": "https://github.com/stealjs/steal/blob/master/license.md",
+			"logo": "https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png",
+			"name": "StealJS - Hot Module Replacement ",
+			"programmingLanguage": "JavaScript"
+		}
+	</script>
+	
+		<link rel="stylesheet" type="text/css" href="./static/bundles/bit-docs-site/static.css">
+	
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-2302003-20', 'auto');
+			ga('send', 'pageview');
+		</script>
+	
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="static/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body class="docs">
+	
+	<header>
+		
+		<div style="display: none;" class="navbar"></div>
+		<nav class="container">
+			<div class="logo-menu">
+				<a class="brand" href="./index.html">StealJS</a>
+
+				<ul class="dropdown-menu">
+					<li><a href="https://donejs.com/">DoneJS</a></li>
+					<li><a href="https://stealjs.com/">StealJS</a></li>
+					<li><a href="https://jquerypp.com/">jQuery ++</a></li>
+					<li><a href="https://funcunit.com/">FuncUnit</a></li>
+					<li><a href="https://documentjs.com/">DocumentJS</a></li>
+				</ul>
+			</div>
+
+			<ul class="nav">
+				<li><a href="https://stealjs.com">Home</a></li>
+
+				
+          <li class="active"><a href="index.html">Api</a></li>
+        
+
+				<li><a href="https://twitter.com/stealjs">Twitter</a></li>
+				<li><a href="https://github.com/stealjs/steal">GitHub</a></li>
+				<li><a href="https://gitter.im/stealjs/steal">Chat</a></li>
+			</ul>
+
+			<div class="pull-right">
+				<div class="bitovi-menu">
+					<a href="https://www.bitovi.com" class="bitovi icon-bits">Bitovi</a>
+					<ul class="dropdown-menu">
+						<li><a href="https://www.bitovi.com">Bitovi.com</a></li>
+						<li><a href="https://www.bitovi.com/blog">Blog</a></li>
+						<li><a href="https://www.bitovi.com/design">Design</a></li>
+						<li><a href="https://www.bitovi.com/development">Development</a></li>
+						<li><a href="https://www.bitovi.com/training">Training</a></li>
+						<li><a href="https://www.bitovi.com/open-source">Open Source</a></li>
+						<li><a href="https://www.bitovi.com/about">About</a></li>
+						<li><a href="https://www.bitovi.com/contact">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+
+	
+<div class="container api">
+
+	
+	<nav class="sidebar">
+		
+		<ul class="api cascading primary-grouping">
+	
+		
+
+		
+			
+				<li class="search-container active">
+					<a
+						class="sidebar-title"
+						href="index.html"
+						data-search="StealJS"
+					>
+						StealJS
+					</a>
+					
+	
+		<ul>
+			
+				
+					
+						<li class="heading search-container">
+							<span>step-by-step guides</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.guides.progressive_loading.html" data-search="Progressive Loading">
+							Progressive Loading
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.quick-start.html" data-search="Quick Start">
+							Quick Start
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.guides.boolean_conditional_loading.html" data-search="Boolean Conditional Loading">
+							Boolean Conditional Loading
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.guides.substitution_conditional_loading.html" data-search="Substitution Conditional Loading">
+							Substitution Conditional Loading
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>development</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.development-bundles.html" data-search="Development Bundles">
+							Development Bundles
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.using-npm-packages.html" data-search="Using npm Packages">
+							Using npm Packages
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container active ">
+						<a class="page" href="StealJS.hot-module-replacement.html" data-search="Hot Module Replacement">
+							Hot Module Replacement
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.configuration.html" data-search="Configuration">
+							Configuration
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.conditionals.html" data-search="Conditional Loading">
+							Conditional Loading
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.babel.html" data-search="Babel">
+							Babel
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.circular.html" data-search="Circular Dependencies">
+							Circular Dependencies
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.error-messages.html" data-search="Error Messages">
+							Error Messages
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>bundling</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.optimized-builds.html" data-search="Optimized Builds">
+							Optimized Builds
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.code-splitting.html" data-search="Code Splitting">
+							Code Splitting
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.tree-shaking.html" data-search="Tree Shaking">
+							Tree Shaking
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.watch-mode.html" data-search="Watch Mode">
+							Watch Mode
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.multi-main.html" data-search="Multi-main Builds">
+							Multi-main Builds
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.project-exporting.html" data-search="Project Exporting">
+							Project Exporting
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>production</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.loading-from-cdn.html" data-search="Loading Scripts from a CDN">
+							Loading Scripts from a CDN
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.moving-to-prod.html" data-search="Moving to Production">
+							Moving to Production
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-bundle-manifest.server.html" data-search="Server templating in Node">
+							Server templating in Node
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-bundle-manifest.snippets.html" data-search="Generating HTML Snippets">
+							Generating HTML Snippets
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>advanced</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.writing-plugins.html" data-search="Writing Plugins">
+							Writing Plugins
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.guides.streams.html" data-search="Streaming API">
+							Streaming API
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>apis</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal.html" data-search="steal">
+							steal
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.html" data-search="steal-tools">
+							steal-tools
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>migrating</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.migrating.html" data-search="Migrating from Legacy Steal">
+							Migrating from Legacy Steal
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.topics.migrating-one.html" data-search="Migrating to StealJS 1.x">
+							Migrating to StealJS 1.x
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.topics.migrating-two.html" data-search="Migrating to StealJS 2.x">
+							Migrating to StealJS 2.x
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>about</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.why.html" data-search="Why StealJS">
+							Why StealJS
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="guides.Contributing.html" data-search="Contributing">
+							Contributing
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>ecosystem</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="grunt-steal.html" data-search="grunt-steal">
+							grunt-steal
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-bundle-manifest.html" data-search="steal-bundle-manifest">
+							steal-bundle-manifest
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-conditional.html" data-search="steal-conditional">
+							steal-conditional
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-css.html" data-search="steal-css">
+							steal-css
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-less.html" data-search="steal-less">
+							steal-less
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-mocha.html" data-search="steal-mocha">
+							steal-mocha
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-qunit.html" data-search="steal-qunit">
+							steal-qunit
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-socket.io.html" data-search="steal-socket.io">
+							steal-socket.io
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+		</ul>
+	
+
+
+				</li>
+			
+		
+	
+</ul>
+
+	</nav>
+	
+
+	
+	<article class="content docs">
+	
+
+		
+		<section class="title">
+			<div class="heading">
+<h1>Hot Module Replacement</h1>
+	<ul class="tags">
+		<li>page</li>
+	</ul>
+	
+	
+</div>
+
+<div class="sub-heading">
+	
+	
+		<span class="module">StealJS.hot-module-replacement</span>
+	
+	
+	
+	<span class="inherits">&nbsp;</span>
+</div>
+
+<ul class="links">
+	
+	
+	
+</ul>
+<br />
+
+		</section>
+		
+
+		
+		<section class="contents">
+			<div class="on-this-page-container"></div>
+		</section>
+		
+
+		
+
+		
+
+		
+			
+		
+
+		
+
+
+		
+		<section class="comment">
+			<blockquote>
+<p>This guide builds on code examples found in <a href="StealJS.quick-start.html" title="The Quick Start is a simple demo that uses npm to install steal, steal-tools,
+and jquery to build a Hello World app. This guide is a step-by-step guide to create the app from scratch. If you just want a starter project, you can clone the source from the GitHub Quick Start repo.">Quick Start</a>.</p>
+</blockquote>
+<p><strong>Hot Module Replacement</strong> (or Hot Module Swapping) is a feature of StealJS (and other loaders) that allows modules to be updated in-place while the application runs, without the need to refresh the browser. In Steal, hot module replacement is handled by the <a href="steal.live-reload.html" title="Live-reload is a module that enables a speedier development workflow. Paired with a WebSocket server such as StealTools, live-reload will reload modules as you change them in your browser.
+See steal.live-reload.options for a full set of configuration options that can be provided.">live-reload</a> module.</p>
+<h2>API</h2>
+<p>Responsibilities for HMR are divided between <a href="steal.html" title="Steal is a  module loader that supports a wide variety of
+syntaxes and configuration options. It makes modular development, test
+and production workflows simple.">steal</a> and <a href="steal-tools.html" title="steal-tools is a collection of JS, Grunt, and command-line utilities
+that make building, packaging, and sharing ES6, CommonJS, AMD, and Steal
+applications easy.">steal-tools</a>.</p>
+<h3>steal</h3>
+<p>The HMR functionality in steal is in <a href="steal.live-reload.html" title="Live-reload is a module that enables a speedier development workflow. Paired with a WebSocket server such as StealTools, live-reload will reload modules as you change them in your browser.
+See steal.live-reload.options for a full set of configuration options that can be provided.">live-reload</a>. This module includes several functions for dealing with reloaded modules. Also look into <a href="steal.live-reload.options.html" title="The following options can be specified to configure steal.live-reload's behavior, using any method specified in config.config.">LiveReloadOptions</a> which lists the options you have for live-reload such as:</p>
+<ul>
+<li>Which port it should connect with the server (using WebSockets), <code>liveReloadPort</code>.</li>
+<li><code>liveReloadAttempts</code>, which says how many attempts it should make to reconnect to the server.</li>
+</ul>
+<h3>steal-tools</h3>
+<p>The <a href="steal-tools.cmd.live-reload.html" title="Starts a live-reload Web Socket server. Used with steal.live-reload, allows you to develop without ever refreshing the browser.">steal-tools live-reload</a> command is the CLI command used to launch a live-reload server. It takes a <code>--live-reload-port</code> flag (like the <code>liveReloadPort</code> config option in steal). You will need to set both of these to use a port other than 8012. See the docs there for more on what you can do with the CLI command.</p>
+<h2>Using HMR</h2>
+<p>To enable hot module replacement, first update your package.json to include <strong>live-reload</strong> as a configDependency:</p>
+<pre><code class="language-json">{
+  &quot;steal&quot;: {
+    &quot;configDependencies&quot;: [
+      &quot;live-reload&quot;
+    ]
+  }
+}
+</code></pre>
+<p>Then import the live-reload module anywhere in your application:</p>
+<pre><code class="language-js">import &quot;live-reload&quot;;
+</code></pre>
+<p>This tells the module to connect to the live-reload server via WebSockets. To enable the live-reload server, use <a href="steal-tools.html" title="steal-tools is a collection of JS, Grunt, and command-line utilities
+that make building, packaging, and sharing ES6, CommonJS, AMD, and Steal
+applications easy.">steal-tools</a>:</p>
+<pre><code class="language-shell">steal-tools live-reload
+</code></pre>
+<p>Which should show:</p>
+<pre><code class="language-shell">Live-reload server listening on port 8012
+</code></pre>
+<blockquote>
+<p><em>Note</em>: To prevent having to globally install steal-tools, instead add a script to your <em>package.json</em>.</p>
+</blockquote>
+<p>Next let's update the <code>index.js</code> file to import live-reload:</p>
+<pre><code class="language-js">import &quot;./styles.css&quot;;
+import $ from &quot;jquery&quot;;
+import &quot;live-reload&quot;;
+
+$(document.body).append(&quot;&lt;h1&gt;Hello World!&lt;/h1&gt;&quot;);
+</code></pre>
+<p><span line-highlight='3'></span>
+Now when you make a change to <code>index.js</code> and save it the module will reload and you should see something like this in the console:</p>
+<pre><code class="language-shell">Reloading stealjs@1.0.0#index
+</code></pre>
+<p>Back in your browser, though, you'll see that the <code>&lt;h1&gt;</code> has been appended twice, oops!</p>
+<p><img src="https://user-images.githubusercontent.com/361671/32618847-db2400e2-c546-11e7-9052-806878480aa9.png" alt="live-reload double render" /></p>
+<p>This is where the <a href="steal.live-reload.html" title="Live-reload is a module that enables a speedier development workflow. Paired with a WebSocket server such as StealTools, live-reload will reload modules as you change them in your browser.
+See steal.live-reload.options for a full set of configuration options that can be provided.">live-reload</a> API comes into play. The module exports a function that can take a callback. That callback will be called <em>after</em> the current module is reloaded.</p>
+<p>We can use this API to remove the previous <code>&lt;h1&gt;</code> from the page. Update the code to be like this:</p>
+<pre><code class="language-js">import &quot;./styles.css&quot;;
+import $ from &quot;jquery&quot;;
+import reload from &quot;live-reload&quot;;
+
+var h1 = $(&quot;&lt;h1&gt;Hello World!&lt;/h1&gt;&quot;);
+$(document.body).append(h1);
+
+reload(function(){
+  // Since this module is re-executed, a new version
+  // of the h1 will be appended, this deletes the old one.
+  h1.remove();
+});
+</code></pre>
+<p><span line-highlight='3,5-6,8-12'></span>
+Now you should understand the basics of hot module replacement and the <a href="steal.live-reload.html" title="Live-reload is a module that enables a speedier development workflow. Paired with a WebSocket server such as StealTools, live-reload will reload modules as you change them in your browser.
+See steal.live-reload.options for a full set of configuration options that can be provided.">live-reload</a> API. See the detailed docs for more functions that you can use for more advanced usage.</p>
+
+		</section>
+		
+		
+
+		
+
+		
+
+	
+	</article>
+	
+
+
+</div>
+
+
+<survey-ad>
+  <button aria-label="Close" class="close" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <a href="https://donejs.com/survey.html" target="_blank">
+    Help us improve StealJS by taking our community survey
+  </a>
+</survey-ad>
+
+
+	
+	<footer>
+		<nav class="container">
+			<a class="brand javascriptmvc" href="index.html"></a>
+		</nav>
+	</footer>
+	
+
+	<script type="text/javascript">
+		var docObject = {"src":{"path":"doc/steal-topics/development/hot-module-replacement.md"},"description":"","name":"StealJS.hot-module-replacement","title":"Hot Module Replacement","type":"page","parent":"StealJS.development","order":4,"comment":" ","pathToRoot":".."};
+	</script>
+
+	
+		<script>
+		  steal = {
+		    instantiated: {
+		      "bundles/bit-docs-site/static.css!$css" : null
+		    }
+		  }
+		</script>
+		<script type='text/javascript'
+				data-main="bit-docs-site/static"
+				src="./static/node_modules/steal/steal.production.js"></script>
+	
+</body>
+
+</html>

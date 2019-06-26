@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: node_modules/steal-tools/doc/types/build-options.md
+	@typedef steal-tools.BuildOptions
+######################################################################## -->
+
+<!--[if lt IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 9]>
+<html class="no-js ie ie9" lang="en">
+<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>StealJS - BuildOptions </title>
+	<meta name="description" content="Options used to configure the build process.">
+	<meta name="author" content="">
+	<meta property="og:title" content="StealJS - BuildOptions ">
+	<meta property="og:description" content="Options used to configure the build process.">
+	<meta property="og:image" content="https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png">
+	<script type="application/ld+json">
+		{
+			"@context": "http://www.schema.org",
+			"@type": "SoftwareSourceCode",
+			"applicationCategory": "DeveloperApplication",
+			"brand": "Bitovi",
+			"category": "JavaScript Frameworks",
+			"codeRepository": "https://github.com/stealjs/steal",
+			"description": "Options used to configure the build process.",
+			"image": "https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png",
+			"license": "https://github.com/stealjs/steal/blob/master/license.md",
+			"logo": "https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png",
+			"name": "StealJS - BuildOptions ",
+			"programmingLanguage": "JavaScript"
+		}
+	</script>
+	
+		<link rel="stylesheet" type="text/css" href="./static/bundles/bit-docs-site/static.css">
+	
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-2302003-20', 'auto');
+			ga('send', 'pageview');
+		</script>
+	
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="static/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body class="docs">
+	
+	<header>
+		
+		<div style="display: none;" class="navbar"></div>
+		<nav class="container">
+			<div class="logo-menu">
+				<a class="brand" href="./index.html">StealJS</a>
+
+				<ul class="dropdown-menu">
+					<li><a href="https://donejs.com/">DoneJS</a></li>
+					<li><a href="https://stealjs.com/">StealJS</a></li>
+					<li><a href="https://jquerypp.com/">jQuery ++</a></li>
+					<li><a href="https://funcunit.com/">FuncUnit</a></li>
+					<li><a href="https://documentjs.com/">DocumentJS</a></li>
+				</ul>
+			</div>
+
+			<ul class="nav">
+				<li><a href="https://stealjs.com">Home</a></li>
+
+				
+          <li class="active"><a href="index.html">Api</a></li>
+        
+
+				<li><a href="https://twitter.com/stealjs">Twitter</a></li>
+				<li><a href="https://github.com/stealjs/steal">GitHub</a></li>
+				<li><a href="https://gitter.im/stealjs/steal">Chat</a></li>
+			</ul>
+
+			<div class="pull-right">
+				<div class="bitovi-menu">
+					<a href="https://www.bitovi.com" class="bitovi icon-bits">Bitovi</a>
+					<ul class="dropdown-menu">
+						<li><a href="https://www.bitovi.com">Bitovi.com</a></li>
+						<li><a href="https://www.bitovi.com/blog">Blog</a></li>
+						<li><a href="https://www.bitovi.com/design">Design</a></li>
+						<li><a href="https://www.bitovi.com/development">Development</a></li>
+						<li><a href="https://www.bitovi.com/training">Training</a></li>
+						<li><a href="https://www.bitovi.com/open-source">Open Source</a></li>
+						<li><a href="https://www.bitovi.com/about">About</a></li>
+						<li><a href="https://www.bitovi.com/contact">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+
+	
+<div class="container api">
+
+	
+	<nav class="sidebar">
+		
+		<ul class="api cascading primary-grouping">
+	
+		
+			<li class="search-container active parent">
+				<a class="sidebar-title" href="index.html" data-search="StealJS">
+					StealJS
+				</a>
+				
+			</li>
+		
+
+		
+			
+				<li class="search-container active">
+					<a
+						class="sidebar-title"
+						href="steal-tools.html"
+						data-search="steal-tools"
+					>
+						steal-tools
+					</a>
+					
+	
+		<ul>
+			
+				
+					
+						<li class="heading search-container">
+							<span>JavaScript</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.build.html" data-search="build">
+							build
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.bundle.html" data-search="bundle">
+							bundle
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.export.html" data-search="export">
+							export
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.optimize.html" data-search="optimize">
+							optimize
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.transform.html" data-search="transform">
+							transform
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.transformImport.html" data-search="transformImport">
+							transformImport
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>Command Line</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.cmd.build.html" data-search="steal-tools build">
+							steal-tools build
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.cmd.bundle.html" data-search="steal-tools bundle">
+							steal-tools bundle
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.cmd.export.html" data-search="steal-tools export">
+							steal-tools export
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.cmd.live-reload.html" data-search="steal-tools live-reload">
+							steal-tools live-reload
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.cmd.optimize.html" data-search="steal-tools optimize">
+							steal-tools optimize
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.cmd.steal-tools.html" data-search="steal-tools">
+							steal-tools
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.cmd.transform.html" data-search="steal-tools transform">
+							steal-tools transform
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>Export Helpers</span>
+							
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>Streams</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.streams.bundle.html" data-search="bundle">
+							bundle
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.streams.concat.html" data-search="concat">
+							concat
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.streams.graph.html" data-search="graph">
+							graph
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.streams.minify.html" data-search="minify">
+							minify
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.streams.transpile.html" data-search="transpile">
+							transpile
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.streams.write.html" data-search="write">
+							write
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>Types</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container active ">
+						<a class="typedef" href="steal-tools.BuildOptions.html" data-search="BuildOptions">
+							BuildOptions
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="function" href="steal-tools.BuildOptions.transpile.html" data-search="Transpile">
+							Transpile
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="steal-tools.BuildResult.html" data-search="BuildResult">
+							BuildResult
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="steal-tools.BundleAssetsOptions.html" data-search="BundleAssetsOptions">
+							BundleAssetsOptions
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="steal-tools.StealConfig.html" data-search="StealConfig">
+							StealConfig
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="steal-tools.export.object.html" data-search="ExportObject">
+							ExportObject
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="steal-tools.export.output.html" data-search="ExportOutput">
+							ExportOutput
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="steal-tools.source.object.html" data-search="SourceObject">
+							SourceObject
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="typedef" href="steal-tools.transform.options.html" data-search="TransformOptions">
+							TransformOptions
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+		</ul>
+	
+
+
+				</li>
+			
+		
+	
+</ul>
+
+	</nav>
+	
+
+	
+	<article class="content docs">
+	
+
+		
+		<section class="title">
+			<div class="heading">
+<h1>BuildOptions</h1>
+	<ul class="tags">
+		<li>typedef</li>
+	</ul>
+	
+	
+</div>
+
+<div class="sub-heading">
+	
+	
+		<span class="module">steal-tools.BuildOptions</span>
+	
+	
+	
+	<code>{Object}</code>
+	
+	<span class="inherits">&nbsp;</span>
+</div>
+
+<ul class="links">
+	
+	
+	
+</ul>
+<br />
+
+		</section>
+		
+
+		
+		<section class="contents">
+			<div class="on-this-page-container"></div>
+		</section>
+		
+
+		
+
+		
+		<section class="description">
+			<p>Options used to configure the build process.</p>
+
+		</section>
+		
+
+		
+			
+			<section class='primary-options'>
+				
+
+  <h2 id="sig_">Object
+</h2>
+<div class="signature-wrapper">
+
+
+
+
+
+
+  <h3>Properties</h3>
+  
+  <ol class="parameters">
+	
+	<li class="parameter">
+		<h4>minify<code>=true</code>
+			<code>{Boolean | function()}</code><span class="pull-right optional">Optional</span></h4>
+		<div class="description">
+			<p><strong>Boolean</strong></p>
+<p>Sets whether the source code is minified prior to writing.</p>
+<p>Minification is optional but on by default, you can turn it off by doing:</p>
+<pre><code class="language-javascript">stealtools.build(config, {
+    minify: false
+});
+</code></pre>
+<hr />
+<p><strong>Function</strong></p>
+<p>A function can be provided to handle minification of each file in a bundle, e.g:</p>
+<pre><code class="language-javascript">stealTools.build(config, {
+    minify: function(source, options) {
+        // use your own library to minify source.code
+        source.code = doCustomMinification(source.code);
+
+        // return the source object when minification is complete
+        return source;
+    }
+});
+</code></pre>
+<p>The function takes a <code>source</code> object as the first parameter, this object contains the <code>code</code> and its AST version after the transpilation
+process; the second parameter, <code>options</code>, is the <a href="steal-tools.BuildOptions.html" title="Options used to configure the build process.">BuildOptions</a> object passed to configure the build process.</p>
+
+		</div>
+		
+		
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>bundleSteal<code>=false</code>
+			<code>{Boolean}</code><span class="pull-right optional">Optional</span></h4>
+		<div class="description">
+			<p>Sets whether StealJS will be included in the built file. Enabling this option will allow you to limit the initial request to just one script.</p>
+
+		</div>
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>verbose<code>=false</code>
+			<code>{Boolean}</code><span class="pull-right optional">Optional</span></h4>
+		<div class="description">
+			<p><code>true</code> turns on verbose output. Defaults to <code>false</code>.</p>
+
+		</div>
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>quiet<code>=false</code>
+			<code>{Boolean}</code><span class="pull-right optional">Optional</span></h4>
+		<div class="description">
+			<p>No logging.  Defaults to <code>false</code>.</p>
+
+		</div>
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>dest<code>=&quot;dist&quot;</code>
+			<code>{String}</code><span class="pull-right optional">Optional</span></h4>
+		<div class="description">
+			<p>Specifies the destination folder for the build. By default steal-tools will write to the <code>BASEURL + '/dist'</code> folder where BASEURL is the local Steal <a href="config.baseURL.html" title="Specifies the root path to use for all module lookups.">baseURL</a>, usually the same folder that your package.json is located.</p>
+<p>The path can be specified in three ways:</p>
+<ul>
+<li>Absolute path - dest starts with <code>/</code>, or matches <em>/^\w+:[/\]/</em>, like:  <code>__dirname+&quot;/place&quot;</code>, or <code>&quot;c:\my\bundles&quot;</code>.</li>
+<li>Relative to <code>process.cwd()</code> - dest starts with <code>./</code>, like <code>&quot;./place&quot;</code>.</li>
+<li>Relative to <a href="config.baseURL.html" title="Specifies the root path to use for all module lookups.">baseURL</a> - dest looks like: &quot;packages&quot;, &quot;foo/bar&quot;.</li>
+</ul>
+
+		</div>
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>bundleAssets<code>=false</code>
+			<code>{<a href="steal-tools.BundleAssetsOptions.html" title="Used to bundle your assets along with your JavaScript and CSS. Setting this option to true will bundle assets that are inferred from your project (such as CSS url()s) and placed into your dist folder.">BundleAssetsOptions</a> | Boolean}</code><span class="pull-right optional">Optional</span></h4>
+		<div class="description">
+			<p>Set to true to have assets from your project bundled into your dest folder.</p>
+
+		</div>
+		
+		
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>ignore
+			<code>{Array&lt;<a href="moduleName.html" title="">moduleName</a>&gt;}</code></h4>
+		<div class="description">
+			<p>An array of module names that should be ignored and not included in the bundled file.
+For more information take a look at the <code>ignore</code> usage http://stealjs.com/docs/steal-tools.build.html#ignore</p>
+
+		</div>
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>maxBundleRequests<code>=3</code>
+			<code>{Number}</code><span class="pull-right optional">Optional</span></h4>
+		<div class="description">
+			<p>The maximum number of bundles that need to be loaded
+for any <code>bundle</code> module. Defaults to <code>3</code>.</p>
+
+		</div>
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>maxMainRequests<code>=3</code>
+			<code>{Number}</code><span class="pull-right optional">Optional</span></h4>
+		<div class="description">
+			<p>The maximum number of bundles that will be loaded for any <code>main</code>
+module. Defaults to <code>3</code>.</p>
+
+		</div>
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>removeDevelopmentCode<code>=true</code>
+			<code>{Boolean}</code><span class="pull-right optional">Optional</span></h4>
+		<div class="description">
+			<p>Remove any development code from the bundle specified
+using <code>//!steal-remove-start</code>, and <code>//!steal-remove-end</code> comments.</p>
+
+		</div>
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>cleanCSSOptions
+			<code>{Object}</code><span class="pull-right optional">Optional</span></h4>
+		<div class="description">
+			<p>A hash of options to customize the minification of css files.
+All available options are listed in the <a href="https://github.com/jakubpawlowicz/clean-css#how-to-use-clean-css-programmatically">clean-css documentation</a>.</p>
+
+		</div>
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>uglifyOptions
+			<code>{Object}</code><span class="pull-right optional">Optional</span></h4>
+		<div class="description">
+			<p>A hash of options to customize the minification of JavaScript files. StealTools uses the
+top-level <code>minify</code> function of terser-js, and the available options are listed <a href="https://github.com/terser-js/terser#minify-options">here</a>.</p>
+<p>For example, to not uglify function names you can use <a href="https://github.com/terser-js/terser#mangle-options">keep_fnames option</a>:</p>
+<pre><code class="language-javascript">stealTools.build(config, {
+  uglifyOptions: {
+    mangle: { &quot;keep_fnames&quot;: true }
+  }
+});
+</code></pre>
+
+		</div>
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>sourceMaps<code>=false</code>
+			<code>{Boolean}</code><span class="pull-right optional">Optional</span></h4>
+		<div class="description">
+			<p>Generate source maps alongside your bundles.</p>
+
+		</div>
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>sourceMapsContent<code>=false</code>
+			<code>{Boolean}</code><span class="pull-right optional">Optional</span></h4>
+		<div class="description">
+			<p>Include the original source contents in the generated source maps. Use this option if your production environment doesn't have access to the source files. Will result in a larger source maps size but will cause fewer requests.</p>
+
+		</div>
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>transpile
+			<code>{<a href="steal-tools.BuildOptions.transpile.html" title="Allows the ability to completely control the transpiling of ES2015 source down to another format for production bundling (usually to AMD).">Transpile</a>(source, <a href="steal-tools.BuildOptions.compileOptions.html" title="An object of options passed into your custom steal-tools.BuildOptions.transpile function.">compileOptions</a>)}</code><span class="pull-right optional">Optional</span></h4>
+		<div class="description">
+			<p>A function that handles the transpiling of ES6 source to a format for production.</p>
+
+		</div>
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>watch<code>=false</code>
+			<code>{Boolean}</code><span class="pull-right optional">Optional</span></h4>
+		<div class="description">
+			<p>Actives watch mode which will continuously build as you develop your application.</p>
+
+		</div>
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>envify<code>=true</code>
+			<code>{Boolean}</code><span class="pull-right optional">Optional</span></h4>
+		<div class="description">
+			<p>Replace Node-style environment variables with plain strings.</p>
+<p>steal-tools uses <a href="https://github.com/zertosh/loose-envify">loose-envify</a> under the hood, this option is specially useful when building React.js applications.</p>
+<p>Usage:</p>
+<p>First, make sure <code>NODE_ENV</code> is set appropiately; by default the build command will
+turn <code>envify</code> on, just run:</p>
+<pre><code>NODE_ENV=production steal-tools build
+</code></pre>
+<p>If you want to turn off this behavior, just pass the following flag to the CLI:</p>
+<pre><code>NODE_ENV=production steal-tools build --no-envify
+</code></pre>
+<p>or, set the flag to false when using the build API, like this:</p>
+<pre><code class="language-javascript">stealTools.build({}, {
+    envify: false
+});
+</code></pre>
+
+		</div>
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>splitLoader<code>=false</code>
+			<code>{Boolean}</code><span class="pull-right optional">Optional</span></h4>
+		<div class="description">
+			<p>Writes the optimized loader in its own bundle.</p>
+<p>By default the, <a href="steal-tools.optimize.html" title="Build a module and all of its dependencies and, optionally, other bundles to progressively load.">optimize</a> will add the loader code to the main bundle, if <code>splitLoader</code> is set to true, a bundle called <code>loader.js</code> will be created; in order to load the application the loader has to be loaded
+like any other bundle.</p>
+<pre><code class="language-html">&lt;script src=&quot;./dist/bundles/loader.js&quot; async&gt;&lt;/script&gt;
+&lt;script src=&quot;./dist/bundles/my-app.js&quot; async&gt;&lt;/script&gt;
+</code></pre>
+<blockquote>
+<p>This option is only available for the <a href="steal-tools.optimize.html" title="Build a module and all of its dependencies and, optionally, other bundles to progressively load.">optimize</a> command.</p>
+</blockquote>
+
+		</div>
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>target
+			<code>{String | Array&lt;String&gt;}</code><span class="pull-right optional">Optional</span></h4>
+		<div class="description">
+			<p>Specifies the platform where the application is going to be deployed.</p>
+<p>Usage:</p>
+<pre><code class="language-js">stealTools.optimize({}, {
+  target: &quot;node&quot;
+});
+</code></pre>
+<p>Setting target to <code>node</code> makes the loader suitable to run on Node.js environments (<code>require</code> is used to load bundles instead of script tags); currently the targets supported are: <code>node</code>, <code>web</code>, and <code>worker</code> (Web Workers).</p>
+<p>Multiple targets can be set by passing an array of supported targets, e.g:</p>
+<pre><code class="language-js">stealTools.optimize({}, {
+  target: [&quot;node&quot;, &quot;web&quot;]
+});
+</code></pre>
+<p>When <code>target</code> is not set the bundle will be written out to its default location (See <code>dest</code> property above), but when single or multiple targets are provided, the build assets will be written out inside folders matching the target name.</p>
+<p>For example, a build targeting both node and web will look like the tree below:</p>
+<pre><code>├── dist
+    │   └── bundles
+    │       ├── node
+    │       │   └── (... application assets)
+    │       └── web
+    │           └── (... application assets)
+</code></pre>
+<blockquote>
+<p>This option is only available for the <a href="steal-tools.optimize.html" title="Build a module and all of its dependencies and, optionally, other bundles to progressively load.">optimize</a> command.</p>
+</blockquote>
+
+		</div>
+		
+		
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>bundleManifest<code>=false</code>
+			<code>{Boolean | String}</code><span class="pull-right optional">Optional</span></h4>
+		<div class="description">
+			<p>Generates an HTTP2-push like manifest of the application bundles for server-side preload.</p>
+<p>When set to <code>true</code> a <code>bundles.json</code> file will be written at the top level of the folder where the built assets are located (see the property<code>dest</code> above).</p>
+<p>A full path to the desired JSON filename can be provided, too. e.g:</p>
+<pre><code class="language-js">stealTools.build(config, {
+  bundleManifest: path.join(__dirname, &quot;dist&quot;, &quot;my-manifest.json&quot;)
+});
+</code></pre>
+<p>The manifest has the following shape:</p>
+<pre><code class="language-json">{
+  &quot;[ENTRY-POINT-BUNDLE-NAME]&quot;: {
+    &quot;[SHARED-BUNDLE-NAME]&quot;: {
+      &quot;type&quot;: &quot;style&quot;,
+      &quot;weight&quot;: 1
+    },
+    &quot;[SHARED-BUNDLE-NAME]&quot;: {
+      &quot;type&quot;: &quot;script&quot;,
+      &quot;weight&quot;: 2
+    }
+  }
+}
+</code></pre>
+<p>The top-level objects correspond to <em>entry level bundles</em>; these are the bundles needed to start up individual &quot;pages&quot; of the application and  progressively loaded bundles.</p>
+<p>The nested objects are <em>shared bundles</em>, these are created by <code>steal-tools</code> to minimize the number of HTTP requests needed to load the application code.</p>
+<p>Each <em>shared bundle</em> has two properties, <code>type</code>, an string that indicates whether the bundle contains script code or styles and <code>weight</code>, a number indicating loading priority; a bundle with lower weight should be loaded before other bundles, e.g: style bundles have <code>weight</code> of <code>1</code> and should be loaded before script bundles.</p>
+
+		</div>
+		
+		
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>bundlePromisePolyfill<code>=false</code>
+			<code>{Boolean}</code><span class="pull-right optional">Optional</span></h4>
+		<div class="description">
+			<p>Bundles a Promise polyfill with StealJS core</p>
+<p>By default, <code>steal-tools</code>'s output requires <code>Promises</code> being natively supported in the target environment where the application runs; if <code>Promises</code> <a href="https://caniuse.com/#feat=promises">are not supported</a>, turn on this flag to include the polyfill in your built code, e.g:</p>
+<pre><code class="language-js">stealTools.build(config, {
+    bundlePromisePolyfill: true
+});
+</code></pre>
+<p><code>steal-tools</code> will write a file called <code>steal-with-promises.production.js</code> to the bundles folder, make sure the script tag in your main html page loads the correct file, like this:</p>
+<pre><code class="language-html">&lt;script src=&quot;./dist/bundles/steal-with-promises.production.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>The <code>bundlePromisePolyfill</code> flag also changes the default behavior of the build command when <code>bundleSteal</code> is set; the Promise polyfill will be included in StealJS core regardless of whether StealJS's code is part of the main bundle or not.</p>
+<p>To bundle StealJS with the Promise polyfill just pass the following options to <a href="steal-tools.build.html" title="Build a module and all of its dependencies and, optionally, other bundles to progressively load.">build</a>:</p>
+<pre><code class="language-js">stealTools.build(config, {
+    bundleSteal: true,
+    bundlePromisePolyfill: true
+});
+</code></pre>
+
+		</div>
+		
+		
+		
+	</li>
+	
+	<li class="parameter">
+		<h4>treeShaking<code>=true</code>
+			<code>{Boolean}</code><span class="pull-right optional">Optional</span></h4>
+		<div class="description">
+			<p>Tree shakes the dependency graph, removing dead code created from unused exports. For more information on how tree shaking works, see the <a href="steal-tools.tree-shaking.html" title="">Tree Shaking</a> topic.</p>
+<p>Tree shaking is enabled by default. Set this flag to false if you would like to disable it (this might be necessary in legacy applications that depend on side effects created by unused exports).</p>
+<pre><code class="language-js">stealTools.build(config, {
+    treeShaking: false
+});
+</code></pre>
+
+		</div>
+		
+		
+		
+	</li>
+	
+</ol>
+
+
+</div>
+
+  
+
+			</section>
+			
+		
+
+		
+
+
+		
+		<section class="comment">
+			
+		</section>
+		
+		
+
+		
+
+		
+
+	
+	</article>
+	
+
+
+</div>
+
+
+<survey-ad>
+  <button aria-label="Close" class="close" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <a href="https://donejs.com/survey.html" target="_blank">
+    Help us improve StealJS by taking our community survey
+  </a>
+</survey-ad>
+
+
+	
+	<footer>
+		<nav class="container">
+			<a class="brand javascriptmvc" href="index.html"></a>
+		</nav>
+	</footer>
+	
+
+	<script type="text/javascript">
+		var docObject = {"src":{"path":"node_modules/steal-tools/doc/types/build-options.md"},"description":"\nOptions used to configure the build process.\n","type":"typedef","title":"BuildOptions","types":[{"type":"Object","options":[{"name":"minify","description":"\n\n**Boolean**\n\nSets whether the source code is minified prior to writing.\n\nMinification is optional but on by default, you can turn it off by doing:\n\n```javascript\nstealtools.build(config, {\n\tminify: false\n});\n```\n---\n**Function**\n\nA function can be provided to handle minification of each file in a bundle, e.g:\n\n```javascript\nstealTools.build(config, {\n\tminify: function(source, options) {\n\t\t// use your own library to minify source.code\n\t\tsource.code = doCustomMinification(source.code);\n\n\t\t// return the source object when minification is complete\n\t\treturn source;\n\t}\n});\n```\n\nThe function takes a `source` object as the first parameter, this object contains the `code` and its AST version after the transpilation\nprocess; the second parameter, `options`, is the [steal-tools.BuildOptions] object passed to configure the build process.\n","types":[{"type":"Boolean"},{"type":"function","returns":{"types":[{"type":"undefined"}]},"params":[]}],"optional":true,"defaultValue":"true"},{"name":"bundleSteal","description":"Sets whether StealJS will be included in the built file. Enabling this option will allow you to limit the initial request to just one script.\n","types":[{"type":"Boolean"}],"optional":true,"defaultValue":"false"},{"name":"verbose","description":"`true` turns on verbose output. Defaults to `false`.\n","types":[{"type":"Boolean"}],"optional":true,"defaultValue":"false"},{"name":"quiet","description":"No logging.  Defaults to `false`.\n","types":[{"type":"Boolean"}],"optional":true,"defaultValue":"false"},{"name":"dest","description":"Specifies the destination folder for the build. By default steal-tools will write to the `BASEURL + '/dist'` folder where BASEURL is the local Steal [config.baseURL baseURL], usually the same folder that your package.json is located.\n\n  The path can be specified in three ways:\n\n - Absolute path - dest starts with `/`, or matches _/^\\w+:[\\/\\\\]/_, like:  `__dirname+\"/place\"`, or `\"c:\\my\\bundles\"`.\n - Relative to `process.cwd()` - dest starts with `./`, like `\"./place\"`.\n - Relative to [config.baseURL baseURL] - dest looks like: \"packages\", \"foo/bar\".\n","types":[{"type":"String"}],"optional":true,"defaultValue":"\"dist\""},{"name":"bundleAssets","description":"Set to true to have assets from your project bundled into your dest folder.\n","types":[{"type":"steal-tools.BundleAssetsOptions"},{"type":"Boolean"}],"optional":true,"defaultValue":"false"},{"name":"ignore","description":"An array of module names that should be ignored and not included in the bundled file.\nFor more information take a look at the `ignore` usage http://stealjs.com/docs/steal-tools.build.html#ignore\n\n","types":[{"type":"Array","template":[{"types":[{"type":"moduleName"}]}]}]},{"name":"maxBundleRequests","description":"The maximum number of bundles that need to be loaded\nfor any `bundle` module. Defaults to `3`.\n","types":[{"type":"Number"}],"optional":true,"defaultValue":"3"},{"name":"maxMainRequests","description":"The maximum number of bundles that will be loaded for any `main`\nmodule. Defaults to `3`.\n","types":[{"type":"Number"}],"optional":true,"defaultValue":"3"},{"name":"removeDevelopmentCode","description":"Remove any development code from the bundle specified\nusing `//!steal-remove-start`, and `//!steal-remove-end` comments.\n","types":[{"type":"Boolean"}],"optional":true,"defaultValue":"true"},{"name":"cleanCSSOptions","description":"A hash of options to customize the minification of css files.\nAll available options are listed in the [clean-css documentation](https://github.com/jakubpawlowicz/clean-css#how-to-use-clean-css-programmatically).\n","types":[{"type":"Object","options":[]}],"optional":true},{"name":"uglifyOptions","description":"A hash of options to customize the minification of JavaScript files. StealTools uses the\ntop-level `minify` function of terser-js, and the available options are listed [here](https://github.com/terser-js/terser#minify-options).\n\nFor example, to not uglify function names you can use [keep_fnames option](https://github.com/terser-js/terser#mangle-options):\n\n```javascript\nstealTools.build(config, {\n  uglifyOptions: {\n    mangle: { \"keep_fnames\": true }\n  }\n});\n```\n","types":[{"type":"Object","options":[]}],"optional":true},{"name":"sourceMaps","description":"Generate source maps alongside your bundles.\n","types":[{"type":"Boolean"}],"optional":true,"defaultValue":"false"},{"name":"sourceMapsContent","description":"Include the original source contents in the generated source maps. Use this option if your production environment doesn't have access to the source files. Will result in a larger source maps size but will cause fewer requests.\n","types":[{"type":"Boolean"}],"optional":true,"defaultValue":"false"},{"name":"transpile","description":"A function that handles the transpiling of ES6 source to a format for production.\n","types":[{"type":"steal-tools.BuildOptions.transpile"}],"optional":true},{"name":"watch","description":"Actives watch mode which will continuously build as you develop your application.\n","types":[{"type":"Boolean"}],"optional":true,"defaultValue":"false"},{"name":"envify","description":"Replace Node-style environment variables with plain strings.\n\nsteal-tools uses [loose-envify](https://github.com/zertosh/loose-envify) under the hood, this option is specially useful when building React.js applications.\n\nUsage:\n\nFirst, make sure `NODE_ENV` is set appropiately; by default the build command will\nturn `envify` on, just run:\n\n```\nNODE_ENV=production steal-tools build\n```\n\nIf you want to turn off this behavior, just pass the following flag to the CLI:\n\n```\nNODE_ENV=production steal-tools build --no-envify\n```\n\nor, set the flag to false when using the build API, like this:\n\n```javascript\nstealTools.build({}, {\n\tenvify: false\n});\n```\n","types":[{"type":"Boolean"}],"optional":true,"defaultValue":"true"},{"name":"splitLoader","description":"Writes the optimized loader in its own bundle.\n\nBy default the, [steal-tools.optimize] will add the loader code to the main bundle, if `splitLoader` is set to true, a bundle called `loader.js` will be created; in order to load the application the loader has to be loaded\nlike any other bundle.\n\n```html\n<script src=\"./dist/bundles/loader.js\" async><\/script>\n<script src=\"./dist/bundles/my-app.js\" async><\/script>\n```\n\n> This option is only available for the [steal-tools.optimize] command.\n","types":[{"type":"Boolean"}],"optional":true,"defaultValue":"false"},{"name":"target","description":"Specifies the platform where the application is going to be deployed.\n\nUsage:\n\n```js\nstealTools.optimize({}, {\n  target: \"node\"\n});\n```\n\nSetting target to `node` makes the loader suitable to run on Node.js environments (`require` is used to load bundles instead of script tags); currently the targets supported are: `node`, `web`, and `worker` (Web Workers).\n\nMultiple targets can be set by passing an array of supported targets, e.g:\n\n```js\nstealTools.optimize({}, {\n  target: [\"node\", \"web\"]\n});\n```\n\nWhen `target` is not set the bundle will be written out to its default location (See `dest` property above), but when single or multiple targets are provided, the build assets will be written out inside folders matching the target name.\n\nFor example, a build targeting both node and web will look like the tree below:\n\n```\n├── dist\n    │   └── bundles\n    │       ├── node\n    │       │   └── (... application assets)\n    │       └── web\n    │           └── (... application assets)\n```\n\n> This option is only available for the [steal-tools.optimize] command.\n","types":[{"type":"String"},{"type":"Array","template":[{"types":[{"type":"String"}]}]}],"optional":true},{"name":"bundleManifest","description":"Generates an HTTP2-push like manifest of the application bundles for server-side preload.\n\nWhen set to `true` a `bundles.json` file will be written at the top level of the folder where the built assets are located (see the property`dest` above).\n\nA full path to the desired JSON filename can be provided, too. e.g:\n\n```js\nstealTools.build(config, {\n  bundleManifest: path.join(__dirname, \"dist\", \"my-manifest.json\")\n});\n```\n\nThe manifest has the following shape:\n\n```json\n{\n  \"[ENTRY-POINT-BUNDLE-NAME]\": {\n    \"[SHARED-BUNDLE-NAME]\": {\n      \"type\": \"style\",\n      \"weight\": 1\n    },\n    \"[SHARED-BUNDLE-NAME]\": {\n      \"type\": \"script\",\n      \"weight\": 2\n    }\n  }\n}\n```\n\nThe top-level objects correspond to _entry level bundles_; these are the bundles needed to start up individual \"pages\" of the application and  progressively loaded bundles.\n\nThe nested objects are _shared bundles_, these are created by `steal-tools` to minimize the number of HTTP requests needed to load the application code.\n\nEach _shared bundle_ has two properties, `type`, an string that indicates whether the bundle contains script code or styles and `weight`, a number indicating loading priority; a bundle with lower weight should be loaded before other bundles, e.g: style bundles have `weight` of `1` and should be loaded before script bundles.\n","types":[{"type":"Boolean"},{"type":"String"}],"optional":true,"defaultValue":"false"},{"name":"bundlePromisePolyfill","description":"Bundles a Promise polyfill with StealJS core\n\nBy default, `steal-tools`'s output requires `Promises` being natively supported in the target environment where the application runs; if `Promises` [are not supported](https://caniuse.com/#feat=promises), turn on this flag to include the polyfill in your built code, e.g:\n\n\n```js\nstealTools.build(config, {\n\tbundlePromisePolyfill: true\n});\n```\n\n`steal-tools` will write a file called `steal-with-promises.production.js` to the bundles folder, make sure the script tag in your main html page loads the correct file, like this:\n\n\n```html\n<script src=\"./dist/bundles/steal-with-promises.production.js\"><\/script>\n```\n\nThe `bundlePromisePolyfill` flag also changes the default behavior of the build command when `bundleSteal` is set; the Promise polyfill will be included in StealJS core regardless of whether StealJS's code is part of the main bundle or not.\n\nTo bundle StealJS with the Promise polyfill just pass the following options to [steal-tools.build]:\n\n```js\nstealTools.build(config, {\n\tbundleSteal: true,\n\tbundlePromisePolyfill: true\n});\n```\n","types":[{"type":"Boolean"}],"optional":true,"defaultValue":"false"},{"name":"treeShaking","description":"Tree shakes the dependency graph, removing dead code created from unused exports. For more information on how tree shaking works, see the [steal-tools.tree-shaking] topic.\n\nTree shaking is enabled by default. Set this flag to false if you would like to disable it (this might be necessary in legacy applications that depend on side effects created by unused exports).\n\n```js\nstealTools.build(config, {\n\ttreeShaking: false\n});\n```\n","types":[{"type":"Boolean"}],"optional":true,"defaultValue":"true"}]}],"name":"steal-tools.BuildOptions","parent":"steal-tools.types","pathToRoot":".."};
+	</script>
+
+	
+		<script>
+		  steal = {
+		    instantiated: {
+		      "bundles/bit-docs-site/static.css!$css" : null
+		    }
+		  }
+		</script>
+		<script type='text/javascript'
+				data-main="bit-docs-site/static"
+				src="./static/node_modules/steal/steal.production.js"></script>
+	
+</body>
+
+</html>

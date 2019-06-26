@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: node_modules/steal-conditional/docs/pages/substitution-conditional-loading.md
+	@page StealJS.guides.substitution_conditional_loading
+######################################################################## -->
+
+<!--[if lt IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 9]>
+<html class="no-js ie ie9" lang="en">
+<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>StealJS - Substitution Conditional Loading </title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta property="og:title" content="StealJS - Substitution Conditional Loading ">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png">
+	<script type="application/ld+json">
+		{
+			"@context": "http://www.schema.org",
+			"@type": "SoftwareSourceCode",
+			"applicationCategory": "DeveloperApplication",
+			"brand": "Bitovi",
+			"category": "JavaScript Frameworks",
+			"codeRepository": "https://github.com/stealjs/steal",
+			"description": "",
+			"image": "https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png",
+			"license": "https://github.com/stealjs/steal/blob/master/license.md",
+			"logo": "https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png",
+			"name": "StealJS - Substitution Conditional Loading ",
+			"programmingLanguage": "JavaScript"
+		}
+	</script>
+	
+		<link rel="stylesheet" type="text/css" href="./static/bundles/bit-docs-site/static.css">
+	
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-2302003-20', 'auto');
+			ga('send', 'pageview');
+		</script>
+	
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="static/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body class="docs">
+	
+	<header>
+		
+		<div style="display: none;" class="navbar"></div>
+		<nav class="container">
+			<div class="logo-menu">
+				<a class="brand" href="./index.html">StealJS</a>
+
+				<ul class="dropdown-menu">
+					<li><a href="https://donejs.com/">DoneJS</a></li>
+					<li><a href="https://stealjs.com/">StealJS</a></li>
+					<li><a href="https://jquerypp.com/">jQuery ++</a></li>
+					<li><a href="https://funcunit.com/">FuncUnit</a></li>
+					<li><a href="https://documentjs.com/">DocumentJS</a></li>
+				</ul>
+			</div>
+
+			<ul class="nav">
+				<li><a href="https://stealjs.com">Home</a></li>
+
+				
+          <li class="active"><a href="index.html">Api</a></li>
+        
+
+				<li><a href="https://twitter.com/stealjs">Twitter</a></li>
+				<li><a href="https://github.com/stealjs/steal">GitHub</a></li>
+				<li><a href="https://gitter.im/stealjs/steal">Chat</a></li>
+			</ul>
+
+			<div class="pull-right">
+				<div class="bitovi-menu">
+					<a href="https://www.bitovi.com" class="bitovi icon-bits">Bitovi</a>
+					<ul class="dropdown-menu">
+						<li><a href="https://www.bitovi.com">Bitovi.com</a></li>
+						<li><a href="https://www.bitovi.com/blog">Blog</a></li>
+						<li><a href="https://www.bitovi.com/design">Design</a></li>
+						<li><a href="https://www.bitovi.com/development">Development</a></li>
+						<li><a href="https://www.bitovi.com/training">Training</a></li>
+						<li><a href="https://www.bitovi.com/open-source">Open Source</a></li>
+						<li><a href="https://www.bitovi.com/about">About</a></li>
+						<li><a href="https://www.bitovi.com/contact">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+
+	
+<div class="container api">
+
+	
+	<nav class="sidebar">
+		
+		<ul class="api cascading primary-grouping">
+	
+		
+
+		
+			
+				<li class="search-container active">
+					<a
+						class="sidebar-title"
+						href="index.html"
+						data-search="StealJS"
+					>
+						StealJS
+					</a>
+					
+	
+		<ul>
+			
+				
+					
+						<li class="heading search-container">
+							<span>step-by-step guides</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.guides.progressive_loading.html" data-search="Progressive Loading">
+							Progressive Loading
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.quick-start.html" data-search="Quick Start">
+							Quick Start
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.guides.boolean_conditional_loading.html" data-search="Boolean Conditional Loading">
+							Boolean Conditional Loading
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container active ">
+						<a class="page" href="StealJS.guides.substitution_conditional_loading.html" data-search="Substitution Conditional Loading">
+							Substitution Conditional Loading
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>development</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.development-bundles.html" data-search="Development Bundles">
+							Development Bundles
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.using-npm-packages.html" data-search="Using npm Packages">
+							Using npm Packages
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.hot-module-replacement.html" data-search="Hot Module Replacement">
+							Hot Module Replacement
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.configuration.html" data-search="Configuration">
+							Configuration
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.conditionals.html" data-search="Conditional Loading">
+							Conditional Loading
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.babel.html" data-search="Babel">
+							Babel
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.circular.html" data-search="Circular Dependencies">
+							Circular Dependencies
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.error-messages.html" data-search="Error Messages">
+							Error Messages
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>bundling</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.optimized-builds.html" data-search="Optimized Builds">
+							Optimized Builds
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.code-splitting.html" data-search="Code Splitting">
+							Code Splitting
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.tree-shaking.html" data-search="Tree Shaking">
+							Tree Shaking
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.watch-mode.html" data-search="Watch Mode">
+							Watch Mode
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.multi-main.html" data-search="Multi-main Builds">
+							Multi-main Builds
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.project-exporting.html" data-search="Project Exporting">
+							Project Exporting
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>production</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.loading-from-cdn.html" data-search="Loading Scripts from a CDN">
+							Loading Scripts from a CDN
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.moving-to-prod.html" data-search="Moving to Production">
+							Moving to Production
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-bundle-manifest.server.html" data-search="Server templating in Node">
+							Server templating in Node
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-bundle-manifest.snippets.html" data-search="Generating HTML Snippets">
+							Generating HTML Snippets
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>advanced</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.writing-plugins.html" data-search="Writing Plugins">
+							Writing Plugins
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.guides.streams.html" data-search="Streaming API">
+							Streaming API
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>apis</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal.html" data-search="steal">
+							steal
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.html" data-search="steal-tools">
+							steal-tools
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>migrating</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.migrating.html" data-search="Migrating from Legacy Steal">
+							Migrating from Legacy Steal
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.topics.migrating-one.html" data-search="Migrating to StealJS 1.x">
+							Migrating to StealJS 1.x
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.topics.migrating-two.html" data-search="Migrating to StealJS 2.x">
+							Migrating to StealJS 2.x
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>about</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.why.html" data-search="Why StealJS">
+							Why StealJS
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="guides.Contributing.html" data-search="Contributing">
+							Contributing
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>ecosystem</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="grunt-steal.html" data-search="grunt-steal">
+							grunt-steal
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-bundle-manifest.html" data-search="steal-bundle-manifest">
+							steal-bundle-manifest
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-conditional.html" data-search="steal-conditional">
+							steal-conditional
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-css.html" data-search="steal-css">
+							steal-css
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-less.html" data-search="steal-less">
+							steal-less
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-mocha.html" data-search="steal-mocha">
+							steal-mocha
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-qunit.html" data-search="steal-qunit">
+							steal-qunit
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-socket.io.html" data-search="steal-socket.io">
+							steal-socket.io
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+		</ul>
+	
+
+
+				</li>
+			
+		
+	
+</ul>
+
+	</nav>
+	
+
+	
+	<article class="content docs">
+	
+
+		
+		<section class="title">
+			<div class="heading">
+<h1>Substitution Conditional Loading</h1>
+	<ul class="tags">
+		<li>page</li>
+	</ul>
+	
+	
+</div>
+
+<div class="sub-heading">
+	
+	
+		<span class="module">StealJS.guides.substitution_conditional_loading</span>
+	
+	
+	
+	<span class="inherits">&nbsp;</span>
+</div>
+
+<ul class="links">
+	
+	
+	
+</ul>
+<br />
+
+		</section>
+		
+
+		
+		<section class="contents">
+			<div class="on-this-page-container"></div>
+		</section>
+		
+
+		
+
+		
+		<section class="description">
+			
+		</section>
+		
+
+		
+			
+		
+
+		
+
+
+		
+		<section class="comment">
+			<!-- hack! -->
+<style>.contents { display: none; }</style>
+<p>StealJS supports conditional module loading through the <a href="https://github.com/stealjs/steal-conditional">steal-conditional</a> extension;
+2 types of conditionals are currently supported, string substitution and <a href="StealJS.guides.boolean_conditional_loading.html" title="">boolean</a>.</p>
+<p>In this guide, we'll build a small demo that uses the string substitution conditional syntax to import a random translation of the famous &quot;Hello, World!&quot;.</p>
+<h2>Install Prerequisites</h2>
+<h3>Window Setup</h3>
+<ol>
+<li>Install <a href="https://nodejs.org/">NodeJS</a>.</li>
+<li>Install Chocolatey, Python, Windows SDK, and Visual Studio as described <a href="http://stealjs.com/docs/guides.ContributingWindows.html">here</a>.</li>
+</ol>
+<h3>Linux / Mac Setup</h3>
+<ol>
+<li>Install <a href="https://nodejs.org/">NodeJS</a>.</li>
+</ol>
+<h2>Setting up a new project</h2>
+<h3>Create a new project folder</h3>
+<p>Create a new folder for your project and then run <code>npm init</code>. Answer all questions with their defaults.</p>
+<pre><code>&gt; mkdir substitution-demo
+&gt; cd substitution-demo
+&gt; npm init
+</code></pre>
+<h3>Create and host the main page</h3>
+<p>Create <em>index.html</em> with:</p>
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+      #header { text-align: center; margin-top: 50px; }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1 id=&quot;header&quot;&gt;Hello, World!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Next install and run a local fileserver. <a href="https://www.npmjs.com/package/http-server">http-server</a> handles our basic needs. We'll install it locally and then and it to our npm scripts:</p>
+<pre><code>&gt; npm install http-server --save
+</code></pre>
+<p>Next, edit your <code>package.json</code> so that the start script looks like:</p>
+<pre><code class="language-json">&quot;scripts&quot;: {
+  &quot;start&quot;: &quot;http-server -c-1&quot;
+}
+</code></pre>
+<p>This allows us to start the server with:</p>
+<pre><code>&gt; npm start
+</code></pre>
+<p>Open <a href="http://127.0.0.1:8080/">http://127.0.0.1:8080/</a>. You should see the <em>Hello, World!</em> test.</p>
+<blockquote>
+<p>Before proceeding kill the development server so we can install some dependencies. Use cmd+c on Mac or ctrl+c on Windows or Linux/BSD.</p>
+</blockquote>
+<h3>Install the application dependencies</h3>
+<p>Installing these dependencies gives us everything we need to build our application.</p>
+<pre><code>&gt; npm install steal steal-tools steal-conditional --save-dev
+</code></pre>
+<h3>Set up steal-conditional</h3>
+<p>Next, configure StealJS to load the <code>steal-conditional</code> extension as a <a href="https://stealjs.com/docs/npm.html#packagestealconfigdependencies">configuration dependency</a>; in your <code>package.json</code> add the following:</p>
+<pre><code class="language-json">{
+  &quot;name&quot;: &quot;substitution-demo&quot;,
+  &quot;steal&quot;: {
+    &quot;configDependencies&quot;: [
+      &quot;./node_modules/steal-conditional/conditional.js&quot;
+    ]
+  }
+}
+</code></pre>
+<p><span line-highlight='3-7'></span>
+Now restart your server; you can keep it on while you develop the rest of the application.</p>
+<pre><code>&gt; npm start
+</code></pre>
+<h2>Import your first module</h2>
+<h3>Create the module</h3>
+<p>Create <em>index.js</em> with the following:</p>
+<pre><code class="language-js">document.getElementById(&quot;header&quot;).textContent = &quot;Hello, World!&quot;;
+</code></pre>
+<p>Nothing interesting here, we grab the element with the <code>header</code> id and then set its <code>textContent</code> property to <code>Hello, World!</code>.</p>
+<h3>Use steal.js in your page</h3>
+<p>Update <em>index.html</em> with:</p>
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+      #header { text-align: center; margin-top: 50px; }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1 id=&quot;header&quot;&gt;Hello, World!&lt;/h1&gt;
+    &lt;script src=&quot;./node_modules/steal/steal.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p><span line-highlight='10'></span>
+Also, since we are setting the <code>textContent</code> property using JavaScript, go ahead
+and remove the <code>Hello, World!</code> from <em>index.html</em>.</p>
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+      #header { text-align: center; margin-top: 50px; }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1 id=&quot;header&quot;&gt;&lt;/h1&gt;
+    &lt;script src=&quot;./node_modules/steal/steal.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p><span line-highlight='9'></span></p>
+<p>Reload <em>index.html</em> to see your changes.</p>
+<h2>Create the translation files</h2>
+<p>Our goal is to import a random translation of <code>Hello, World!</code> and set it to the
+<code>textContent</code> of the <code>h1</code> tag we added to <em>index.html</em>.</p>
+<p>Create a folder name <strong>locale</strong>, and add the following, each translation in its
+own module:</p>
+<pre><code class="language-js">// substitution-demo/locale/en.js
+
+export default { helloWorld: &quot;Hello, World!&quot; };
+</code></pre>
+<pre><code class="language-js">// substitution-demo/locale/es.js
+
+export default { helloWorld: &quot;¡Hola Mundo!&quot; };
+</code></pre>
+<pre><code class="language-js">// substitution-demo/locale/hi.js
+
+export default { helloWorld: &quot;नमस्ते दुनिया&quot; };
+</code></pre>
+<p>Next, we need to import these modules in <em>index.js</em> and randomly pick a specific
+translation to use its value to populate the <code>h1</code> tag in <em>index.html</em>.</p>
+<p>We could import each individual module and then write a simple algorithm to pick one
+of the translation values, in our example, that's an ok solution since we only have 3
+translation modules, but you can imagine how annoying it would be to do the same with
+100 or even more modules.</p>
+<h3>The string substitution syntax</h3>
+<p>Add the following to the <em>index.js</em> file we created before:</p>
+<pre><code class="language-js">import i18n from &quot;locale/#{lang}&quot;;
+
+document.getElementById(&quot;header&quot;).textContent = i18n.helloWorld;
+</code></pre>
+<p><span line-highlight='1'></span>
+This syntax might be already familiar and the reason is that it resembles the <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Template_literals">ES2015 Template Literals</a> syntax,
+with the difference that the character before the curly braces is a <code>#</code> sign.</p>
+<p>The name between the curly braces (<code>lang</code> in our example) is a module name, called condition module, the <code>steal-conditional</code> extension will load it first and grab <a href="https://developer.mozilla.org/en/docs/web/javascript/reference/statements/export#Using_the_default_export">its default export</a>; if the value is not a <code>string</code> it will throw an error, otherwise this value is used to replace the module name along with the <code>#</code> sign and the curly braces.</p>
+<p>Let's say, <code>lang</code>'s default export value is the string <code>'foo'</code>, the conditional import in <em>index.js</em> would be interpolated to:</p>
+<pre><code class="language-js">import i18n from &quot;locale/foo&quot;;
+</code></pre>
+<blockquote>
+<p>It is also possible for the conditional module to define multiple conditions via the <code>.</code> modifier:</p>
+<pre><code class="language-js">import &quot;locale/#{lang.helloWorld}&quot;;
+</code></pre>
+<p>See <code>steal-conditional</code>'s <a href="https://github.com/stealjs/steal-conditional/blob/master/README.md">README</a> for more details.</p>
+</blockquote>
+<h3>Create the condition module</h3>
+<p>Create <em>lang.js</em> with:</p>
+<pre><code class="language-js">const locales = ['en', 'es', 'hi'];
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
+export default locales[getRandomInt(0, locales.length)];
+</code></pre>
+<p>The condition module creates a constant that holds the possible translation files to use,
+in our example there are 3 possible modules, then, the <code>getRandomInt</code> helper is defined,
+this function returns a random number between the <code>min</code> argument and <code>max</code>.</p>
+<p>Finally, <code>getRandomInt</code> is used to export a value of the <code>locales</code> array.</p>
+<p>Reload <em>index.html</em> to see your changes.</p>
+<p><img src="https://cloud.githubusercontent.com/assets/724877/21694104/5a33f32e-d362-11e6-8468-cafd83b0a021.png" alt="screen shot 2017-01-05 at 16 14 46" /></p>
+<p>If you reload <em>index.html</em> a couple more times, you should see the other translations as well:</p>
+<p><img src="https://cloud.githubusercontent.com/assets/724877/21694124/6e1d4b60-d362-11e6-9d67-32ac20cbc0f3.png" alt="screen shot 2017-01-05 at 16 14 39" /></p>
+<p>Pretty cool, don't you think?</p>
+<blockquote>
+<p>Showing a random language is done here for demonstration purposes, in most real world applications you'd want to use <a href="https://developer.mozilla.org/en-US/docs/Web/API/NavigatorLanguage/language">the preferred language of the user</a>.</p>
+</blockquote>
+<h2>Build a production app</h2>
+<p>Now that we've created our application we need to share it with the public. To do this we'll create a build that will concat our JavaScript and styles down to only one file, each, for faster page loads in production.</p>
+<h3>Build the app and switch to production</h3>
+<p>When we first installed our initial dependencies for myhub, one of those was <em>steal-tools</em>. steal-tools is a set of tools that helps with bundling assets for production use.</p>
+<p>In your package.json <code>&quot;scripts&quot;</code> section add:</p>
+<pre><code class="language-json">{
+  &quot;scripts&quot;: {
+    ...
+    &quot;build&quot;: &quot;steal-tools&quot;
+  }
+}
+</code></pre>
+<p>And then you can run:</p>
+<pre><code>&gt; npm run build
+</code></pre>
+<p>To use the production artifacts rather than the development files we need to update our index.html to load them.</p>
+<p>Update <em>index.html</em> with:</p>
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+      #header { text-align: center; margin-top: 50px; }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1 id=&quot;header&quot;&gt;&lt;/h1&gt;
+    &lt;script src=&quot;./dist/steal.production.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p><span line-highlight='10'></span>
+By using <code>steal.production.js</code> instead of <code>steal.js</code> StealJS will know to load the production files we just built.</p>
+<h3>A bundle for each conditional module</h3>
+<p>During the build, <code>steal-conditional</code> will detect the possible variations and <code>steal-tools</code> will create separate individual bundles for each variation.</p>
+<p>If we take a look at the artifacts created during the build process</p>
+<p><img src="https://cloud.githubusercontent.com/assets/724877/21693701/b0cebb8a-d360-11e6-905f-b276af5dcebf.png" alt="screen shot 2017-01-05 at 16 03 40" /></p>
+<p>We can see how each of the locale modules we create gets its own bundle.</p>
+<p>Finally, reload <em>index.html</em> to see your changes:</p>
+<p><img src="https://cloud.githubusercontent.com/assets/724877/21693798/19ac6774-d361-11e6-86e2-edf97852369d.png" alt="screen shot 2017-01-05 at 16 07 34" /></p>
+
+		</section>
+		
+		
+
+		
+
+		
+
+	
+	</article>
+	
+
+
+</div>
+
+
+<survey-ad>
+  <button aria-label="Close" class="close" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <a href="https://donejs.com/survey.html" target="_blank">
+    Help us improve StealJS by taking our community survey
+  </a>
+</survey-ad>
+
+
+	
+	<footer>
+		<nav class="container">
+			<a class="brand javascriptmvc" href="index.html"></a>
+		</nav>
+	</footer>
+	
+
+	<script type="text/javascript">
+		var docObject = {"src":{"path":"node_modules/steal-conditional/docs/pages/substitution-conditional-loading.md"},"description":"\n","name":"StealJS.guides.substitution_conditional_loading","title":"Substitution Conditional Loading","type":"page","parent":"StealJS.guides","outline":{"depth":0},"comment":" ","pathToRoot":".."};
+	</script>
+
+	
+		<script>
+		  steal = {
+		    instantiated: {
+		      "bundles/bit-docs-site/static.css!$css" : null
+		    }
+		  }
+		</script>
+		<script type='text/javascript'
+				data-main="bit-docs-site/static"
+				src="./static/node_modules/steal/steal.production.js"></script>
+	
+</body>
+
+</html>

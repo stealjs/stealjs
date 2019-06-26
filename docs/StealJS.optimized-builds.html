@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: doc/steal-topics/bundling/optimized-builds.md
+	@page StealJS.optimized-builds
+######################################################################## -->
+
+<!--[if lt IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 9]>
+<html class="no-js ie ie9" lang="en">
+<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>StealJS - Optimized Builds </title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta property="og:title" content="StealJS - Optimized Builds ">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png">
+	<script type="application/ld+json">
+		{
+			"@context": "http://www.schema.org",
+			"@type": "SoftwareSourceCode",
+			"applicationCategory": "DeveloperApplication",
+			"brand": "Bitovi",
+			"category": "JavaScript Frameworks",
+			"codeRepository": "https://github.com/stealjs/steal",
+			"description": "",
+			"image": "https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png",
+			"license": "https://github.com/stealjs/steal/blob/master/license.md",
+			"logo": "https://www.bitovi.com/hs-fs/hubfs/open-source/os-stealjs.png",
+			"name": "StealJS - Optimized Builds ",
+			"programmingLanguage": "JavaScript"
+		}
+	</script>
+	
+		<link rel="stylesheet" type="text/css" href="./static/bundles/bit-docs-site/static.css">
+	
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-2302003-20', 'auto');
+			ga('send', 'pageview');
+		</script>
+	
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="static/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body class="docs">
+	
+	<header>
+		
+		<div style="display: none;" class="navbar"></div>
+		<nav class="container">
+			<div class="logo-menu">
+				<a class="brand" href="./index.html">StealJS</a>
+
+				<ul class="dropdown-menu">
+					<li><a href="https://donejs.com/">DoneJS</a></li>
+					<li><a href="https://stealjs.com/">StealJS</a></li>
+					<li><a href="https://jquerypp.com/">jQuery ++</a></li>
+					<li><a href="https://funcunit.com/">FuncUnit</a></li>
+					<li><a href="https://documentjs.com/">DocumentJS</a></li>
+				</ul>
+			</div>
+
+			<ul class="nav">
+				<li><a href="https://stealjs.com">Home</a></li>
+
+				
+          <li class="active"><a href="index.html">Api</a></li>
+        
+
+				<li><a href="https://twitter.com/stealjs">Twitter</a></li>
+				<li><a href="https://github.com/stealjs/steal">GitHub</a></li>
+				<li><a href="https://gitter.im/stealjs/steal">Chat</a></li>
+			</ul>
+
+			<div class="pull-right">
+				<div class="bitovi-menu">
+					<a href="https://www.bitovi.com" class="bitovi icon-bits">Bitovi</a>
+					<ul class="dropdown-menu">
+						<li><a href="https://www.bitovi.com">Bitovi.com</a></li>
+						<li><a href="https://www.bitovi.com/blog">Blog</a></li>
+						<li><a href="https://www.bitovi.com/design">Design</a></li>
+						<li><a href="https://www.bitovi.com/development">Development</a></li>
+						<li><a href="https://www.bitovi.com/training">Training</a></li>
+						<li><a href="https://www.bitovi.com/open-source">Open Source</a></li>
+						<li><a href="https://www.bitovi.com/about">About</a></li>
+						<li><a href="https://www.bitovi.com/contact">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+
+	
+<div class="container api">
+
+	
+	<nav class="sidebar">
+		
+		<ul class="api cascading primary-grouping">
+	
+		
+
+		
+			
+				<li class="search-container active">
+					<a
+						class="sidebar-title"
+						href="index.html"
+						data-search="StealJS"
+					>
+						StealJS
+					</a>
+					
+	
+		<ul>
+			
+				
+					
+						<li class="heading search-container">
+							<span>step-by-step guides</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.guides.progressive_loading.html" data-search="Progressive Loading">
+							Progressive Loading
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.quick-start.html" data-search="Quick Start">
+							Quick Start
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.guides.boolean_conditional_loading.html" data-search="Boolean Conditional Loading">
+							Boolean Conditional Loading
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.guides.substitution_conditional_loading.html" data-search="Substitution Conditional Loading">
+							Substitution Conditional Loading
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>development</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.development-bundles.html" data-search="Development Bundles">
+							Development Bundles
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.using-npm-packages.html" data-search="Using npm Packages">
+							Using npm Packages
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.hot-module-replacement.html" data-search="Hot Module Replacement">
+							Hot Module Replacement
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.configuration.html" data-search="Configuration">
+							Configuration
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.conditionals.html" data-search="Conditional Loading">
+							Conditional Loading
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.babel.html" data-search="Babel">
+							Babel
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.circular.html" data-search="Circular Dependencies">
+							Circular Dependencies
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.error-messages.html" data-search="Error Messages">
+							Error Messages
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>bundling</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container active ">
+						<a class="page" href="StealJS.optimized-builds.html" data-search="Optimized Builds">
+							Optimized Builds
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.code-splitting.html" data-search="Code Splitting">
+							Code Splitting
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.tree-shaking.html" data-search="Tree Shaking">
+							Tree Shaking
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.watch-mode.html" data-search="Watch Mode">
+							Watch Mode
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.multi-main.html" data-search="Multi-main Builds">
+							Multi-main Builds
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.project-exporting.html" data-search="Project Exporting">
+							Project Exporting
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>production</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.loading-from-cdn.html" data-search="Loading Scripts from a CDN">
+							Loading Scripts from a CDN
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.moving-to-prod.html" data-search="Moving to Production">
+							Moving to Production
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-bundle-manifest.server.html" data-search="Server templating in Node">
+							Server templating in Node
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-bundle-manifest.snippets.html" data-search="Generating HTML Snippets">
+							Generating HTML Snippets
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>advanced</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.writing-plugins.html" data-search="Writing Plugins">
+							Writing Plugins
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.guides.streams.html" data-search="Streaming API">
+							Streaming API
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>apis</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal.html" data-search="steal">
+							steal
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-tools.html" data-search="steal-tools">
+							steal-tools
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>migrating</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.migrating.html" data-search="Migrating from Legacy Steal">
+							Migrating from Legacy Steal
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.topics.migrating-one.html" data-search="Migrating to StealJS 1.x">
+							Migrating to StealJS 1.x
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.topics.migrating-two.html" data-search="Migrating to StealJS 2.x">
+							Migrating to StealJS 2.x
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>about</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="StealJS.why.html" data-search="Why StealJS">
+							Why StealJS
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="guides.Contributing.html" data-search="Contributing">
+							Contributing
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+				
+					
+						<li class="heading search-container">
+							<span>ecosystem</span>
+							
+	
+		<ul>
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="grunt-steal.html" data-search="grunt-steal">
+							grunt-steal
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="page" href="steal-bundle-manifest.html" data-search="steal-bundle-manifest">
+							steal-bundle-manifest
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-conditional.html" data-search="steal-conditional">
+							steal-conditional
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-css.html" data-search="steal-css">
+							steal-css
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-less.html" data-search="steal-less">
+							steal-less
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-mocha.html" data-search="steal-mocha">
+							steal-mocha
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-qunit.html" data-search="steal-qunit">
+							steal-qunit
+						</a>
+					</li>
+					
+
+				
+			
+				
+					
+					
+					<li class="search-container">
+						<a class="module" href="steal-socket.io.html" data-search="steal-socket.io">
+							steal-socket.io
+						</a>
+					</li>
+					
+
+				
+			
+		</ul>
+	
+
+
+						</li>
+					
+					
+
+				
+			
+		</ul>
+	
+
+
+				</li>
+			
+		
+	
+</ul>
+
+	</nav>
+	
+
+	
+	<article class="content docs">
+	
+
+		
+		<section class="title">
+			<div class="heading">
+<h1>Optimized Builds</h1>
+	<ul class="tags">
+		<li>page</li>
+	</ul>
+	
+	
+</div>
+
+<div class="sub-heading">
+	
+	
+		<span class="module">StealJS.optimized-builds</span>
+	
+	
+	
+	<span class="inherits">&nbsp;</span>
+</div>
+
+<ul class="links">
+	
+	
+	
+</ul>
+<br />
+
+		</section>
+		
+
+		
+		<section class="contents">
+			<div class="on-this-page-container"></div>
+		</section>
+		
+
+		
+
+		
+		<section class="description">
+			
+		</section>
+		
+
+		
+			
+		
+
+		
+
+
+		
+		<section class="comment">
+			<p>In 1.4.0 StealTools added a new <strong>optimize</strong> API which aims to replace <a href="steal-tools.build">stealTools.build</a>
+as the default way of creating a build of a module and all of its dependencies; builds created by <code>stealTools.optimize</code> are smaller and load faster.</p>
+<p>Unlike regular <a href="steal-tools.build">builds</a>, optimized builds don't need to load or bundle StealJS at all; a thin wrapper is added instead to the main bundle so the browser can load and execute the modules correctly.</p>
+<blockquote>
+<p>The <strong>optimize</strong> API is a work in progress, some StealJS features are not supported yet.</p>
+</blockquote>
+<p>In this guide, we'll go through the steps required to create and use an optimized build. We'll be using the
+<code>myhub</code> application created in the <a href="./StealJS.guides.progressive_loading">Progressive Loading</a> guide.</p>
+<h2>Install Prerequisites</h2>
+<h3>Window Setup</h3>
+<ol>
+<li>Install <a href="https://nodejs.org/">NodeJS</a>.</li>
+<li>Install Chocolatey, Python, Windows SDK, and Visual Studio as described <a href="http://stealjs.com/docs/guides.ContributingWindows.html">here</a>.</li>
+</ol>
+<h3>Linux / Mac Setup</h3>
+<ol>
+<li>Install <a href="https://nodejs.org/">NodeJS</a>.</li>
+</ol>
+<h2>Setting up myhub</h2>
+<h3>Clone the Github repo</h3>
+<p>Run the following command:</p>
+<pre><code>&gt; git clone git@github.com:stealjs/myhub.git
+</code></pre>
+<h3>Install dependencies</h3>
+<p>As mentioned before, the <strong>optimize</strong> API is still in its early days, for that reason
+we need to use some pre-release packages.</p>
+<p>Edit your <code>package.json</code> like:</p>
+<pre><code class="language-json">&quot;devDependencies&quot;: {
+  ...
+  &quot;steal-css&quot;: &quot;^1.3.0-pre.0&quot;,
+  &quot;steal-tools&quot;: &quot;^1.4.0&quot;
+}
+</code></pre>
+<p>Run <code>npm install</code> to install all the application dependencies.</p>
+<h3>Make an optimize build script</h3>
+<p>Create <em>optimize.js</em>:</p>
+<pre><code class="language-js">var stealTools = require(&quot;steal-tools&quot;);
+
+// use the defaults
+stealTools.optimize();
+</code></pre>
+<blockquote>
+<p>The <a href="steal-tools.cmd.optimize.html" title="Call steal-tools steal-tools.optimize from the command line.">steal-tools optimize</a> CLI can be used instead of NPM scripts.</p>
+</blockquote>
+<p>Run the build script with:</p>
+<pre><code>&gt; node optimize.js
+</code></pre>
+<p>Now, start an http server by running <code>npm start</code> and open <code>http://127.0.0.1:8080/</code>
+in a web browser. You should see myhub's home page.</p>
+<blockquote>
+<p>One limitation of the optimized loader is that unlike StealJS' loader it does not normalize module identifiers on runtime. For static imports that's not a problem, but it's an issue for dynamic imports (through steal.import), the module identifier needs to match the name set in <a href="config.bundle.html" title="Specifies which modules will be progressively loaded. This is
+used by the build.">bundle</a>.</p>
+</blockquote>
+<h3>Performance comparison</h3>
+<p>For most application builds where StealJS is not included in each of the main bundles, optimized builds will
+have one fewer http request on the initial load which is already a win.</p>
+<p>In this example, we are comparing how fast the load event is fired (this event is fired when a resource and its dependent resources have finished loading) when creating the build using <code>stealTools.build</code> (with <code>bundleSteal</code> set to <code>true</code>) and <code>stealTools.optimize</code>.</p>
+<p><img src="https://user-images.githubusercontent.com/724877/27665945-ab37799a-5c2d-11e7-8d20-08f3de19ee5f.png" alt="build" /></p>
+<p>In the screenshot above, the build created by <a href="steal-tools.build">stealTools.build</a> takes 157ms to
+fire the load event, in contrast the optimized build takes 119ms (24% faster) to fire the load event, see the screenshot below.</p>
+<p><img src="https://user-images.githubusercontent.com/724877/27653129-5d2fb35c-5bfb-11e7-85fb-fa48f2a79e1b.png" alt="google chrome" /></p>
+<p>It's also worth noting that the optimized bundles are smaller; the gzip size of the optimized main bundle is 31.8 kB compared to the 59.5 kB bundle of the regular build (46% smaller!).</p>
+<h3>Progressive loading and async script tags</h3>
+<p>So far we have only loaded the main module of the <code>myhub</code> application; one of the features of this application is that it progressively loads the modules needed to render the <code>weather</code> page and the <code>puppies</code> page only when the user navigates to any of these pages.</p>
+<p><img src="https://user-images.githubusercontent.com/724877/27666155-16d23f86-5c2f-11e7-997f-c117416b8196.png" alt="weather" /></p>
+<p>Once again, the optimized bundle is smaller than the regular one (although the difference is less that 1 kB); but unlike regular bundles loaded with StealJS, the optimized loader can handle bundles loaded using script tags; which means we can take advantage of the browser capability to download the bundle and parse its code without blocking the main thread and without waiting for the user to click any of the navigation links.</p>
+<p>Edit <code>index.html</code> to asynchronously load the bundles of the other two pages like this:</p>
+<pre><code class="language-html">&lt;body&gt;
+  &lt;div class=&quot;container&quot;&gt;Hello World.&lt;/div&gt;
+  &lt;script async src=&quot;./dist/bundles/myhub/myhub.js&quot;&gt;&lt;/script&gt;
+  &lt;script async src=&quot;./dist/bundles/myhub/weather/weather.js&quot;&gt;&lt;/script&gt;
+  &lt;script async src=&quot;./dist/bundles/myhub/puppies/puppies.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+<p><img src="https://user-images.githubusercontent.com/724877/27666330-2e7c18d6-5c30-11e7-95b7-5a9323b51833.png" alt="optimize-async" /></p>
+<p>If you reload your browser, you'd notice that there are two extra requests and the load event takes more or less the same time to fire as before. The browser downloaded and parsed the bundles without blocking the main thread, instead of waiting for the user to navigate away from the home page, which results in smoother transitions.</p>
+<p>Navigate to the puppies page and see it for yourself!</p>
+<p><img src="https://user-images.githubusercontent.com/724877/27697431-75927fc2-5cb1-11e7-9642-1a496a5c8cd3.png" alt="async" /></p>
+<h2>iOS builds using Apache Cordova</h2>
+<p>In this part of the guide we will turn the <code>myhub</code> application into an iOS application that can be tested in the iOS simulator using <a href="https://cordova.apache.org/">Apache Cordova</a>.</p>
+<blockquote>
+<p>This guide is targeted to macOS users, please download and install Xcode from the <a href="https://developer.apple.com/xcode/">AppStore</a> before moving forward.</p>
+</blockquote>
+<p>To set up the Cordova build, we have to install a couple of packages, run:</p>
+<pre><code>npm install --save-dev steal-cordova
+npm install --global ios-sim
+</code></pre>
+<h3>Update the optimize build script</h3>
+<p>Once <code>steal-cordova</code> is installed and saved in your <code>package.json</code> file, update <em>optimize.js</em> with the following code:</p>
+<pre><code class="language-js">var path = require(&quot;path&quot;);
+var stealTools = require(&quot;steal-tools&quot;);
+
+var stealCordova = require(&quot;steal-cordova&quot;)({
+  buildDir: &quot;./build/cordova&quot;,
+  id: &quot;com.myhub&quot;,
+  name: &quot;MyHub&quot;,
+  platforms: [&quot;ios&quot;],
+  index: path.join(__dirname, &quot;index.html&quot;)
+});
+
+stealTools
+  .optimize()
+  .then(stealCordova.build)
+  .then(function() {
+    // launch the iOS simulator automatically
+    stealCordova.ios.emulate();
+  });
+</code></pre>
+<blockquote>
+<p>Read <a href="https://github.com/stealjs/steal-cordova">steal-cordova</a> documentation to get familiar with all the available options.</p>
+</blockquote>
+<p>Run the build script with:</p>
+<pre><code>&gt; node optimize.js
+</code></pre>
+<p><img src="https://user-images.githubusercontent.com/724877/28987781-fc5b731c-7929-11e7-89b4-10f9a3551b0b.png" alt="screen shot 2017-08-04 at 15 30 42" /></p>
+<p>Congrats! you just created an iOS application!</p>
+<blockquote>
+<p>If you receive the error &quot;Error: Cannot read property 'replace' of undefined&quot;, you can work around it by running <code>cd build/cordova/platforms/ios/cordova/ &amp;&amp; npm install ios-sim@6</code> then cd back into the <code>myhub</code> root folder and run the optimize build script again.</p>
+</blockquote>
+<h3>Optimized build targets and Cordova builds</h3>
+<p>The <code>optimize</code> API can be passed a <a href="steal-tools.BuildOptions">target</a> option to generate code specific to certain platforms, you can read more about it in the <a href="https://stealjs.com/docs/steal-tools.BuildOptions.html">steal-tools</a> documentation.</p>
+<p>The Cordova build requires the web target output to be passed in, first, make sure your <code>target</code> array includes the &quot;web&quot; option.</p>
+<p>Assuming you're creating a build to load on Web Workers as a second target, <em>optimize.js</em> should look like this:</p>
+<pre><code class="language-js">// The code up to this point remains the same
+stealTools
+  .optimize({}, { target: [&quot;web&quot;, &quot;worker&quot;] })
+  .then(function(buildResult) {
+    return stealCordova.build(buildResult.web);
+  })
+  .then(function() {
+    stealCordova.ios.emulate();
+  });
+</code></pre>
+<p>and that's it!</p>
+<h3>Desktop builds using Electron</h3>
+<p>In the last part of this guide we will make a desktop build of our <code>myhub</code> application using <a href="https://electron.atom.io/">Electron</a>.</p>
+<p>To set up the desktop build, we have to install <code>steal-electron</code> by running:</p>
+<pre><code>npm install --save-dev steal-electron
+</code></pre>
+<h3>Electron main module</h3>
+<p>We will need a different entry point for our Electron application, this module will take care of creating windows and handling system events.</p>
+<p>Create <em>electron-main.js</em> with the following code:</p>
+<pre><code class="language-js">const url = require(&quot;url&quot;);
+const path = require(&quot;path&quot;);
+const { app, BrowserWindow } = require(&quot;electron&quot;);
+
+let win;
+
+function createWindow() {
+  win = new BrowserWindow({ width: 800, height: 600 });
+
+  win.loadURL(
+    url.format({
+      pathname: path.join(__dirname, &quot;index.html&quot;),
+      protocol: &quot;file:&quot;,
+      slashes: true
+    })
+  );
+
+  win.on(&quot;closed&quot;, () =&gt; {
+    win = null;
+  });
+}
+
+app.on(&quot;ready&quot;, createWindow);
+
+app.on(&quot;window-all-closed&quot;, () =&gt; {
+  if (process.platform !== &quot;darwin&quot;) {
+    app.quit();
+  }
+});
+
+app.on(&quot;activate&quot;, () =&gt; {
+  if (win === null) {
+    createWindow();
+  }
+});
+</code></pre>
+<blockquote>
+<p>This code was taken from Electron's <a href="https://electron.atom.io/docs/tutorial/quick-start/">quick start guide</a>, read their documentation to get familiar with the available APIs and options.</p>
+</blockquote>
+<h3>Update the optimize build script</h3>
+<p>Once <code>steal-electron</code> is installed and saved in your <code>package.json</code> file, update <em>optimize.js</em> with the following code:</p>
+<pre><code class="language-js">var stealTools = require(&quot;steal-tools&quot;);
+var stealElectron = require(&quot;steal-electron&quot;);
+
+var electronOptions = {
+  buildDir: &quot;./build&quot;,
+  platforms: [&quot;darwin&quot;],
+  main: &quot;electron-main.js&quot;,
+  electronVersion: &quot;1.6.11&quot;,
+  files: [&quot;dist/**/*&quot;, &quot;index.html&quot;]
+};
+
+stealTools
+  .optimize()
+  .then(function(buildResult) {
+    return stealElectron(electronOptions, buildResult);
+  });
+</code></pre>
+<blockquote>
+<p>Read <a href="https://github.com/stealjs/steal-electron">steal-electron</a> documentation to get familiar with all the available options.</p>
+</blockquote>
+<p>Run the build script with:</p>
+<pre><code>&gt; node optimize.js
+</code></pre>
+<p>Then open the generated application file by running the following command:</p>
+<pre><code>open build/myhub-darwin-x64/myhub.app
+</code></pre>
+<p><img src="https://user-images.githubusercontent.com/724877/28988817-feca7fe4-792e-11e7-845c-53d9964ded09.png" alt="screen shot 2017-08-04 at 16 05 41" /></p>
+<p>Congrats, you just created a desktop application!</p>
+
+		</section>
+		
+		
+
+		
+
+		
+
+	
+	</article>
+	
+
+
+</div>
+
+
+<survey-ad>
+  <button aria-label="Close" class="close" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <a href="https://donejs.com/survey.html" target="_blank">
+    Help us improve StealJS by taking our community survey
+  </a>
+</survey-ad>
+
+
+	
+	<footer>
+		<nav class="container">
+			<a class="brand javascriptmvc" href="index.html"></a>
+		</nav>
+	</footer>
+	
+
+	<script type="text/javascript">
+		var docObject = {"src":{"path":"doc/steal-topics/bundling/optimized-builds.md"},"description":"\n","name":"StealJS.optimized-builds","title":"Optimized Builds","type":"page","parent":"StealJS.bundling","order":0,"comment":" ","pathToRoot":".."};
+	</script>
+
+	
+		<script>
+		  steal = {
+		    instantiated: {
+		      "bundles/bit-docs-site/static.css!$css" : null
+		    }
+		  }
+		</script>
+		<script type='text/javascript'
+				data-main="bit-docs-site/static"
+				src="./static/node_modules/steal/steal.production.js"></script>
+	
+</body>
+
+</html>
