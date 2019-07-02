@@ -66,7 +66,7 @@ The [load.metadata meta] **exports** property specifies a global value that is t
 window.FOO = { ... };
 ```
 
-We would specify this config with: `"exports": "FOO"`.  Then any other module that exports it like:
+We would specify this config with: `"exports": "FOO"`.  Then any other module that imports it like:
 
 ```
 import foo from "foo";
