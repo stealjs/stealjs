@@ -31,7 +31,7 @@
     "steal-mocha": "^1.0.0",
     "steal-qunit": "^1.0.0",
     "steal-socket.io": "^4.0.0",
-    "steal-tools": "^2.0.0"
+    "steal-tools": "^2.2.6"
   },
   "devDependencies": {
     "bit-docs": "0.0.8-0"
